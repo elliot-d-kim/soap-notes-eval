@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dark clinical palette */
+  --color-bg-primary: #0a0a0f;
+  --color-bg-secondary: #111118;
+  --color-bg-tertiary: #1a1a24;
+  --color-bg-elevated: #22222e;
+
+  --color-border-subtle: #2a2a3a;
+  --color-border-default: #3a3a4e;
+  --color-border-strong: #4a4a62;
+
+  --color-text-primary: #e8e8f0;
+  --color-text-secondary: #9898b0;
+  --color-text-muted: #6868808;
+
+  --color-accent-green: #22c55e;
+  --color-accent-green-dim: #166534;
+  --color-accent-red: #ef4444;
+  --color-accent-red-dim: #7f1d1d;
+  --color-accent-amber: #f59e0b;
+  --color-accent-amber-dim: #78350f;
+  --color-accent-blue: #3b82f6;
+  --color-accent-blue-dim: #1e3a5f;
+
+  --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", ui-monospace, monospace;
+  --font-sans: "DM Sans", "Inter", system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-default);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-strong);
+}
+
+/* Monospace for clinical data */
+.font-clinical {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* Verdict badges */
+.verdict-pass {
+  color: var(--color-accent-green);
+  background-color: var(--color-accent-green-dim);
+}
+.verdict-fail {
+  color: var(--color-accent-red);
+  background-color: var(--color-accent-red-dim);
+}
+.verdict-modified {
+  color: var(--color-accent-amber);
+  background-color: var(--color-accent-amber-dim);
+}
+
+/* Panel styling */
+.panel {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+}
+.panel-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-border-subtle);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+}
