@@ -5,15 +5,71 @@ Test strategy:
 2. Each degradation type triggers its expected failure.
 3. Edge cases (empty sections, malformed SOAP, missing transcript) are handled.
 4. Entity extraction returns expected entity types for clinical text.
+5. Manifest-driven tests: load degraded samples from data/samples/degraded/manifest.json
+   and verify Tier 1 detects the expected failure types.
 """
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 import pytest
 
+from src.data.loaders import parse_soap_sections
+from src.data.models import SOAPNote
 from src.tier1.entities import ExtractedEntities, extract_entities
 from src.tier1.pipeline import run_tier1
 from src.tier1.structure import validate_structure
+
+
+# ---------------------------------------------------------------------------
+# Manifest-driven degraded sample loading
+# ---------------------------------------------------------------------------
+
+_DEGRADED_DIR = Path(__file__).parent.parent / "data" / "samples" / "degraded"
+_DEGRADED_MANIFEST = _DEGRADED_DIR / "manifest.json"
+
+# Failure types that Tier 1 structural checks can detect (programmatic degradations)
+_TIER1_DETECTABLE = {"missing_section", "redundancy_bloat", "structural_errors"}
+
+
+def _load_degraded_manifest_entries() -> list[dict]:
+    """Load entries from data/samples/degraded/manifest.json."""
+    if not _DEGRADED_MANIFEST.exists():
+        return []
+    with open(_DEGRADED_MANIFEST) as f:
+        data = json.load(f)
+    return data.get("samples", [])
+
+
+def _load_degraded_note(entry: dict) -> SOAPNote:
+    """Load a degraded sample JSON file into a SOAPNote."""
+    path = _DEGRADED_DIR / entry["filename"]
+    with open(path) as f:
+        raw = json.load(f)
+    note_text = raw.get("note_text", "")
+    return SOAPNote(
+        note_id=entry["note_id"],
+        source_dataset=entry.get("source_dataset", "test"),
+        transcript=raw.get("transcript"),
+        note_text=note_text,
+        sections=parse_soap_sections(note_text),
+    )
+
+
+def _tier1_detectable_entries() -> list[dict]:
+    """Return manifest entries whose degradation types are detectable by Tier 1."""
+    entries = _load_degraded_manifest_entries()
+    result = []
+    seen = set()
+    for entry in entries:
+        dtypes = set(entry.get("degradation_types", []))
+        note_id = entry["note_id"]
+        if dtypes & _TIER1_DETECTABLE and note_id not in seen:
+            seen.add(note_id)
+            result.append(entry)
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -162,3 +218,37 @@ def test_tier1_report_is_serializable(good_note):
     assert parsed["note_id"] == good_note.note_id
     assert "structure" in parsed
     assert "entities" in parsed
+
+
+# ---------------------------------------------------------------------------
+# Manifest-driven tests — load degraded samples from disk
+# ---------------------------------------------------------------------------
+
+
+_MANIFEST_ENTRIES = _tier1_detectable_entries()
+
+
+@pytest.mark.skipif(
+    not _MANIFEST_ENTRIES,
+    reason="No degraded manifest entries found (run generate_degraded.py first)",
+)
+@pytest.mark.parametrize(
+    "entry",
+    _MANIFEST_ENTRIES,
+    ids=[e["note_id"] for e in _MANIFEST_ENTRIES],
+)
+def test_manifest_degraded_sample_detected(entry):
+    """Tier 1 should detect failure in each degraded sample loaded from manifest.json."""
+    note = _load_degraded_note(entry)
+    report = run_tier1(note)
+
+    expected_types = set(entry["degradation_types"]) & _TIER1_DETECTABLE
+    assert not report.passed, (
+        f"Expected Tier 1 to fail for {entry['note_id']} "
+        f"(degradation: {entry['degradation_types']}), but it passed."
+    )
+    for expected_ft in expected_types:
+        assert expected_ft in report.failure_types, (
+            f"Expected failure type '{expected_ft}' in Tier 1 report for "
+            f"{entry['note_id']}, got: {report.failure_types}"
+        )

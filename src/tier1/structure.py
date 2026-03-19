@@ -69,8 +69,10 @@ _MIN_WORDS: dict[str, int] = {
     "plan": 5,
 }
 
-# Fraction of sentences that are duplicates to flag bloat
-_REDUNDANCY_THRESHOLD = 0.25
+# Fraction of sentences that are duplicates to flag bloat.
+# 0.20 catches notes with even a single duplicated section (e.g., Plan repeated)
+# while avoiding false positives on notes with incidental wording overlaps.
+_REDUNDANCY_THRESHOLD = 0.20
 
 
 # ---------------------------------------------------------------------------
