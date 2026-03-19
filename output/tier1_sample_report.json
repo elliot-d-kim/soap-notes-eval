@@ -1,0 +1,95 @@
+{
+  "note_id": "adesouza_000",
+  "source_dataset": "adesouza1",
+  "timestamp": "2026-03-19T11:44:55.842508+00:00",
+  "passed": false,
+  "failure_types": [
+    "missing_section"
+  ],
+  "structure": {
+    "note_id": "adesouza_000",
+    "passed": false,
+    "checks": [
+      {
+        "name": "section_present:subjective",
+        "passed": false,
+        "details": "'subjective' section is missing or empty"
+      },
+      {
+        "name": "section_present:objective",
+        "passed": false,
+        "details": "'objective' section is missing or empty"
+      },
+      {
+        "name": "section_present:assessment",
+        "passed": false,
+        "details": "'assessment' section is missing or empty"
+      },
+      {
+        "name": "section_present:plan",
+        "passed": false,
+        "details": "'plan' section is missing or empty"
+      },
+      {
+        "name": "section_length:subjective",
+        "passed": false,
+        "details": "'subjective' has 0 words (minimum 10)"
+      },
+      {
+        "name": "section_length:objective",
+        "passed": false,
+        "details": "'objective' has 0 words (minimum 5)"
+      },
+      {
+        "name": "section_length:assessment",
+        "passed": false,
+        "details": "'assessment' has 0 words (minimum 5)"
+      },
+      {
+        "name": "section_length:plan",
+        "passed": false,
+        "details": "'plan' has 0 words (minimum 5)"
+      },
+      {
+        "name": "section_ordering",
+        "passed": true,
+        "details": "Insufficient section headers detected to assess ordering"
+      },
+      {
+        "name": "redundancy_bloat",
+        "passed": true,
+        "details": ""
+      }
+    ]
+  },
+  "entities": {
+    "subjective": {
+      "medications": [],
+      "diagnoses": [],
+      "procedures": [],
+      "other": [],
+      "model_name": ""
+    },
+    "objective": {
+      "medications": [],
+      "diagnoses": [],
+      "procedures": [],
+      "other": [],
+      "model_name": ""
+    },
+    "assessment": {
+      "medications": [],
+      "diagnoses": [],
+      "procedures": [],
+      "other": [],
+      "model_name": ""
+    },
+    "plan": {
+      "medications": [],
+      "diagnoses": [],
+      "procedures": [],
+      "other": [],
+      "model_name": ""
+    }
+  }
+}

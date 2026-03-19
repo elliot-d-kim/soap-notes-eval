@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "soap-notes-eval"
+version = "0.1.0"
+description = "DeepScribe SOAP Note Evaluation Suite — tiered automated evaluation of AI-generated clinical notes"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # Config & validation
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    # LLM access
+    "litellm>=1.44",
+    "openai>=1.40",  # litellm dependency
+    # NLP (Tier 1)
+    "spacy>=3.7",
+    # HTTP & async
+    "httpx>=0.27",
+    # Data
+    "datasets>=2.20",
+    "huggingface-hub>=0.24",
+    # Web framework (for Tier 3 API)
+    "fastapi>=0.111",
+    "uvicorn[standard]>=0.30",
+    # Storage
+    "duckdb>=0.10",
+    # Stats (meta-eval)
+    "scikit-learn>=1.5",
+    "numpy<2.0",
+    "krippendorff>=0.6",
+    # Testing
+    "pytest>=8.2",
+    "pytest-asyncio>=0.23",
+    # Dev utilities
+    "python-dotenv>=1.0",
+    "rich>=13.7",
+    "typer>=0.12",
+    "en-core-web-sm",
+    "scispacy>=0.5.5",
+    "en-core-sci-sm",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4",
+    "mypy>=1.10",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }
+en-core-sci-sm = { url = "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz" }

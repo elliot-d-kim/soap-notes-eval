@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "description": "Prompt version manifest for the SOAP Note Evaluation Suite. Tracks the active version for each prompt type.",
+  "prompts": {
+    "tier2_judge": {
+      "active_version": "v001",
+      "versions": {
+        "v001": {
+          "filename": "tier2_judge_v001.md",
+          "created": "2026-03-19",
+          "description": "Initial PDQI-9-adapted binary judge prompt with chain-of-thought and hallucination grounding.",
+          "criteria": [
+            "accuracy",
+            "completeness",
+            "succinctness",
+            "organization",
+            "consistency",
+            "appropriateness"
+          ]
+        }
+      }
+    }
+  }
+}

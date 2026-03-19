@@ -1,0 +1,14 @@
+{
+  "note_text": "Subjective:\n28-year-old female presenting with 2-week history of right knee pain after a running injury. Describes pain as sharp with activity, rated 6/10. No locking or giving way. No previous knee injuries.\n\nObjective:\nRight knee: full ROM, mild swelling. Tenderness at lateral joint line. McMurray's negative. Lachman's negative. Patellar grind test negative.\n\nAssessment:\n1. Lateral knee pain, likely IT band syndrome vs. lateral meniscus irritation\n2. Mild patellofemoral tracking disorder\n\nPlan:\n1. RICE protocol\n2. Naproxen 500mg BID with food for 1–2 weeks\n3. Physical therapy referral for IT band stretching and strengthening\n4. Avoid running until pain-free\n5. Cyclobenzaprine 5mg QHS PRN for muscle spasm\n6. Return if no improvement in 3 weeks or if locking/instability develops",
+  "transcript": "Doctor: What happened with your knee?\nPatient: I was training for a half marathon and started getting this sharp pain on the outside of my right knee about two weeks ago.\nDoctor: Any popping, locking, or feeling like it gives way?\nPatient: No, none of that.\nDoctor: On a scale of 1–10?\nPatient: About a 6 when I'm running.\nDoctor: [examines knee] You have some swelling and tenderness along the lateral joint line. Special tests are negative. This looks like IT band syndrome or mild lateral meniscus irritation.\nPatient: What should I do?\nDoctor: Rest, ice, naproxen for pain. I'll refer you to PT for stretching. Hold off on running for now.",
+  "ground_truth_note": null,
+  "_fallback": true,
+  "_note_id": "aci_002",
+  "_degradation_types": [
+    "hallucinated_entities"
+  ],
+  "_degradation_details": {
+    "method": "llm_injection"
+  },
+  "_original_note_id": "aci_002"
+}
