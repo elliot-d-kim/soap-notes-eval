@@ -52,12 +52,12 @@ The design is grounded in three strategic insights from the evaluation literatur
           └─────────────────┬────────────────────────┘
                             │
           ┌─────────────────▼────────────────────────┐
-          │    Tier 3 — Human Expert Review (future)  │
-          │    (three-column web UI — Cursor build)   │
+          │    Tier 3 — Human Expert Review           │
+          │    (three-column web UI)                  │
           │                                           │
           │  • Side-by-side: transcript / note / judge│
           │  • CRUD on judge annotations              │
-          │  • Expert reasoning capture               │
+          │  • Expert reasoning traces                │
           │  • Diff export for prompt calibration     │
           └──────────────────────────────────────────┘
 ```
@@ -74,69 +74,14 @@ The design is grounded in three strategic insights from the evaluation literatur
 
 ---
 
-## Tech Stack
-
-- **Python 3.12+** with `uv` for package management
-- **Pydantic v2** — strict typed I/O at all boundaries
-- **pydantic-settings** — config from `.env`, never hardcoded
-- **LiteLLM** via OpenRouter — single key for Claude, GPT, Gemini
-- **spaCy + scispaCy** — biomedical NER for Tier 1
-- **scikit-learn + krippendorff** — agreement metrics for meta-eval
-- **pytest + pytest-asyncio** — test coverage for each tier independently
-
----
-
-## Project Structure
-
-```
-soap-notes-eval/
-├── src/
-│   ├── config.py              # Central config (pydantic-settings)
-│   ├── tier1/
-│   │   ├── entities.py        # spaCy + scispaCy entity extraction
-│   │   ├── structure.py       # Section completeness & structural validation
-│   │   └── pipeline.py        # Tier 1 orchestrator
-│   ├── tier2/
-│   │   ├── judge.py           # LLM-as-a-judge orchestrator
-│   │   └── schemas.py         # Pydantic verdict models
-│   ├── data/
-│   │   ├── models.py          # SOAP note Pydantic models
-│   │   └── loaders.py         # Dataset loaders + section parser
-│   └── meta_eval/
-│       ├── agreement.py       # Cohen's kappa, Krippendorff's alpha
-│       └── calibrate.py       # Judge calibration vs ground truth
-├── data/samples/
-│   ├── download.py            # Download 2-3 samples per HuggingFace dataset
-│   ├── generate_degraded.py   # Hybrid programmatic + LLM degradation
-│   ├── manifest.json          # Catalog of all samples (good + degraded)
-│   └── degraded/
-│       ├── manifest.json      # Ground-truth failure labels
-│       └── *.json             # 18 degraded note variants
-├── prompts/
-│   ├── manifest.json          # Active version tracking
-│   └── tier2_judge_v001.md    # PDQI-9-adapted judge prompt
-├── tests/
-│   ├── conftest.py            # Shared fixtures (good + degraded notes)
-│   ├── test_tier1.py          # Tier 1 tests (10 cases)
-│   ├── test_tier2.py          # Tier 2 tests (10 unit + 3 integration)
-│   └── test_meta_eval.py      # Agreement metric tests (15 cases)
-├── output/
-│   ├── tier1_sample_report.json
-│   └── tier2_sample_report.json
-└── scripts/
-    ├── emit_tier1_report.py
-    └── emit_tier2_report.py
-```
-
----
-
 ## Setup
 
 ### Prerequisites
 
-- Python 3.12
+- Python 3.12+
 - [uv](https://github.com/astral-sh/uv) (`curl -LsSf https://astral.sh/uv/install.sh | sh`)
-- An [OpenRouter](https://openrouter.ai) API key
+- Node.js 20+ (for Tier 3 frontend)
+- An [OpenRouter](https://openrouter.ai) API key (for Tier 2 LLM judge)
 
 ### Installation
 
@@ -144,15 +89,12 @@ soap-notes-eval/
 git clone <repo-url>
 cd soap-notes-eval
 
-# Copy and populate the env file
-cp .env.example .env
-# Edit .env — add OPENROUTER_API_KEY
-
-# Install dependencies (uv reads pyproject.toml, generates uv.lock)
+# Python dependencies
+cp .env.example .env     # Add OPENROUTER_API_KEY
 uv sync
 
-# Install the scispaCy biomedical NER model
-uv add "en_core_sci_sm @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz"
+# Tier 3 frontend dependencies
+cd src/tier3/frontend && npm install && cd ../../..
 ```
 
 ### Data Preparation
@@ -167,74 +109,39 @@ uv run python data/samples/generate_degraded.py
 
 ---
 
-## Usage
+## Running
 
-### Tier 1 — Automated Screening
-
-```python
-from src.data.loaders import parse_soap_sections
-from src.data.models import SOAPNote
-from src.tier1.pipeline import run_tier1
-
-note = SOAPNote(
-    note_id="example_001",
-    source_dataset="custom",
-    transcript="Doctor: ...\nPatient: ...",
-    note_text="Subjective:\n...\n\nObjective:\n...\n\nAssessment:\n...\n\nPlan:\n...",
-    sections=parse_soap_sections("Subjective:\n...\n\nObjective:\n..."),
-)
-
-report = run_tier1(note)
-print(report.to_json())
-```
-
-### Tier 2 — LLM Judge
-
-```python
-import asyncio
-from src.tier2.judge import judge_note
-
-verdict = asyncio.run(judge_note(note))
-print(f"Overall: {verdict.overall_verdict.value}")   # "pass" or "fail"
-print(f"Escalate to Tier 3: {verdict.escalate_to_tier3}")
-```
-
-### Meta-Evaluation
-
-```python
-from src.meta_eval.agreement import compute_agreement
-
-result = compute_agreement(
-    judge_labels=["pass", "fail", "pass", "fail"],
-    human_labels=["pass", "fail", "fail", "fail"],
-)
-print(f"Agreement: {result.percent_agreement:.1%}")
-print(f"Cohen's kappa: {result.cohens_kappa:.3f} ({result.kappa_interpretation})")
-```
-
-### Emit Sample Reports
+### Tier 1 & 2 — Evaluation Pipeline
 
 ```bash
+# Emit sample reports
 uv run python scripts/emit_tier1_report.py   # → output/tier1_sample_report.json
 uv run python scripts/emit_tier2_report.py   # → output/tier2_sample_report.json
 ```
 
----
+### Tier 3 — Expert Review UI
 
-## Testing
+Start both servers, then open http://localhost:3000:
 
 ```bash
-# Unit + schema validation tests (no API key required)
-uv run pytest tests/ -v
+# Terminal 1 — FastAPI backend (API + SQLite persistence)
+uv run uvicorn src.tier3.app:app --reload --port 8000
 
-# Include LLM integration tests (requires OPENROUTER_API_KEY in .env)
-RUN_INTEGRATION_TESTS=1 uv run pytest tests/ -v
+# Terminal 2 — Next.js frontend
+cd src/tier3/frontend && npm run dev
 ```
 
-**Coverage:**
-- `test_tier1.py` — good notes pass; each degradation type triggers expected failure; edge cases
-- `test_tier2.py` — schema chain-of-thought enforcement; consistency constraints; JSON parsing
-- `test_meta_eval.py` — agreement metrics on known pairs; calibration detection rates; edge cases
+Select a note, click "Start Review," annotate judge verdicts, and export the review as JSON for calibration.
+
+### Tests
+
+```bash
+# Unit + schema validation (no API key required)
+uv run pytest tests/ -v
+
+# Include LLM integration tests (requires OPENROUTER_API_KEY)
+RUN_INTEGRATION_TESTS=1 uv run pytest tests/ -v
+```
 
 ---
 
@@ -276,15 +183,14 @@ Most eval systems stop at "the judge says pass." This system asks the harder que
 
 `src/tier2/schemas.py` uses Pydantic validators to enforce the chain-of-thought pattern at the *model level* — not just in the prompt. `CriterionVerdict` raises `ValidationError` if the rationale is fewer than 10 characters. `Tier2Verdict` raises if `overall_verdict` is PASS while any criterion is FAIL or a hallucination is detected. The LLM cannot produce an inconsistent verdict that passes schema validation.
 
-### 3. Graceful Degradation in Entity Extraction
+### 3. Tier 3 Expert Review as a Calibration Tool
 
-`src/tier1/entities.py` tries the scispaCy biomedical model (`en_core_sci_sm`) but silently falls back to `en_core_web_sm` if unavailable. The entity classification heuristic (`_classify_entity`) uses clinical vocabulary patterns rather than relying solely on model labels — because `en_core_sci_sm` returns generic `ENTITY` labels that require post-classification anyway. The system stays functional at both full and reduced capability.
+The review UI isn't just a dashboard — it's the feedback mechanism that closes the meta-evaluation loop. Every expert accept/reject/modify decision is captured with reasoning traces and diffed against the original judge output. The JSON export format is designed specifically to feed back into prompt refinement: when an expert rejects an accuracy verdict, that example becomes training signal for the next prompt iteration. This is how you move from "the judge agrees with me 78% of the time" to ">90%."
 
 ---
 
 ## Future Work
 
-- **Tier 3 frontend** — scaffold is in place; build in Cursor for visual iteration with browser preview
 - **Online evaluation** — real-time feedback loops and production monitoring
 - **Generator self-correction** — judge feedback improving the note-generation model
 - **Full dataset processing** — currently processes samples only; architecture is dataset-agnostic
