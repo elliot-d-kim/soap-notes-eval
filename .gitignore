@@ -6,3 +6,4 @@ __pycache__/
 node_modules/
 .next/
 /docs/DESIGN_RESEARCH_AND_DECISIONS_TRANSCRIPT.md
+.claude/settings.local.json
