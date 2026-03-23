@@ -4,11 +4,12 @@ Dataset acquisition, synthetic degradation, and test fixture plan for the DeepSc
 
 ## Datasets
 
-Download 2–3 representative samples from each source into /data/samples/ using the HuggingFace `datasets` library (pip install datasets). Write a download script at data/samples/download.py.
+Download samples from each source into /data/samples/ using the HuggingFace `datasets` library. The download script at data/samples/download.py pulls 50 samples per dataset (100 total).
 
-- **adesouza1/soap_notes** (HuggingFace) — listed in assessment requirements
-- **ACI-Bench** (HuggingFace) — 87 complete doctor-patient dialogues with paired clinical notes. Higher fidelity.
-- **Omi Health** (HuggingFace) — 10K synthetic dialogues via GPT-4 / NotChat framework. Useful for volume testing, not ground truth.
+- **adesouza1/soap_notes** (HuggingFace, 558 rows) — listed in assessment requirements. Fields: `soap_notes`, `patient_convo`.
+- **omi-health/medical-dialogue-to-soap-summary** (HuggingFace, 9,250 rows) — synthetic dialogues via GPT-4 / NotChat framework. Fields: `soap`, `dialogue`.
+
+Note: ACI-Bench was originally planned but is no longer accessible on HuggingFace Hub.
 
 Save as JSON with original field names preserved.
 
@@ -32,9 +33,13 @@ Create data/samples/generate_degraded.py — hybrid approach that takes good SOA
 
 Output to data/samples/degraded/ with manifest.json mapping each file to its ground-truth failure labels.
 
+## Curated Eval Set
+
+A curated subset lives in data/eval_set/ (committed to git): 20 good + 84 degraded = 104 samples. The full dataset (100 good + 597 degraded) stays in data/samples/ (gitignored, since LLM-generated degradations are expensive to reproduce).
+
 ## Manifest
 
-Create data/samples/manifest.json cataloging all samples (good + degraded) with source dataset, filename, and label metadata.
+Each data directory has a manifest.json cataloging samples with source dataset, filename, and label metadata.
 
 ## Test Fixture Expectations
 

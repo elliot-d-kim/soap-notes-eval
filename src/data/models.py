@@ -58,7 +58,7 @@ class SOAPNote(BaseModel):
 
     note_id: str = Field(description="Unique identifier for this note.")
     source_dataset: str = Field(
-        description="Dataset this sample came from (e.g., 'adesouza1', 'ACI-Bench', 'omi-health')."
+        description="Dataset this sample came from (e.g., 'adesouza1', 'omi-health')."
     )
     transcript: Optional[str] = Field(
         default=None,

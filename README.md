@@ -22,7 +22,7 @@ I'm familiar with classical ML — supervised vs. unsupervised approaches, cost/
 
 The moment that shaped the entire project was realizing: *I need to evaluate the evaluation system. This is the sneaky thing.* If I build an LLM judge, how do I know the judge is good? If I just run it against good SOAP notes and it says "good," that tells me almost nothing. I need bad SOAP notes — with *known* failure types — so I can measure whether the judge actually catches what it should catch.
 
-This is why the synthetic degradation suite exists. The existing datasets (MTS Dialogue, ACI-Bench, Omi Health) only contain good examples. To test an evaluator, you need both good and bad, with ground-truth labels for what's wrong. So I generate intentionally degraded variants — missing sections, hallucinated entities, internal contradictions — and use those as the test bed for the judge itself.
+This is why the synthetic degradation suite exists. The existing datasets (adesouza1, Omi Health) only contain good examples. To test an evaluator, you need both good and bad, with ground-truth labels for what's wrong. So I generate intentionally degraded variants — missing sections, hallucinated entities, internal contradictions — and use those as the test bed for the judge itself.
 
 ### Why a tiered architecture
 
@@ -56,7 +56,7 @@ Things I thought about but explicitly scoped out:
 
 **Judge prompt calibration.** The Tier 2 judge prompt (`prompts/tier2_judge_v001.md`) is a v001 for a reason. The critique shadowing methodology — iterate between domain expert review and prompt refinement until you reach >90% agreement — is the process I've designed the system to support, but actually *running* that process requires a domain expert and multiple iterations. The meta-eval module (`src/meta_eval/`) provides the agreement metrics; the Tier 3 UI provides the annotation workflow; the versioned prompt system provides the iteration mechanism. The pieces are in place for the loop, but the loop hasn't been run yet.
 
-**Sample size.** The assessment mentions 100 SOAP notes. The current implementation works with 9 source notes + 30 degraded variants = 39 total. The architecture is dataset-agnostic — scaling to 100+ is a config change, not a redesign — but within the time constraint I prioritized depth of evaluation design over breadth of data processing. The scripts currently emit single-note sample reports; batch processing across the full dataset with aggregate reporting is a natural next step.
+**Sample size.** The curated eval set contains 104 data points: 20 good SOAP notes + 84 degraded variants across 6 failure types. The full dataset (100 good + 597 degraded = 697 total) is available locally via `data/samples/` but gitignored since the LLM-generated degradations are expensive to reproduce. The curated subset in `data/eval_set/` is committed and covers all degradation types with sufficient density for meaningful meta-evaluation.
 
 **Aggregate reporting / dashboard.** The assessment mentions a dashboard as a bonus deliverable. This is an area that would benefit from development — the individual JSON reports from Tier 1 and Tier 2 exist, but there's no cross-note summary showing patterns like "hallucinations are most common in the Plan section" or "completeness failures cluster in notes from dataset X." This is where the meta-eval module's per-failure-type detection rates would shine if run at scale.
 
@@ -158,7 +158,7 @@ To test the evaluator, I needed bad SOAP notes with known failure types — the 
 | `hallucinated_entities` | LLM-assisted | Plausible but unsupported medications/diagnoses injected |
 | `internal_contradiction` | LLM-assisted | Contradiction between Subjective and Assessment |
 
-27 degraded variants across 9 source notes, each with ground-truth labels in `data/samples/degraded/manifest.json`. These become both pytest fixtures and calibration targets for the meta-evaluation module.
+84 degraded variants across 14 source notes in the curated eval set (`data/eval_set/degraded/manifest.json`), with ground-truth labels for each failure type. These become both pytest fixtures and calibration targets for the meta-evaluation module. The full dataset (597 degraded variants across 100 source notes) is available locally in `data/samples/`.
 
 ---
 
@@ -187,11 +187,15 @@ cd src/tier3/frontend && npm install && cd ../../..
 
 ### Data Preparation
 
+The curated eval set (`data/eval_set/`, 20 good + 84 degraded = 104 samples) is committed and ready to use.
+
+To regenerate the full dataset locally:
+
 ```bash
-# Download 2-3 samples per dataset (adesouza1, ACI-Bench, Omi Health)
+# Download 100 samples (50 adesouza1 + 50 omi-health) → data/samples/
 uv run python data/samples/download.py
 
-# Generate synthetically degraded variants (programmatic + LLM)
+# Generate degraded variants (programmatic + LLM) → data/samples/degraded/
 uv run python data/samples/generate_degraded.py
 ```
 
@@ -278,4 +282,4 @@ Beyond the Tier 3 UX refinement and judge prompt calibration discussed above:
 - **Online evaluation** — Real-time feedback loops and production monitoring. The tiered architecture supports this (Tier 1 can run synchronously in a request pipeline), but the orchestration infrastructure isn't built.
 - **Generator self-correction** — Having the judge provide feedback to the note-generating LLM so it can fix its notes in real time. This is a compelling product feature that sits at the boundary of evaluation and generation.
 - **End-user edit flywheel** — Capturing what physicians change in generated notes (the way [Wispr Flow](https://wisprflow.ai/) learns from text corrections) and feeding those diffs back as evaluation signal. Raises HIPAA/PII concerns, but the edit patterns themselves — are they correcting medications? moving sentences between sections? — would be an incredibly rich data source for understanding systematic failure modes. Subject to survivorship bias though: the edits that get made are the errors that get caught, and the dangerous ones are the ones that slip through undetected.
-- **Full dataset processing** — Currently processes samples only; the architecture is dataset-agnostic and ready for scale.
+- **Full dataset processing** — The full 697-sample dataset is available locally; running the eval pipeline against it (instead of the curated 104-sample subset) is a config change.

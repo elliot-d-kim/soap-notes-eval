@@ -5,7 +5,7 @@ Test strategy:
 2. Each degradation type triggers its expected failure.
 3. Edge cases (empty sections, malformed SOAP, missing transcript) are handled.
 4. Entity extraction returns expected entity types for clinical text.
-5. Manifest-driven tests: load degraded samples from data/samples/degraded/manifest.json
+5. Manifest-driven tests: load degraded samples from data/eval_set/degraded/manifest.json
    and verify Tier 1 detects the expected failure types.
 """
 
@@ -35,7 +35,7 @@ _TIER1_DETECTABLE = {"missing_section", "redundancy_bloat", "structural_errors"}
 
 
 def _load_degraded_manifest_entries() -> list[dict]:
-    """Load entries from data/samples/degraded/manifest.json."""
+    """Load entries from data/eval_set/degraded/manifest.json."""
     if not _DEGRADED_MANIFEST.exists():
         return []
     with open(_DEGRADED_MANIFEST) as f:
