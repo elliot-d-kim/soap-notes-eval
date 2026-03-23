@@ -1,0 +1,155 @@
+{
+  "age": 53,
+  "patient_name": "Celina Hale",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "43a2e8ad11fdce00",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(465) 366-4047",
+        "dob": {
+          "age": 31,
+          "date": "1992-10-15T04:21:54.680Z"
+        },
+        "email": "nevaeh.lee@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "896-09-4985"
+        },
+        "location": {
+          "city": "West Valley City",
+          "coordinates": {
+            "latitude": "-18.3632",
+            "longitude": "153.9962"
+          },
+          "country": "United States",
+          "postcode": 16423,
+          "state": "Arizona",
+          "street": {
+            "name": "N Stelling Rd",
+            "number": 4794
+          },
+          "timezone": {
+            "description": "Mid-Atlantic",
+            "offset": "-2:00"
+          }
+        },
+        "login": {
+          "md5": "fb0465a4ac47493e77a13a5e75f4df86",
+          "password": "tammy",
+          "salt": "sBwKYdUq",
+          "sha1": "4cf596cc4e551733278ef22e46fb25e088a42cf6",
+          "sha256": "9350d7b246cd177f1b7ed0db75c9607b90a8cd52b32b5dd3d13036dffb79fe48",
+          "username": "angryswan578",
+          "uuid": "b8d678f0-1475-49d0-b4e0-d8d2de118c56"
+        },
+        "name": {
+          "first": "Nevaeh",
+          "last": "Lee",
+          "title": "Ms"
+        },
+        "nat": "US",
+        "phone": "(900) 673-4462",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/79.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/79.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/79.jpg"
+        },
+        "registered": {
+          "age": 19,
+          "date": "2004-12-19T00:41:11.108Z"
+        }
+      }
+    ]
+  },
+  "gender": "female",
+  "dob": "11/14/1970",
+  "phone": "(347) 556-6804",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "81503827e49fb78c",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(928) 239-5309",
+        "dob": {
+          "age": 53,
+          "date": "1970-11-14T12:39:36.583Z"
+        },
+        "email": "celina.hale@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "314-46-3133"
+        },
+        "location": {
+          "city": "Glendale",
+          "coordinates": {
+            "latitude": "-40.9381",
+            "longitude": "143.1700"
+          },
+          "country": "United States",
+          "postcode": 20373,
+          "state": "Arkansas",
+          "street": {
+            "name": "Mockingbird Hill",
+            "number": 4138
+          },
+          "timezone": {
+            "description": "Central Time (US & Canada), Mexico City",
+            "offset": "-6:00"
+          }
+        },
+        "login": {
+          "md5": "6bd6f98daada5db2d97e5542f4be7b00",
+          "password": "alice1",
+          "salt": "VLITap8R",
+          "sha1": "df55189c5d7db8ef6930e7cb21d84e461fd66e16",
+          "sha256": "349bf1debfd2ac2d88f8009c5706dd3c3f2558d6a1fd1cc6420a3602d9dd2c88",
+          "username": "smallmouse619",
+          "uuid": "25b36851-1c98-4b04-bb1c-997b627b69aa"
+        },
+        "name": {
+          "first": "Celina",
+          "last": "Hale",
+          "title": "Ms"
+        },
+        "nat": "US",
+        "phone": "(347) 556-6804",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/37.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/37.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/37.jpg"
+        },
+        "registered": {
+          "age": 7,
+          "date": "2016-10-04T16:09:15.194Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Ear Infections",
+  "patient_convo": "\nPhysician: Good morning, Mrs. Hale. How are you feeling today?\n\nPatient: (coughing) Not great, to be honest. I've had this persistent cough for a few weeks now, and it's been getting worse. I also feel really tired and run down all the time.\n\nPhysician: I see. Have you noticed any other symptoms, such as fever or shortness of breath?\n\nPatient: Yes, I've had a low-grade fever on and off for the past few days, and I sometimes feel like I can't catch my breath.\n\nPhysician: I understand. Can you tell me more about your cough? Is it dry or productive? Do you have any chest pain or tightness?\n\nPatient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not a lot. And yes, my chest does feel tight and a little sore.\n\nPhysician: Okay. Have you noticed any triggers that make your cough worse, such as certain activities or environments?\n\nPatient: Well, it seems to get worse at night, and when I'm lying down. And sometimes when I'm outside, especially if it's windy or cold.\n\nPhysician: That's helpful information. Now, I know you've been dealing with ear infections recently. Have you noticed any hearing loss or ringing in your ears?\n\nPatient: Yes, I have. My hearing seems to come and go, and sometimes I get this ringing or buzzing sound in my ears. It's really frustrating.\n\nPhysician: I can imagine. Have you had any recent travel or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled recently, and I don't think anyone in my household has been sick.\n\nPhysician: Alright. I'm going to order some tests to help us better understand what's going on. We'll do a complete blood count, a chest X-ray, and a nasal swab to rule out any viral or bacterial infections. We'll also check your blood sugar levels, given your history of diabetes. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. Do you have any allergies or sensitivities to medications that I should be aware of?\n\nPatient: No, I don't think so. But my daughter mentioned something about a reaction to penicillin when I was younger.\n\nPhysician: Okay, that's good to know. We'll make sure to avoid penicillin-based antibiotics just in case. I'll also recommend that you use a humidifier at home to help soothe your throat and chest. And please, make sure to follow up with the specialist for your ear issues. They'll be able to assess your hearing and provide guidance on the best course of action.\n\nPatient: Okay, that all sounds good. Thank you, doctor.\n\nPhysician: You're welcome, Mrs. Hale. We'll get you feeling better in no time.",
+  "soap_notes": "Subjective:\nMrs. Hale presents with a persistent dry cough, low-grade fever, fatigue, and shortness of breath. She reports experiencing tightness and soreness in her chest, especially at night and when lying down. Mrs. Hale also mentions fluctuating hearing loss and ringing in her ears. She denies recent travel or exposure to sick individuals.\n\nObjective:\nMrs. Hale appears fatigued but alert during the examination. Vital signs are within normal limits. Physical examination reveals mild chest tenderness and intermittent wheezing upon auscultation. No signs of respiratory distress are noted. Mrs. Hale's ear examination shows signs of inflammation and fluid accumulation.\n\nAssessment:\nMrs. Hale presents with symptoms suggestive of an upper respiratory infection, possibly exacerbated by her asthma. The presence of ear symptoms indicates ongoing issues with recurrent ear infections. Further evaluation is needed to determine the underlying cause of her symptoms and hearing issues.\n\nPlan:\n1. Order a complete blood count, chest X-ray, and nasal swab to assess for infection.\n2. Prescribe an antibiotic for the suspected respiratory infection, avoiding penicillin-based medications.\n3. Recommend the use of a humidifier at home to alleviate throat and chest discomfort.\n4. Refer Mrs. Hale to the ENT specialist for a hearing test and consideration of ear tube placement.\n5. Schedule a follow-up appointment to review test results and adjust treatment as needed.",
+  "doctor_name": "Dr. Nevaeh Lee",
+  "address": "4138 Mockingbird Hill, Glendale, Arkansas 20373",
+  "full_patient_data": "\nDEMOGRAPHICS:\nPatient Name: Celina Hale\nAge: 53\nAddress: 4138 Mockingbird Hill, Glendale, Arkansas 20373\nPhone: (347) 556-6804\n\nPROBLEM LIST:\nChronic:\n- Asthma\n- Hypertension\n- Type 2 Diabetes\n\nOther:\n- Ear Infections (acute)\n\nHEALTH MAINTENANCE:\nVaccines and Screenings:\n- Influenza vaccine: due on 10/1/2023\n- Colonoscopy: overdue\n- Mammogram: due on 07/01/2024\n\nREMINDERS AND RESULTS:\n- Celina Hale, please schedule your influenza vaccine for October 1st, 2023.\n- Celina Hale, your colonoscopy is overdue. Please schedule an appointment with your primary care provider to discuss this matter.\n- Celina Hale, your mammogram results are normal.\n\nCARE TEAM AND COMMUNICATION:\nPrimary Care Provider: Dr. Nevaeh Lee\nSpecialist: ENT Specialist (Dr. Aaliyah Thompson)\nPharmacy: CVS Pharmacy (4150 N. Oak St., Glendale, Arkansas 20373)\n\nALLERGIES:\n- Penicillin\n\nMEDICATIONS:\n- Metformin 1000mg twice daily for Type 2 Diabetes\n- Lisinopril 20mg daily for Hypertension\n- Albuterol inhaler as needed for Asthma\n\nIMMUNIZATIONS:\n- Influenza vaccine (2022)\n- Tdap (2019)\n- Pneumococcal conjugate vaccine (2018)\n\nSIGNIFICANT HISTORY DETAILS:\n- Non-smoker\n- Occasional alcohol use\n- Speaks English\n\nSPECIALTY COMMENTS:\n- Celina Hale has been experiencing recurrent ear infections, which have been resistant to typical antibiotic treatments. An ENT specialist has recommended a hearing test and possible ear tube placement.\n\nFAMILY COMMENTS:\n- Celina Hale's daughter has expressed concerns about her mother's frequent ear infections and their impact on her overall health. She has requested regular updates on her mother's condition and treatment plan.",
+  "note_text": "Subjective:\nMrs. Hale presents with a persistent dry cough, low-grade fever, fatigue, and shortness of breath. She reports experiencing tightness and soreness in her chest, especially at night and when lying down. Mrs. Hale also mentions fluctuating hearing loss and ringing in her ears. She denies recent travel or exposure to sick individuals.\n\nObjective:\nMrs. Hale appears fatigued but alert during the examination. Vital signs are within normal limits. Physical examination reveals mild chest tenderness and intermittent wheezing upon auscultation. No signs of respiratory distress are noted. Mrs. Hale's ear examination shows signs of inflammation and fluid accumulation.\n\nAssessment:\nMrs. Hale presents with symptoms suggestive of an upper respiratory infection, possibly exacerbated by her asthma. The presence of ear symptoms indicates ongoing issues with recurrent ear infections. Further evaluation is needed to determine the underlying cause of her symptoms and hearing issues. Patient also shows early signs of bronchiectasis based on clinical presentation.\n\nPlan:\n1. Order a complete blood count, chest X-ray, and nasal swab to assess for infection.\n2. Prescribe an antibiotic for the suspected respiratory infection, avoiding penicillin-based medications.\n3. Recommend the use of a humidifier at home to alleviate throat and chest discomfort.\n4. Refer Mrs. Hale to the ENT specialist for a hearing test and consideration of ear tube placement.\n5. Schedule a follow-up appointment to review test results and adjust treatment as needed.\n6. Start Montelukast (Singulair) 10mg daily to help manage respiratory symptoms.",
+  "transcript": "\nPhysician: Good morning, Mrs. Hale. How are you feeling today?\n\nPatient: (coughing) Not great, to be honest. I've had this persistent cough for a few weeks now, and it's been getting worse. I also feel really tired and run down all the time.\n\nPhysician: I see. Have you noticed any other symptoms, such as fever or shortness of breath?\n\nPatient: Yes, I've had a low-grade fever on and off for the past few days, and I sometimes feel like I can't catch my breath.\n\nPhysician: I understand. Can you tell me more about your cough? Is it dry or productive? Do you have any chest pain or tightness?\n\nPatient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not a lot. And yes, my chest does feel tight and a little sore.\n\nPhysician: Okay. Have you noticed any triggers that make your cough worse, such as certain activities or environments?\n\nPatient: Well, it seems to get worse at night, and when I'm lying down. And sometimes when I'm outside, especially if it's windy or cold.\n\nPhysician: That's helpful information. Now, I know you've been dealing with ear infections recently. Have you noticed any hearing loss or ringing in your ears?\n\nPatient: Yes, I have. My hearing seems to come and go, and sometimes I get this ringing or buzzing sound in my ears. It's really frustrating.\n\nPhysician: I can imagine. Have you had any recent travel or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled recently, and I don't think anyone in my household has been sick.\n\nPhysician: Alright. I'm going to order some tests to help us better understand what's going on. We'll do a complete blood count, a chest X-ray, and a nasal swab to rule out any viral or bacterial infections. We'll also check your blood sugar levels, given your history of diabetes. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. Do you have any allergies or sensitivities to medications that I should be aware of?\n\nPatient: No, I don't think so. But my daughter mentioned something about a reaction to penicillin when I was younger.\n\nPhysician: Okay, that's good to know. We'll make sure to avoid penicillin-based antibiotics just in case. I'll also recommend that you use a humidifier at home to help soothe your throat and chest. And please, make sure to follow up with the specialist for your ear issues. They'll be able to assess your hearing and provide guidance on the best course of action.\n\nPatient: Okay, that all sounds good. Thank you, doctor.\n\nPhysician: You're welcome, Mrs. Hale. We'll get you feeling better in no time.",
+  "_note_id": "adesouza_002",
+  "_degradation_types": [
+    "hallucinated_entities"
+  ],
+  "_degradation_details": {
+    "method": "llm_injection"
+  },
+  "_original_note_id": "adesouza_002"
+}

@@ -1,59 +1,57 @@
 {
   "note_id": "adesouza_000",
   "source_dataset": "adesouza1",
-  "timestamp": "2026-03-19T11:44:55.842508+00:00",
-  "passed": false,
-  "failure_types": [
-    "missing_section"
-  ],
+  "timestamp": "2026-03-23T22:26:11.603540+00:00",
+  "passed": true,
+  "failure_types": [],
   "structure": {
     "note_id": "adesouza_000",
-    "passed": false,
+    "passed": true,
     "checks": [
       {
         "name": "section_present:subjective",
-        "passed": false,
-        "details": "'subjective' section is missing or empty"
+        "passed": true,
+        "details": ""
       },
       {
         "name": "section_present:objective",
-        "passed": false,
-        "details": "'objective' section is missing or empty"
+        "passed": true,
+        "details": ""
       },
       {
         "name": "section_present:assessment",
-        "passed": false,
-        "details": "'assessment' section is missing or empty"
+        "passed": true,
+        "details": ""
       },
       {
         "name": "section_present:plan",
-        "passed": false,
-        "details": "'plan' section is missing or empty"
+        "passed": true,
+        "details": ""
       },
       {
         "name": "section_length:subjective",
-        "passed": false,
-        "details": "'subjective' has 0 words (minimum 10)"
+        "passed": true,
+        "details": ""
       },
       {
         "name": "section_length:objective",
-        "passed": false,
-        "details": "'objective' has 0 words (minimum 5)"
+        "passed": true,
+        "details": ""
       },
       {
         "name": "section_length:assessment",
-        "passed": false,
-        "details": "'assessment' has 0 words (minimum 5)"
+        "passed": true,
+        "details": ""
       },
       {
         "name": "section_length:plan",
-        "passed": false,
-        "details": "'plan' has 0 words (minimum 5)"
+        "passed": true,
+        "details": ""
       },
       {
         "name": "section_ordering",
         "passed": true,
-        "details": "Insufficient section headers detected to assess ordering"
+        "details": ""
       },
       {
         "name": "redundancy_bloat",
@@ -64,32 +62,120 @@
   },
   "entities": {
     "subjective": {
-      "medications": [],
+      "medications": [
+        "constant pain",
+        "pain"
+      ],
       "diagnoses": [],
       "procedures": [],
-      "other": [],
-      "model_name": ""
+      "other": [
+        "Zack Fields",
+        "right knee",
+        "left ankle",
+        "months",
+        "ache",
+        "mobility",
+        "walking",
+        "standing",
+        "extended",
+        "periods",
+        "improves",
+        "sitting",
+        "lying down",
+        "Zack",
+        "ibuprofen",
+        "pain relief",
+        "minimal",
+        "relief",
+        "stomach discomfort"
+      ],
+      "model_name": "core_sci_sm"
     },
     "objective": {
-      "medications": [],
+      "medications": [
+        "pain"
+      ],
       "diagnoses": [],
-      "procedures": [],
-      "other": [],
-      "model_name": ""
+      "procedures": [
+        "examination",
+        "affected",
+        "impact",
+        "daily activities"
+      ],
+      "other": [
+        "Zack",
+        "moving",
+        "right knee",
+        "left ankle",
+        "swelling",
+        "redness",
+        "joints",
+        "Zack's range of motion",
+        "ibuprofen",
+        "pain relief",
+        "Zack's",
+        "mother",
+        "expressed",
+        "concerns",
+        "mental health"
+      ],
+      "model_name": "core_sci_sm"
     },
     "assessment": {
-      "medications": [],
-      "diagnoses": [],
-      "procedures": [],
-      "other": [],
-      "model_name": ""
+      "medications": [
+        "strain"
+      ],
+      "diagnoses": [
+        "diagnosis",
+        "osteoarthritis"
+      ],
+      "procedures": [
+        "symptoms",
+        "testing",
+        "suboptimal",
+        "physical therapy",
+        "affected"
+      ],
+      "other": [
+        "Zack's",
+        "history",
+        "right knee",
+        "left ankle",
+        "Zack's current",
+        "pain management",
+        "ibuprofen",
+        "experiences",
+        "occasional",
+        "mobility",
+        "reduce",
+        "joints"
+      ],
+      "model_name": "core_sci_sm"
     },
     "plan": {
       "medications": [],
       "diagnoses": [],
-      "procedures": [],
-      "other": [],
-      "model_name": ""
+      "procedures": [
+        "effective",
+        "gastrointestinal",
+        "side effects",
+        "physical therapy"
+      ],
+      "other": [
+        "medication",
+        "pain management",
+        "Zack",
+        "mobility issues",
+        "joints",
+        "Advise Zack",
+        "lifting",
+        "bending",
+        "Follow up with",
+        "weeks",
+        "progress",
+        "treatment plan"
+      ],
+      "model_name": "core_sci_sm"
     }
   }
 }

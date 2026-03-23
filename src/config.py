@@ -32,7 +32,7 @@ class Settings(BaseSettings):
     # Paths
     prompts_dir: str = "prompts"
     output_dir: str = "output"
-    data_dir: str = "data/samples"
+    data_dir: str = "data/eval_set"
 
     # Meta-eval
     agreement_target: float = 0.90  # target Cohen's kappa / percent agreement

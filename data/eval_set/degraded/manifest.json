@@ -1,0 +1,1147 @@
+{
+  "version": "1.0",
+  "description": "Degraded variants for eval set with ground-truth failure labels.",
+  "samples": [
+    {
+      "note_id": "adesouza_000_missing_section",
+      "filename": "adesouza_000_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_000",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_000_omitted_findings",
+      "filename": "adesouza_000_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_000",
+      "degradation_details": {
+        "omitted_sentences": [
+          "Zack Fields reports experiencing constant pain in his right knee and left ankle for the past six months.",
+          "He describes the pain as a dull ache that is always present and affects his mobility, particularly when walking or standing for extended periods."
+        ]
+      }
+    },
+    {
+      "note_id": "adesouza_000_redundancy_bloat",
+      "filename": "adesouza_000_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_000",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "adesouza_000_structural_errors",
+      "filename": "adesouza_000_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_000",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_000_hallucinated_entities",
+      "filename": "adesouza_000_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_000",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_000_internal_contradiction",
+      "filename": "adesouza_000_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_000",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_001_missing_section",
+      "filename": "adesouza_001_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_001",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_001_omitted_findings",
+      "filename": "adesouza_001_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_001",
+      "degradation_details": {
+        "omitted_sentences": [
+          "He also experiences sharp stomach pain, bloating, abdominal discomfort, intermittent diarrhea, nausea, vomiting, weight loss, loss of appetite, and fatigue."
+        ]
+      }
+    },
+    {
+      "note_id": "adesouza_001_redundancy_bloat",
+      "filename": "adesouza_001_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_001",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "adesouza_001_structural_errors",
+      "filename": "adesouza_001_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_001",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_001_hallucinated_entities",
+      "filename": "adesouza_001_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_001",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_001_internal_contradiction",
+      "filename": "adesouza_001_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_001",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_002_missing_section",
+      "filename": "adesouza_002_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_002",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_002_omitted_findings",
+      "filename": "adesouza_002_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_002",
+      "degradation_details": {
+        "omitted_sentences": [
+          "Hale presents with a persistent dry cough, low-grade fever, fatigue, and shortness of breath."
+        ]
+      }
+    },
+    {
+      "note_id": "adesouza_002_redundancy_bloat",
+      "filename": "adesouza_002_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_002",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "adesouza_002_structural_errors",
+      "filename": "adesouza_002_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_002",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_002_hallucinated_entities",
+      "filename": "adesouza_002_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_002",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_002_internal_contradiction",
+      "filename": "adesouza_002_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_002",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_003_missing_section",
+      "filename": "adesouza_003_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_003",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_003_omitted_findings",
+      "filename": "adesouza_003_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_003",
+      "degradation_details": {
+        "omitted_sentences": [
+          "He describes the pain as a dull ache that can become sharp with certain movements, affecting his ability to walk and stand for extended periods.",
+          "The pain is also disrupting his sleep."
+        ]
+      }
+    },
+    {
+      "note_id": "adesouza_003_redundancy_bloat",
+      "filename": "adesouza_003_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_003",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "adesouza_003_structural_errors",
+      "filename": "adesouza_003_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_003",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_003_hallucinated_entities",
+      "filename": "adesouza_003_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_003",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_003_internal_contradiction",
+      "filename": "adesouza_003_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_003",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_004_missing_section",
+      "filename": "adesouza_004_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_004",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_004_omitted_findings",
+      "filename": "adesouza_004_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_004",
+      "degradation_details": {
+        "omitted_sentences": [
+          "She discloses a family history of depression in her mother and suicide in her grandfather, expressing concern about her mental health."
+        ]
+      }
+    },
+    {
+      "note_id": "adesouza_004_redundancy_bloat",
+      "filename": "adesouza_004_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_004",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "adesouza_004_structural_errors",
+      "filename": "adesouza_004_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_004",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_004_hallucinated_entities",
+      "filename": "adesouza_004_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_004",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_004_internal_contradiction",
+      "filename": "adesouza_004_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_004",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_005_missing_section",
+      "filename": "adesouza_005_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_005",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_005_omitted_findings",
+      "filename": "adesouza_005_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_005",
+      "degradation_details": {
+        "omitted_sentences": [
+          "He reports headaches, queasiness, and occasional feelings of nausea."
+        ]
+      }
+    },
+    {
+      "note_id": "adesouza_005_redundancy_bloat",
+      "filename": "adesouza_005_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_005",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "adesouza_005_structural_errors",
+      "filename": "adesouza_005_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_005",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_005_hallucinated_entities",
+      "filename": "adesouza_005_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_005",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_005_internal_contradiction",
+      "filename": "adesouza_005_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_005",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_006_missing_section",
+      "filename": "adesouza_006_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_006",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_006_omitted_findings",
+      "filename": "adesouza_006_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_006",
+      "degradation_details": {
+        "omitted_sentences": [
+          "Henry reports feeling tired despite getting a full night's sleep and experiencing occasional muscle cramps in his legs."
+        ]
+      }
+    },
+    {
+      "note_id": "adesouza_006_redundancy_bloat",
+      "filename": "adesouza_006_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_006",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "adesouza_006_structural_errors",
+      "filename": "adesouza_006_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_006",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "adesouza_006_hallucinated_entities",
+      "filename": "adesouza_006_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_006",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "adesouza_006_internal_contradiction",
+      "filename": "adesouza_006_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_006",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_000_missing_section",
+      "filename": "omi_000_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_000",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "omi_000_omitted_findings",
+      "filename": "omi_000_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_000",
+      "degradation_details": {
+        "omitted_sentences": [
+          "She denies any issues with muscle tone or hypotonia."
+        ]
+      }
+    },
+    {
+      "note_id": "omi_000_redundancy_bloat",
+      "filename": "omi_000_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_000",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "omi_000_structural_errors",
+      "filename": "omi_000_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_000",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "omi_000_hallucinated_entities",
+      "filename": "omi_000_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_000",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_000_internal_contradiction",
+      "filename": "omi_000_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_000",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_001_missing_section",
+      "filename": "omi_001_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_001",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "omi_001_omitted_findings",
+      "filename": "omi_001_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_001",
+      "degradation_details": {
+        "omitted_sentences": [
+          "The patient, a 21-month-old male, presented with weakness in his lower extremities and lumbar pain following a mild upper respiratory tract infection.",
+          "Initial treatment with anti-inflammatory therapy for suspected transient hips arthritis was ineffective, leading to worsening pain and inability to walk."
+        ]
+      }
+    },
+    {
+      "note_id": "omi_001_redundancy_bloat",
+      "filename": "omi_001_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_001",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "omi_001_structural_errors",
+      "filename": "omi_001_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_001",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "omi_001_hallucinated_entities",
+      "filename": "omi_001_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_001",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_001_internal_contradiction",
+      "filename": "omi_001_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_001",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_002_missing_section",
+      "filename": "omi_002_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_002",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "omi_002_omitted_findings",
+      "filename": "omi_002_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_002",
+      "degradation_details": {
+        "omitted_sentences": [
+          "Patient reports experiencing fatigue, night sweats, weight loss, loss of appetite, and mild abdominal discomfort for the past 2 months.",
+          "No fever, chills, cough, nausea, vomiting, itching, or urinary or bowel issues."
+        ]
+      }
+    },
+    {
+      "note_id": "omi_002_redundancy_bloat",
+      "filename": "omi_002_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_002",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "omi_002_structural_errors",
+      "filename": "omi_002_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_002",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "omi_002_hallucinated_entities",
+      "filename": "omi_002_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_002",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_002_internal_contradiction",
+      "filename": "omi_002_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_002",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_003_missing_section",
+      "filename": "omi_003_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_003",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "omi_003_omitted_findings",
+      "filename": "omi_003_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_003",
+      "degradation_details": {
+        "omitted_sentences": [
+          "He has a family history significant for prostate cancer, as his 62-year-old brother was diagnosed and treated with radiation."
+        ]
+      }
+    },
+    {
+      "note_id": "omi_003_redundancy_bloat",
+      "filename": "omi_003_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_003",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "omi_003_structural_errors",
+      "filename": "omi_003_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_003",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "omi_003_hallucinated_entities",
+      "filename": "omi_003_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_003",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_003_internal_contradiction",
+      "filename": "omi_003_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_003",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_004_missing_section",
+      "filename": "omi_004_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_004",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "omi_004_omitted_findings",
+      "filename": "omi_004_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_004",
+      "degradation_details": {
+        "omitted_sentences": [
+          "The patient, a married woman with a 7-year history of infertility, reports irregular menstruation and excessive body hair growth.",
+          "She has a history of two early miscarriages, intrauterine insemination attempts, intramural myoma myomectomy, disc hernia, and peptic ulcer."
+        ]
+      }
+    },
+    {
+      "note_id": "omi_004_redundancy_bloat",
+      "filename": "omi_004_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_004",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "omi_004_structural_errors",
+      "filename": "omi_004_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_004",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "omi_004_hallucinated_entities",
+      "filename": "omi_004_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_004",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_004_internal_contradiction",
+      "filename": "omi_004_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_004",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_005_missing_section",
+      "filename": "omi_005_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_005",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "omi_005_omitted_findings",
+      "filename": "omi_005_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_005",
+      "degradation_details": {
+        "omitted_sentences": [
+          "The patient, a long-term sufferer of acromegaly, reports experiencing shortness of breath and dyspnea on exertion for the past 2 years, and an episode of presyncope 2 weeks ago.",
+          "There is no family history of diseases, and the patient denies any history of hypertension, diabetes mellitus, sleep apnea, or sudden cardiac death."
+        ]
+      }
+    },
+    {
+      "note_id": "omi_005_redundancy_bloat",
+      "filename": "omi_005_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_005",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "omi_005_structural_errors",
+      "filename": "omi_005_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_005",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "omi_005_hallucinated_entities",
+      "filename": "omi_005_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_005",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_005_internal_contradiction",
+      "filename": "omi_005_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_005",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_006_missing_section",
+      "filename": "omi_006_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_006",
+      "degradation_details": {
+        "removed_section": "assessment"
+      }
+    },
+    {
+      "note_id": "omi_006_omitted_findings",
+      "filename": "omi_006_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_006",
+      "degradation_details": {
+        "omitted_sentences": [
+          "The patient reports a history of abdominal pain for approximately one year, worsening over the last six months, particularly postprandial and localized to the right upper abdomen.",
+          "The patient denies any history of alcohol consumption or smoking."
+        ]
+      }
+    },
+    {
+      "note_id": "omi_006_redundancy_bloat",
+      "filename": "omi_006_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_006",
+      "degradation_details": {
+        "duplicated_section": "plan",
+        "filler_added": true
+      }
+    },
+    {
+      "note_id": "omi_006_structural_errors",
+      "filename": "omi_006_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_006",
+      "degradation_details": {
+        "swap": "plan_before_assessment"
+      }
+    },
+    {
+      "note_id": "omi_006_hallucinated_entities",
+      "filename": "omi_006_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_006",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    },
+    {
+      "note_id": "omi_006_internal_contradiction",
+      "filename": "omi_006_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_006",
+      "degradation_details": {
+        "method": "llm_injection"
+      }
+    }
+  ]
+}

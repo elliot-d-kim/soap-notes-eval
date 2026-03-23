@@ -13,9 +13,9 @@ from src.tier1.pipeline import run_tier1
 
 
 def main() -> None:
-    manifest = Path("data/samples/manifest.json")
+    manifest = Path("data/eval_set/manifest.json")
     if not manifest.exists():
-        print("Run data/samples/download.py first.")
+        print("Run data/samples/download.py and generate_degraded.py first.")
         sys.exit(1)
 
     notes = list(load_samples_from_manifest(manifest))

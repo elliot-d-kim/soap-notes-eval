@@ -1,0 +1,147 @@
+{
+  "age": 53,
+  "patient_name": "Nina Carpenter",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "22c85ad6ec59e477",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(405) 360-8727",
+        "dob": {
+          "age": 65,
+          "date": "1958-04-27T05:04:07.941Z"
+        },
+        "email": "edwin.fowler@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "317-92-7720"
+        },
+        "location": {
+          "city": "St. Louis",
+          "coordinates": {
+            "latitude": "-36.5287",
+            "longitude": "-118.0844"
+          },
+          "country": "United States",
+          "postcode": 19185,
+          "state": "Minnesota",
+          "street": {
+            "name": "Valwood Pkwy",
+            "number": 1608
+          },
+          "timezone": {
+            "description": "Eniwetok, Kwajalein",
+            "offset": "-12:00"
+          }
+        },
+        "login": {
+          "md5": "b634c14607bbd3c8c26dc5259cbcfa19",
+          "password": "falcon",
+          "salt": "p0HzI1lN",
+          "sha1": "e5cdcf6934c08938397273e35db54a70a26b9be0",
+          "sha256": "24919b65fa89a67180477f1aaefb9d6c78bd74988dcc2ef127d75c666e6c0f67",
+          "username": "orangefrog572",
+          "uuid": "4402dd71-4f86-48d2-a585-8390d9a4b855"
+        },
+        "name": {
+          "first": "Edwin",
+          "last": "Fowler",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(856) 465-3302",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/6.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/6.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/6.jpg"
+        },
+        "registered": {
+          "age": 10,
+          "date": "2013-11-18T07:23:33.133Z"
+        }
+      }
+    ]
+  },
+  "gender": "female",
+  "dob": "1/4/1971",
+  "phone": "(302) 442-9023",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "e2e25f60ef1fa267",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(732) 443-2110",
+        "dob": {
+          "age": 53,
+          "date": "1971-01-04T17:00:09.327Z"
+        },
+        "email": "nina.carpenter@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "258-43-7356"
+        },
+        "location": {
+          "city": "Arvada",
+          "coordinates": {
+            "latitude": "12.4707",
+            "longitude": "95.1786"
+          },
+          "country": "United States",
+          "postcode": 48446,
+          "state": "Rhode Island",
+          "street": {
+            "name": "White Oak Dr",
+            "number": 9858
+          },
+          "timezone": {
+            "description": "Azores, Cape Verde Islands",
+            "offset": "-1:00"
+          }
+        },
+        "login": {
+          "md5": "40f7d0740a383aafaf3f53fff528aca7",
+          "password": "calvin1",
+          "salt": "VrybTKOC",
+          "sha1": "9ed31ab1e8897bfd6ab8d0774dcf19a872ed8645",
+          "sha256": "1c060b10b93be3b922b489d9e1dfde12c6c292f2b0d2190e1aadcb7ff59c180b",
+          "username": "bluemeercat127",
+          "uuid": "b116ff0c-6c46-40b9-a733-90718203474e"
+        },
+        "name": {
+          "first": "Nina",
+          "last": "Carpenter",
+          "title": "Miss"
+        },
+        "nat": "US",
+        "phone": "(302) 442-9023",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/52.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/52.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/52.jpg"
+        },
+        "registered": {
+          "age": 20,
+          "date": "2004-01-12T17:37:19.137Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Diabetes",
+  "patient_convo": "\nPhysician: Good morning, Nina. How are you feeling today?\n\nPatient: Good morning, Dr. Fowler. I've been feeling alright, but I have been experiencing some unusual symptoms lately.\n\nPhysician: Can you tell me more about these symptoms? When did you first notice them?\n\nPatient: Well, I've been feeling increasingly thirsty and urinating more frequently, especially at night. And my vision has been a bit blurry lately.\n\nPhysician: Okay, that's helpful information. Have you noticed any other changes in your body? Maybe some numbness or tingling sensations?\n\nPatient: Yes, actually. My feet have been tingling a bit, especially in the mornings. And I've been feeling a bit more fatigued than usual.\n\nPhysician: I see. Have you experienced any pain or discomfort in your chest or abdomen?\n\nPatient: No, nothing like that. Just some occasional dizziness.\n\nPhysician: Alright. Have you been managing your diabetes well? Have you noticed any changes in your blood sugar levels?\n\nPatient: To be honest, I haven't been checking my levels as regularly as I should. But I did notice that my last A1C result was a bit higher than usual.\n\nPhysician: I see. And how have your blood pressure and cholesterol levels been?\n\nPatient: My blood pressure has been a bit elevated, but my cholesterol levels were okay last time I checked.\n\nPhysician: Okay, that's good to know. Have you been taking your medications as prescribed?\n\nPatient: Yes, I've been taking them regularly. But I'm concerned that they might not be working as effectively as they should be.\n\nPhysician: I understand your concerns. Let's take a closer look at your medication regimen and see if any adjustments need to be made. In the meantime, I'd like to schedule you for some follow-up tests to get a better understanding of your current health status. We'll order a blood test to check your A1C, blood lipids, and kidney function. And we'll also schedule you for a retinal exam to assess your eye health.\n\nPatient: Sounds good. I appreciate your help, Dr. Fowler.\n\nPhysician: Of course, Nina. We'll work together to get you feeling better and manage your diabetes more effectively. And don't forget, it's important to stay on top of your preventative care. We'll make sure you're up to date on all your vaccinations and cancer screenings.\n\nPatient: Thank you, Dr. Fowler. I feel better already.\n\nPhysician: Great. Let's get the ball rolling on those tests and schedule a follow-up appointment for next week. We'll review the results and discuss any necessary adjustments to your treatment plan.",
+  "soap_notes": "Subjective:\nNina Carpenter reports feeling increasingly thirsty and urinating more frequently, especially at night. She also mentions experiencing blurry vision, tingling sensations in her feet, fatigue, and occasional dizziness. Nina admits to not checking her blood sugar levels regularly and notes that her last A1C result was higher than usual. She expresses concerns about the effectiveness of her current medications.\n\nObjective:\nNina appears alert and oriented during the conversation. Vital signs are within normal limits. No signs of distress or acute pain are observed. Physical examination reveals no abnormalities. Laboratory results from the last visit show an A1C of 7.1% and LDL cholesterol of 115 mg/dL.\n\nAssessment:\nNina is presenting with symptoms suggestive of uncontrolled diabetes, including polyuria, polydipsia, blurry vision, neuropathy, and fatigue. Her elevated A1C indicates poor glycemic control. Blood pressure is slightly elevated, and cholesterol levels are within normal limits. Nina's concerns about medication efficacy and the need for lifestyle modifications are valid and require attention.\n\nPlan:\n1. Schedule follow-up tests to assess A1C, blood lipids, and kidney function.\n2. Arrange a retinal exam to evaluate eye health.\n3. Review current medication regimen for potential adjustments.\n4. Discuss lifestyle modifications to improve diabetes management.\n5. Ensure Nina is up to date on vaccinations and cancer screenings.\n6. Schedule a follow-up appointment for next week to review test results and adjust treatment plan accordingly.",
+  "doctor_name": "Dr. Edwin Fowler",
+  "address": "9858 White Oak Dr, Arvada, Rhode Island 48446",
+  "full_patient_data": "\n\n\nDEMOGRAPHICS:\nName: Nina Carpenter\nAge: 53\nAddress: 9858 White Oak Dr, Arvada, Rhode Island 48446\nPhone: (302) 442-9023\n\nPROBLEM LIST:\n- Diabetes Mellitus Type 2 (chronic)\n- Hypertension (chronic)\n- Hyperlipidemia (chronic)\n\nHEALTH MAINTENANCE:\n- Influenza vaccine (overdue)\n- Colonoscopy (due on 08/12/2024)\n- Mammogram (due soon)\n\nREMINDERS AND RESULTS:\n- Diabetes A1C: 7.1% (last result 03/16/2023)\n- LDL Cholesterol: 115 mg/dL (last result 03/16/2023)\n\nCARE TEAM AND COMMUNICATION:\n- Dr. Edwin Fowler (Primary Care Physician)\n- Nurse Practitioner: Jane Smith\n- Diabetes Educator: Susan Johnson\n- Pharmacist: Michael Brown\n- Contact via MyChart patient portal\n\nALLERGIES:\n- Penicillin (moderate)\n\nMEDICATIONS:\n- Metformin 1000mg: 1 tablet by mouth twice daily\n- Lisinopril 20mg: 1 tablet by mouth daily\n- Atorvastatin 40mg: 1 tablet by mouth daily\n\nIMMUNIZATIONS:\n- Tdap (Adacel): 09/15/2020\n- Pneumococcal (PCV13): 09/15/2020\n- Pneumococcal (PPSV23): 09/15/2020\n- Influenza (Fluzone): 09/15/2021\n\nSIGNIFICANT HISTORY DETAILS:\n- Tobacco use: former smoker, quit 01/01/2010\n- Alcohol use: social drinker\n- Language: English\n\nSPECIALTY COMMENTS:\n- Dr. Fowler: \"Nina has been managing her diabetes well, but we need to work on her A1C. Let's discuss lifestyle modifications and medication adjustments.\"\n\nFAMILY COMMENTS:\n- Nina: \"I'm concerned about my risk of complications and want to learn more about preventing them.\"",
+  "note_text": "Subjective:\nNina Carpenter reports feeling increasingly thirsty and urinating more frequently, especially at night. She also mentions experiencing blurry vision, tingling sensations in her feet, fatigue, and occasional dizziness. Nina admits to not checking her blood sugar levels regularly and notes that her last A1C result was higher than usual. She expresses concerns about the effectiveness of her current medications.\n\nObjective:\nNina appears alert and oriented during the conversation. Vital signs are within normal limits. No signs of distress or acute pain are observed. Physical examination reveals no abnormalities. Laboratory results from the last visit show an A1C of 7.1% and LDL cholesterol of 115 mg/dL.\n\nAssessment:\nNina is presenting with symptoms suggestive of uncontrolled diabetes, including polyuria, polydipsia, blurry vision, neuropathy, and fatigue. Her elevated A1C indicates poor glycemic control. Blood pressure is slightly elevated, and cholesterol levels are within normal limits. Nina's concerns about medication efficacy and the need for lifestyle modifications are valid and require attention.\n\nPlan:\n1. Schedule follow-up tests to assess A1C, blood lipids, and kidney function.\n2. Arrange a retinal exam to evaluate eye health.\n3. Review current medication regimen for potential adjustments.\n4. Discuss lifestyle modifications to improve diabetes management.\n5. Ensure Nina is up to date on vaccinations and cancer screenings.\n6. Schedule a follow-up appointment for next week to review test results and adjust treatment plan accordingly.",
+  "transcript": "\nPhysician: Good morning, Nina. How are you feeling today?\n\nPatient: Good morning, Dr. Fowler. I've been feeling alright, but I have been experiencing some unusual symptoms lately.\n\nPhysician: Can you tell me more about these symptoms? When did you first notice them?\n\nPatient: Well, I've been feeling increasingly thirsty and urinating more frequently, especially at night. And my vision has been a bit blurry lately.\n\nPhysician: Okay, that's helpful information. Have you noticed any other changes in your body? Maybe some numbness or tingling sensations?\n\nPatient: Yes, actually. My feet have been tingling a bit, especially in the mornings. And I've been feeling a bit more fatigued than usual.\n\nPhysician: I see. Have you experienced any pain or discomfort in your chest or abdomen?\n\nPatient: No, nothing like that. Just some occasional dizziness.\n\nPhysician: Alright. Have you been managing your diabetes well? Have you noticed any changes in your blood sugar levels?\n\nPatient: To be honest, I haven't been checking my levels as regularly as I should. But I did notice that my last A1C result was a bit higher than usual.\n\nPhysician: I see. And how have your blood pressure and cholesterol levels been?\n\nPatient: My blood pressure has been a bit elevated, but my cholesterol levels were okay last time I checked.\n\nPhysician: Okay, that's good to know. Have you been taking your medications as prescribed?\n\nPatient: Yes, I've been taking them regularly. But I'm concerned that they might not be working as effectively as they should be.\n\nPhysician: I understand your concerns. Let's take a closer look at your medication regimen and see if any adjustments need to be made. In the meantime, I'd like to schedule you for some follow-up tests to get a better understanding of your current health status. We'll order a blood test to check your A1C, blood lipids, and kidney function. And we'll also schedule you for a retinal exam to assess your eye health.\n\nPatient: Sounds good. I appreciate your help, Dr. Fowler.\n\nPhysician: Of course, Nina. We'll work together to get you feeling better and manage your diabetes more effectively. And don't forget, it's important to stay on top of your preventative care. We'll make sure you're up to date on all your vaccinations and cancer screenings.\n\nPatient: Thank you, Dr. Fowler. I feel better already.\n\nPhysician: Great. Let's get the ball rolling on those tests and schedule a follow-up appointment for next week. We'll review the results and discuss any necessary adjustments to your treatment plan."
+}

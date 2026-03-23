@@ -14,9 +14,9 @@ from src.tier2.judge import judge_note
 
 
 async def main() -> None:
-    manifest = Path("data/samples/manifest.json")
+    manifest = Path("data/eval_set/manifest.json")
     if not manifest.exists():
-        print("Run data/samples/download.py first.")
+        print("Run data/samples/download.py and generate_degraded.py first.")
         sys.exit(1)
 
     notes = [n for n in load_samples_from_manifest(manifest) if n.transcript]

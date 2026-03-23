@@ -1,0 +1,157 @@
+{
+  "age": 45,
+  "patient_name": "Lance Butler",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "4943734db9fb2e2c",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(290) 840-3424",
+        "dob": {
+          "age": 63,
+          "date": "1960-12-11T07:51:20.933Z"
+        },
+        "email": "george.brooks@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "325-99-5225"
+        },
+        "location": {
+          "city": "Orlando",
+          "coordinates": {
+            "latitude": "-30.9326",
+            "longitude": "-51.0154"
+          },
+          "country": "United States",
+          "postcode": 93067,
+          "state": "Oregon",
+          "street": {
+            "name": "White Oak Dr",
+            "number": 9447
+          },
+          "timezone": {
+            "description": "Newfoundland",
+            "offset": "-3:30"
+          }
+        },
+        "login": {
+          "md5": "81321e0aca178aef3c34e87ce9809121",
+          "password": "ramses",
+          "salt": "Ny4F8QhU",
+          "sha1": "024ef71287ec88df7ef84078164a85656a25fbd1",
+          "sha256": "f65c60cb604c264b4f9f413b15066c4a0389c60cdc95845900d81b2b574bedd0",
+          "username": "angrybird821",
+          "uuid": "614ffabe-a6e8-4fa1-8b01-c4bfd4cce039"
+        },
+        "name": {
+          "first": "George",
+          "last": "Brooks",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(828) 890-2544",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/96.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/96.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/96.jpg"
+        },
+        "registered": {
+          "age": 7,
+          "date": "2016-09-10T02:00:39.161Z"
+        }
+      }
+    ]
+  },
+  "gender": "male",
+  "dob": "2/28/1978",
+  "phone": "(786) 767-2434",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "12742aa29b35d39e",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(918) 342-3636",
+        "dob": {
+          "age": 45,
+          "date": "1978-02-28T06:59:43.961Z"
+        },
+        "email": "lance.butler@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "795-82-9866"
+        },
+        "location": {
+          "city": "Pittsburgh",
+          "coordinates": {
+            "latitude": "89.3942",
+            "longitude": "-61.4109"
+          },
+          "country": "United States",
+          "postcode": 72453,
+          "state": "Mississippi",
+          "street": {
+            "name": "Cherry St",
+            "number": 1257
+          },
+          "timezone": {
+            "description": "Brazil, Buenos Aires, Georgetown",
+            "offset": "-3:00"
+          }
+        },
+        "login": {
+          "md5": "7220c2189d2e2eba7eb18dfd3e52aefe",
+          "password": "kristian",
+          "salt": "twfvqTpe",
+          "sha1": "095562b89af0cf06300e0d1b1024ce9076cbe74a",
+          "sha256": "460ff449c586d5bd698cfa0c94cebb22ace4ad90dc87c80eb157fa5eb9fdaca2",
+          "username": "whitepeacock576",
+          "uuid": "91521a7b-5515-44b4-98fc-89f7adabbc46"
+        },
+        "name": {
+          "first": "Lance",
+          "last": "Butler",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(786) 767-2434",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/49.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/49.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/49.jpg"
+        },
+        "registered": {
+          "age": 2,
+          "date": "2021-11-30T13:08:44.980Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Anxiety and Depression",
+  "patient_convo": "\nPhysician: Good morning, Lance. How are you feeling today?\n\nPatient: Hi, Doc. I've been feeling pretty anxious lately. I've had trouble sleeping, and I've been getting these panic attacks out of the blue. It's like my heart is racing, and I can't catch my breath.\n\nPhysician: I see. Can you tell me more about these panic attacks? How often are they happening, and how long have you been experiencing them?\n\nPatient: They started about a month ago, and they've been happening pretty regularly since then. Maybe once or twice a week. It's like I'll be doing something normal, and then suddenly, I'll feel like I'm going to pass out or something. My heart races, and I get this feeling of dread in my stomach. It's really scary.\n\nPhysician: That sounds very distressing. Have you noticed any triggers that might set off these panic attacks?\n\nPatient: Not really. Like I said, it seems to happen out of the blue. Sometimes I'll be at work, and other times I'll be at home watching TV or something.\n\nPhysician: Okay. Have you experienced any other symptoms aside from the panic attacks and difficulty sleeping? Maybe some changes in your mood or energy levels?\n\nPatient: Yeah, I've been feeling pretty down lately. I don't really have the motivation to do things that I used to enjoy. And I've been feeling pretty irritable too. Little things will set me off, and I'll get angry or frustrated easily.\n\nPhysician: I understand. Have you noticed any changes in your appetite or weight recently?\n\nPatient: Actually, yes. I've lost a little bit of weight recently. I'm not sure if it's because of my anxiety or not, but I've definitely been eating less.\n\nPhysician: Okay, that's helpful to know. Have you experienced any physical symptoms like headaches or stomach problems?\n\nPatient: Yeah, I've had some headaches, and my stomach has been feeling pretty queasy lately. Sometimes I'll feel like I'm going to throw up.\n\nPhysician: I see. Have you tried any coping mechanisms or relaxation techniques to help manage your anxiety?\n\nPatient: Not really. I've been trying to exercise more, but it's hard when I'm feeling anxious all the time. I've also been trying to avoid things that I think might trigger my anxiety, but it seems like it's hard to avoid sometimes.\n\nPhysician: That makes sense. It sounds like you're experiencing quite a bit of anxiety, and it's impacting your daily life. I'm going to recommend that we start you on a medication to help manage your symptoms. We can also discuss some coping strategies and relaxation techniques that might be helpful for you. Additionally, I think it would be beneficial for you to see a therapist to address the underlying causes of your anxiety. Does that sound like a good plan to you?\n\nPatient: Yeah, that sounds good. I just want to feel better.\n\nPhysician: I understand. Let's get started on the medication, and we can follow up in a few weeks to see how you're doing. In the meantime, I'll refer you to a therapist, and we can work on getting you set up with an appointment.",
+  "soap_notes": "Subjective:\nLance reports feeling anxious and experiencing panic attacks for the past month, occurring once or twice a week. He describes symptoms of racing heart, difficulty breathing, and feelings of dread. Lance also mentions feeling down, irritable, and having a decreased appetite leading to weight loss. He reports headaches, queasiness, and occasional feelings of nausea. Lance has been trying to exercise more but finds it challenging due to his anxiety.\n\nObjective:\nLance appears anxious during the appointment but is cooperative and engaged in the conversation. Vital signs are within normal limits. Lance has lost weight since his last visit. He displays signs of mild depression and reports occasional breakthrough symptoms despite being responsive to his current medication regimen.\n\nAssessment:\nLance presents with symptoms consistent with anxiety disorder and major depressive disorder. His recent weight loss, headaches, and gastrointestinal symptoms may be related to his anxiety. Lance would benefit from starting medication to manage his symptoms, along with therapy to address underlying causes of his anxiety and depression.\n\nPlan:\n1. Start Lance on a medication regimen to manage his anxiety and depressive symptoms.\n2. Refer Lance to a therapist for ongoing therapy sessions to address underlying causes of his anxiety.\n3. Schedule a follow-up appointment in a few weeks to assess the effectiveness of the medication and therapy.\n4. Educate Lance on coping strategies and relaxation techniques to help manage his anxiety on a day-to-day basis.\n5. Follow up on overdue vaccines and screenings, including the influenza vaccine and tetanus vaccine.\n6. Monitor Lance's progress closely and communicate with his therapist and pharmacist to ensure coordinated care.",
+  "doctor_name": "Dr. George Brooks",
+  "address": "1257 Cherry St, Pittsburgh, Mississippi 72453",
+  "full_patient_data": "\nDEMOGRAPHICS:\nName: Lance Butler\nAge: 45\nAddress: 1257 Cherry St, Pittsburgh, Mississippi 72453\nPhone: (786) 767-2434\n\nPROBLEM LIST:\nChronic:\n- Anxiety Disorder\n- Major Depressive Disorder\n\nOTHER:\n- None\n\nHEALTH MAINTENANCE:\nVaccines and Screenings:\n- Influenza vaccine: due soon\n- Tetanus vaccine: overdue\n- Colon cancer screening: due on 3/2/2024\n\nREMINDERS AND RESULTS:\n- Reminder: schedule anxiety therapy appointment\n- Results: CBC, Lipid Panel, HbA1c - Normal\n\nCARE TEAM AND COMMUNICATION:\nPrimary Care Physician: Dr. George Brooks, MD\nTherapist: Dr. Sarah Johnson, PhD\nPharmacist: Dr. Michael Brown, PharmD\n\nALLEGIES:\n- Penicillin\n\nMEDICATIONS:\n- Sertraline 100mg PO QD\n- Alprazolam 0.5mg PO TID PRN\n\nIMMUNIZATIONS:\n- DTaP\n- Hepatitis B\n- HPV\n- MMR\n- Varicella\n\nSIGNIFICANT HISTORY DETAILS:\n- Tobacco use: 10 cigarettes per day for 20 years, quit 5 years ago\n- Alcohol use: Social drinker\n- Language: English\n\nSPECIALTY COMMENTS:\n- Patient reports increased anxiety symptoms in the past month\n- Patient is responsive to current medication regimen but reports occasional breakthrough symptoms\n\nFAMILY COMMENTS:\n- Patient's sister reports concerns about patient's mental health and ability to manage stress\n- Patient's mother has a history of depression and anxiety, currently in remission with medication",
+  "note_text": "Subjective:\nLance reports feeling anxious and experiencing panic attacks for the past month, occurring once or twice a week. He describes symptoms of racing heart, difficulty breathing, and feelings of dread. Lance also mentions feeling down, irritable, and having a decreased appetite leading to weight loss. Lance has been trying to exercise more but finds it challenging due to his anxiety.\n\nObjective:\nLance appears anxious during the appointment but is cooperative and engaged in the conversation. Vital signs are within normal limits. Lance has lost weight since his last visit. He displays signs of mild depression and reports occasional breakthrough symptoms despite being responsive to his current medication regimen.\n\nAssessment:\nLance presents with symptoms consistent with anxiety disorder and major depressive disorder. His recent weight loss, headaches, and gastrointestinal symptoms may be related to his anxiety. Lance would benefit from starting medication to manage his symptoms, along with therapy to address underlying causes of his anxiety and depression.\n\nPlan:\n1. Start Lance on a medication regimen to manage his anxiety and depressive symptoms.\n2. Refer Lance to a therapist for ongoing therapy sessions to address underlying causes of his anxiety.\n3. Schedule a follow-up appointment in a few weeks to assess the effectiveness of the medication and therapy.\n4. Educate Lance on coping strategies and relaxation techniques to help manage his anxiety on a day-to-day basis.\n5. Follow up on overdue vaccines and screenings, including the influenza vaccine and tetanus vaccine.\n6. Monitor Lance's progress closely and communicate with his therapist and pharmacist to ensure coordinated care.",
+  "transcript": "\nPhysician: Good morning, Lance. How are you feeling today?\n\nPatient: Hi, Doc. I've been feeling pretty anxious lately. I've had trouble sleeping, and I've been getting these panic attacks out of the blue. It's like my heart is racing, and I can't catch my breath.\n\nPhysician: I see. Can you tell me more about these panic attacks? How often are they happening, and how long have you been experiencing them?\n\nPatient: They started about a month ago, and they've been happening pretty regularly since then. Maybe once or twice a week. It's like I'll be doing something normal, and then suddenly, I'll feel like I'm going to pass out or something. My heart races, and I get this feeling of dread in my stomach. It's really scary.\n\nPhysician: That sounds very distressing. Have you noticed any triggers that might set off these panic attacks?\n\nPatient: Not really. Like I said, it seems to happen out of the blue. Sometimes I'll be at work, and other times I'll be at home watching TV or something.\n\nPhysician: Okay. Have you experienced any other symptoms aside from the panic attacks and difficulty sleeping? Maybe some changes in your mood or energy levels?\n\nPatient: Yeah, I've been feeling pretty down lately. I don't really have the motivation to do things that I used to enjoy. And I've been feeling pretty irritable too. Little things will set me off, and I'll get angry or frustrated easily.\n\nPhysician: I understand. Have you noticed any changes in your appetite or weight recently?\n\nPatient: Actually, yes. I've lost a little bit of weight recently. I'm not sure if it's because of my anxiety or not, but I've definitely been eating less.\n\nPhysician: Okay, that's helpful to know. Have you experienced any physical symptoms like headaches or stomach problems?\n\nPatient: Yeah, I've had some headaches, and my stomach has been feeling pretty queasy lately. Sometimes I'll feel like I'm going to throw up.\n\nPhysician: I see. Have you tried any coping mechanisms or relaxation techniques to help manage your anxiety?\n\nPatient: Not really. I've been trying to exercise more, but it's hard when I'm feeling anxious all the time. I've also been trying to avoid things that I think might trigger my anxiety, but it seems like it's hard to avoid sometimes.\n\nPhysician: That makes sense. It sounds like you're experiencing quite a bit of anxiety, and it's impacting your daily life. I'm going to recommend that we start you on a medication to help manage your symptoms. We can also discuss some coping strategies and relaxation techniques that might be helpful for you. Additionally, I think it would be beneficial for you to see a therapist to address the underlying causes of your anxiety. Does that sound like a good plan to you?\n\nPatient: Yeah, that sounds good. I just want to feel better.\n\nPhysician: I understand. Let's get started on the medication, and we can follow up in a few weeks to see how you're doing. In the meantime, I'll refer you to a therapist, and we can work on getting you set up with an appointment.",
+  "_note_id": "adesouza_005",
+  "_degradation_types": [
+    "omitted_findings"
+  ],
+  "_degradation_details": {
+    "omitted_sentences": [
+      "He reports headaches, queasiness, and occasional feelings of nausea."
+    ]
+  },
+  "_original_note_id": "adesouza_005"
+}

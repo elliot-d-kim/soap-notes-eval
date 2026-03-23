@@ -27,7 +27,7 @@ from src.tier1.structure import validate_structure
 # Manifest-driven degraded sample loading
 # ---------------------------------------------------------------------------
 
-_DEGRADED_DIR = Path(__file__).parent.parent / "data" / "samples" / "degraded"
+_DEGRADED_DIR = Path(__file__).parent.parent / "data" / "eval_set" / "degraded"
 _DEGRADED_MANIFEST = _DEGRADED_DIR / "manifest.json"
 
 # Failure types that Tier 1 structural checks can detect (programmatic degradations)

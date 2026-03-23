@@ -1,0 +1,147 @@
+{
+  "age": 26,
+  "patient_name": "Brianna Lucas",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "3d4c2ee93dfb0a37",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(734) 458-4176",
+        "dob": {
+          "age": 51,
+          "date": "1972-10-23T07:58:26.397Z"
+        },
+        "email": "howard.hall@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "196-44-3451"
+        },
+        "location": {
+          "city": "Jacksonville",
+          "coordinates": {
+            "latitude": "-49.6603",
+            "longitude": "-82.7717"
+          },
+          "country": "United States",
+          "postcode": 52579,
+          "state": "Ohio",
+          "street": {
+            "name": "Oak Lawn Ave",
+            "number": 797
+          },
+          "timezone": {
+            "description": "Tehran",
+            "offset": "+3:30"
+          }
+        },
+        "login": {
+          "md5": "87b187e4a4b7d73076c04ce89d1107d2",
+          "password": "cats",
+          "salt": "sCxFdlWH",
+          "sha1": "e2dcf3fa6e66b5e4913592dab912df5be7235fd8",
+          "sha256": "ca07cd2716784e6e3cbee88c9c6fe39cb99d23f7e954907feea652d411bf9849",
+          "username": "yellowfrog612",
+          "uuid": "659187a7-4758-403c-83f5-9766229ab17d"
+        },
+        "name": {
+          "first": "Howard",
+          "last": "Hall",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(315) 770-4893",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/39.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/39.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/39.jpg"
+        },
+        "registered": {
+          "age": 14,
+          "date": "2009-11-24T18:30:33.188Z"
+        }
+      }
+    ]
+  },
+  "gender": "female",
+  "dob": "12/21/1997",
+  "phone": "(310) 556-6137",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "538a03a4dfde9e67",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(546) 203-8613",
+        "dob": {
+          "age": 26,
+          "date": "1997-12-21T18:55:42.273Z"
+        },
+        "email": "brianna.lucas@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "796-54-8689"
+        },
+        "location": {
+          "city": "Tallahassee",
+          "coordinates": {
+            "latitude": "51.3060",
+            "longitude": "92.8111"
+          },
+          "country": "United States",
+          "postcode": 31375,
+          "state": "California",
+          "street": {
+            "name": "W Pecan St",
+            "number": 2504
+          },
+          "timezone": {
+            "description": "Eniwetok, Kwajalein",
+            "offset": "-12:00"
+          }
+        },
+        "login": {
+          "md5": "6a29701f2be6c48ee45920963b044328",
+          "password": "draven",
+          "salt": "o41N7SFq",
+          "sha1": "c9367ca4585b7370cf237c5ebb9158f1648ecaf7",
+          "sha256": "c84d075fab9489d86acdeaa557b3b78b3020bc3ee7a9c0d6fc77b2b788ed9d9d",
+          "username": "tinybutterfly898",
+          "uuid": "28b04ee1-33ed-4afb-844e-1ef6622078ab"
+        },
+        "name": {
+          "first": "Brianna",
+          "last": "Lucas",
+          "title": "Ms"
+        },
+        "nat": "US",
+        "phone": "(310) 556-6137",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/40.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/40.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/40.jpg"
+        },
+        "registered": {
+          "age": 13,
+          "date": "2010-11-16T07:47:23.795Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Injuries",
+  "patient_convo": "\nPhysician: Good morning, Brianna. How can I assist you today?\n\nPatient: Hi, Dr. Hall. I've been experiencing some discomfort in my right ankle, particularly when I walk or stand for extended periods. It's been bothering me for a few weeks now, and I thought it was time to have it checked out.\n\nPhysician: I see. Can you describe the pain for me? Is it a dull ache or more of a sharp, stabbing sensation?\n\nPatient: It's a mix of both, actually. It's mostly a dull ache, but when I put too much weight on it or move it the wrong way, it can become quite sharp.\n\nPhysician: Okay, that's helpful. Have you noticed any swelling or bruising in the area?\n\nPatient: Yes, there's been some swelling, especially after I've been on my feet for a while. It's not massive, but it's definitely noticeable.\n\nPhysician: I understand. Have you experienced any difficulty moving your ankle or putting weight on it?\n\nPatient: Yes, it's been a bit challenging. I've been trying to avoid putting too much pressure on it, but it's hard to do that when I'm walking or standing.\n\nPhysician: I see. Have you tried any treatments or remedies for the pain, such as ice or heat applications?\n\nPatient: Yes, I've been using ice packs on and off, mostly after I've been exercising or walking. It seems to help a bit, but the pain still persists.\n\nPhysician: Okay. Have you experienced any other symptoms, such as numbness or tingling sensations in your foot or toes?\n\nPatient: No, nothing like that. Just the pain and swelling in my ankle.\n\nPhysician: All right. Let's take a look. Can you please remove your shoes and socks so I can examine your ankle?\n\nPatient: Sure.\n\n(After the examination)\n\nPhysician: I don't see any obvious deformities or open wounds. I'm going to order an X-ray to get a better look at what's going on inside. In the meantime, I'd like to schedule you for a follow-up appointment in two days to discuss the results. Does that work for you?\n\nPatient: Yes, that's fine. Thank you, Dr. Hall.\n\nPhysician: You're welcome, Brianna. We'll get to the bottom of this and figure out the best course of action for your treatment.",
+  "soap_notes": "Subjective:\nBrianna Lucas presents with discomfort in her right ankle, describing a mix of dull aching and sharp, stabbing pain. She reports swelling in the area, especially after prolonged periods of standing or walking. Brianna has been using ice packs for relief but notes that the pain persists. She denies any numbness or tingling sensations in her foot or toes.\n\nObjective:\nPhysical examination reveals no obvious deformities or open wounds in the right ankle. The physician will order an X-ray to further assess the internal structures of the ankle. Brianna is compliant with the examination process and agrees to a follow-up appointment in two days to discuss the X-ray results.\n\nAssessment:\nBrianna Lucas presents with ongoing discomfort and swelling in her right ankle, warranting further investigation through an X-ray. The physician will review the imaging results to determine the appropriate treatment plan for Brianna's condition.\n\nPlan:\n1. Order X-ray for right ankle to assess internal structures.\n2. Schedule follow-up appointment in two days to discuss X-ray results and determine treatment plan.\n3. Monitor Brianna's response to treatment and adjust as necessary.\n4. Educate Brianna on ankle care and potential treatment options for pain relief.",
+  "doctor_name": "Dr. Howard Hall",
+  "address": "2504 W Pecan St, Tallahassee, California 31375",
+  "full_patient_data": "\nDEMOGRAPHICS:\nName: Brianna Lucas\nAge: 26\nAddress: 2504 W Pecan St, Tallahassee, California 31375\nPhone: (310) 556-6137\n\nPROBLEM LIST:\nChronic:\n- None\n\nOther:\n- Injury (Right ankle)\n\nHEALTH MAINTENANCE:\nVaccines and Screenings:\n- Tetanus shot: Due on 12/21/2027\n- Mammogram: Not due yet\n\nReminders and Results:\n- Reminder for Tetanus shot on 12/21/2027\n\nCARE TEAM AND COMMUNICATION:\nPrimary Care Physician: Dr. Howard Hall\n\nALLERGIES:\n- None\n\nMEDICATIONS:\n- Ibuprofen: 400mg, 1 tablet every 4 hours as needed for pain\n- Acetaminophen: 650mg, 1 tablet every 6 hours as needed for pain\n\nIMMUNIZATIONS:\n- Tetanus: 09/21/2010\n- Influenza: 10/15/2022\n\nSIGNIFICANT HISTORY DETAILS:\n- Tobacco use: Never\n- Alcohol use: Occasionally\n- Language they speak: English\n\nSPECIALTY COMMENTS:\n- Patient is compliant with medication instructions and follow-up appointments.\n\nFAMILY COMMENTS:\n- Supports patient's health goals and lifestyle changes.",
+  "note_text": "Subjective:\nBrianna Lucas presents with discomfort in her right ankle, describing a mix of dull aching and sharp, stabbing pain. She reports swelling in the area, especially after prolonged periods of standing or walking. Brianna has been using ice packs for relief but notes that the pain persists. She denies any numbness or tingling sensations in her foot or toes.\n\nObjective:\nPhysical examination reveals no obvious deformities or open wounds in the right ankle. The physician will order an X-ray to further assess the internal structures of the ankle. Brianna is compliant with the examination process and agrees to a follow-up appointment in two days to discuss the X-ray results.\n\nAssessment:\nBrianna Lucas presents with ongoing discomfort and swelling in her right ankle, warranting further investigation through an X-ray. The physician will review the imaging results to determine the appropriate treatment plan for Brianna's condition.\n\nPlan:\n1. Order X-ray for right ankle to assess internal structures.\n2. Schedule follow-up appointment in two days to discuss X-ray results and determine treatment plan.\n3. Monitor Brianna's response to treatment and adjust as necessary.\n4. Educate Brianna on ankle care and potential treatment options for pain relief.",
+  "transcript": "\nPhysician: Good morning, Brianna. How can I assist you today?\n\nPatient: Hi, Dr. Hall. I've been experiencing some discomfort in my right ankle, particularly when I walk or stand for extended periods. It's been bothering me for a few weeks now, and I thought it was time to have it checked out.\n\nPhysician: I see. Can you describe the pain for me? Is it a dull ache or more of a sharp, stabbing sensation?\n\nPatient: It's a mix of both, actually. It's mostly a dull ache, but when I put too much weight on it or move it the wrong way, it can become quite sharp.\n\nPhysician: Okay, that's helpful. Have you noticed any swelling or bruising in the area?\n\nPatient: Yes, there's been some swelling, especially after I've been on my feet for a while. It's not massive, but it's definitely noticeable.\n\nPhysician: I understand. Have you experienced any difficulty moving your ankle or putting weight on it?\n\nPatient: Yes, it's been a bit challenging. I've been trying to avoid putting too much pressure on it, but it's hard to do that when I'm walking or standing.\n\nPhysician: I see. Have you tried any treatments or remedies for the pain, such as ice or heat applications?\n\nPatient: Yes, I've been using ice packs on and off, mostly after I've been exercising or walking. It seems to help a bit, but the pain still persists.\n\nPhysician: Okay. Have you experienced any other symptoms, such as numbness or tingling sensations in your foot or toes?\n\nPatient: No, nothing like that. Just the pain and swelling in my ankle.\n\nPhysician: All right. Let's take a look. Can you please remove your shoes and socks so I can examine your ankle?\n\nPatient: Sure.\n\n(After the examination)\n\nPhysician: I don't see any obvious deformities or open wounds. I'm going to order an X-ray to get a better look at what's going on inside. In the meantime, I'd like to schedule you for a follow-up appointment in two days to discuss the results. Does that work for you?\n\nPatient: Yes, that's fine. Thank you, Dr. Hall.\n\nPhysician: You're welcome, Brianna. We'll get to the bottom of this and figure out the best course of action for your treatment."
+}

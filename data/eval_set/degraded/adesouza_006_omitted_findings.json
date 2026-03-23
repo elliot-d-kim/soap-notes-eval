@@ -1,0 +1,157 @@
+{
+  "age": 55,
+  "patient_name": "Karl Henry",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "8e6a76726f66cfc7",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(805) 770-2403",
+        "dob": {
+          "age": 57,
+          "date": "1966-03-13T05:53:11.813Z"
+        },
+        "email": "ana.daniels@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "040-66-6069"
+        },
+        "location": {
+          "city": "Red Oak",
+          "coordinates": {
+            "latitude": "-23.7634",
+            "longitude": "132.4792"
+          },
+          "country": "United States",
+          "postcode": 53819,
+          "state": "Ohio",
+          "street": {
+            "name": "College St",
+            "number": 1569
+          },
+          "timezone": {
+            "description": "Tehran",
+            "offset": "+3:30"
+          }
+        },
+        "login": {
+          "md5": "3c9f0542ee85d6c459fb60ce114d7d18",
+          "password": "enigma",
+          "salt": "uPUL3zUG",
+          "sha1": "af9c48c9cc5ae1e48d047f7938fcb8ef7907d8d4",
+          "sha256": "2a6c031452f9fe1ad9fbf225aa3789d209a4630089dae065945ed8f647693efe",
+          "username": "organicmouse631",
+          "uuid": "034921bb-75ab-49e6-8859-a96c344420b9"
+        },
+        "name": {
+          "first": "Ana",
+          "last": "Daniels",
+          "title": "Miss"
+        },
+        "nat": "US",
+        "phone": "(422) 306-6816",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/20.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/20.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/20.jpg"
+        },
+        "registered": {
+          "age": 6,
+          "date": "2017-10-22T08:35:50.680Z"
+        }
+      }
+    ]
+  },
+  "gender": "male",
+  "dob": "8/23/1968",
+  "phone": "(312) 518-8478",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "55d0b2e8ce0af4c7",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(801) 718-9557",
+        "dob": {
+          "age": 55,
+          "date": "1968-08-23T16:46:46.225Z"
+        },
+        "email": "karl.henry@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "236-80-9762"
+        },
+        "location": {
+          "city": "The Colony",
+          "coordinates": {
+            "latitude": "-9.6725",
+            "longitude": "-179.5428"
+          },
+          "country": "United States",
+          "postcode": 24964,
+          "state": "Illinois",
+          "street": {
+            "name": "Edwards Rd",
+            "number": 1382
+          },
+          "timezone": {
+            "description": "Eastern Time (US & Canada), Bogota, Lima",
+            "offset": "-5:00"
+          }
+        },
+        "login": {
+          "md5": "d148d31279e893e98806062b33138982",
+          "password": "chilli",
+          "salt": "lFYkhX4Y",
+          "sha1": "423d9c15d6d9ce76b85254e23caf2321f692bee6",
+          "sha256": "48457ea0e83291318e58fe1afd880abe3e786bcf27aa3c1dcecc4854eee22b20",
+          "username": "smallbutterfly486",
+          "uuid": "86323e42-28d2-42ce-83c1-668b32362dd7"
+        },
+        "name": {
+          "first": "Karl",
+          "last": "Henry",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(312) 518-8478",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/71.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
+        },
+        "registered": {
+          "age": 11,
+          "date": "2012-08-03T22:14:32.894Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Thyroid Disorders",
+  "patient_convo": "\nPhysician: Good morning, Mr. Henry. I'm Dr. Daniels, your primary care provider. I've reviewed your medical history and test results. I'd like to discuss your symptoms and health concerns with you today. How are you feeling?\n\nPatient: Hello, Dr. Daniels. Lately, I've been feeling quite tired, even after getting a full night's sleep. And occasionally, I get muscle cramps in my legs.\n\nPhysician: I see. Can you tell me more about your fatigue? Is it a new symptom, or has it been ongoing? And how would you describe the muscle cramps? Are they severe or mild?\n\nPatient: Well, the fatigue has been bothering me for a few months now. It's not extreme, but it's definitely noticeable. As for the muscle cramps, they're not too severe, but they're annoying. They usually occur after I've been sitting or lying down for a while.\n\nPhysician: I understand. Have you noticed any other symptoms, such as weight changes, hair loss, or cold intolerance?\n\nPatient: Yes, I have lost a bit of weight recently, about 10 pounds or so. And my hair has been shedding more than usual. But I haven't noticed any significant changes in my tolerance to cold temperatures.\n\nPhysician: Thank you for sharing that. Now, I'd like to discuss your medications. You're currently taking Levothyroxine for hypothyroidism. Have you noticed any changes in your symptoms since starting the medication?\n\nPatient: To be honest, I'm not sure. I thought I was feeling a bit better initially, but the fatigue has persisted. And I've been experiencing some constipation, which I don't think is related to the medication.\n\nPhysician: I see. We'll need to monitor your thyroid levels closely to ensure the medication is effective. I'd like to schedule you for a follow-up appointment in two weeks to recheck your TSH and T4 levels. In the meantime, I recommend increasing your Levothyroxine dosage to 125 mcg, as recommended by your endocrinologist, Dr. Smith.\n\nPatient: Okay, that sounds good. But what about the muscle cramps? Shouldn't I be taking something for those?\n\nPhysician: We can certainly consider medication options for the muscle cramps. However, given your history of hypertension and hypothyroidism, we need to ensure that any medication we prescribe won't interact with your current medications or worsen your condition. Let's discuss this further with your endocrinologist and pharmacist to determine the best course of action.\n\nPatient: Alright, that makes sense. Thank you, Dr. Daniels.\n\nPhysician: You're welcome, Mr. Henry. I'll also recommend that you schedule a colonoscopy to address your overdue colorectal cancer screening. We'll coordinate with your insurance to ensure the process goes smoothly. Finally, please make sure to get your influenza vaccine soon. We'll provide you with information on that as well.\n\nPatient: Okay, I'll take care of it. Thank you for your help, Dr. Daniels.\n\nPhysician: You're welcome, Mr. Henry. We'll work together to address your health concerns and ensure you're feeling your best. We'll follow up with you in two weeks. Have a good day.",
+  "soap_notes": "Subjective:\nMr. Henry reports feeling tired despite getting a full night's sleep and experiencing occasional muscle cramps in his legs. He mentions losing about 10 pounds recently and increased hair shedding. He denies any significant changes in cold intolerance.\n\nObjective:\nMr. Henry appears alert and cooperative during the appointment. Vital signs are within normal limits. He has a history of hypothyroidism, type 2 diabetes, and hypertension. Recent lab results show TSH levels at 8.0 mIU/L and T4 levels at 4.9 mcg/dL. He is currently taking Levothyroxine 100 mcg, Metformin 1000 mg, and Lisinopril 20 mg.\n\nAssessment:\nMr. Henry's symptoms of fatigue, weight loss, and hair shedding may be related to his hypothyroidism. The muscle cramps could be a separate issue or related to his current medications. His TSH levels indicate hypothyroidism, and an increase in Levothyroxine dosage to 125 mcg daily has been recommended by his endocrinologist.\n\nPlan:\nSchedule a follow-up appointment in two weeks to recheck TSH and T4 levels after increasing Levothyroxine dosage. Consult with endocrinologist and pharmacist regarding medication options for muscle cramps. Coordinate a colonoscopy for overdue colorectal cancer screening. Provide information on getting the influenza vaccine. Follow up with Mr. Henry to monitor his progress and address any further concerns.",
+  "doctor_name": "Dr. Ana Daniels",
+  "address": "1382 Edwards Rd, The Colony, Illinois 24964",
+  "full_patient_data": "\nDEMOGRAPHICS:\nName: Karl Henry\nAge: 55\nAddress: 1382 Edwards Rd, The Colony, Illinois 24964\nPhone: (312) 518-8478\n\nPROBLEM LIST:\nChronic:\n- Hypothyroidism\n- Type 2 Diabetes\n- Hypertension\n\nOther:\n- Seasonal Allergies\n\nHEALTH MAINTENANCE:\nVaccines and Screenings:\n- Influenza vaccine: due soon\n- Tetanus vaccine: overdue\n- Colorectal cancer screening: due on 12/01/2023\n\nREMINDERS AND RESULTS:\n- Reminder for annual physical examination\n- Results: TSH: 8.0 mIU/L (ref: 0.4 - 4.0 mIU/L)\n- Results: T4: 4.9 mcg/dL (ref: 4.5 - 12.0 mcg/dL)\n\nCARE TEAM AND COMMUNICATION:\nCare Team:\n- Dr. Ana Daniels (Primary Care Provider)\n- Nurse Practitioner Sarah Johnson\n- Endocrinologist Dr. Mark Smith\n\nCommunication:\n- Preferred contact method: phone\n- Emergency contact: wife, Laura Henry\n\nALLERGIES:\n- Penicillin\n\nMEDICATIONS:\n- Levothyroxine 100 mcg: 1 tab daily\n- Metformin 1000 mg: 2 tabs twice daily\n- Lisinopril 20 mg: 1 tab daily\n\nIMMUNIZATIONS:\n- Tdap (Tetanus, Diphtheria, Pertussis): 03/15/2021\n- Influenza: 10/01/2022\n\nSIGNIFICANT HISTORY DETAILS:\n- Tobacco use: None\n- Alcohol use: Occasional\n- Language they speak: English\n\nSPECIALTY COMMENTS:\n- Dr. Mark Smith (Endocrinologist): \"Mr. Henry's TSH and T4 levels indicate hypothyroidism. Increase Levothyroxine dosage to 125 mcg daily.\"\n\nFAMILY COMMENTS:\n- Wife, Laura Henry: \"Karl has been feeling more tired than usual lately. He also mentioned occasional muscle cramps.\"",
+  "note_text": "Subjective:\nMr. He mentions losing about 10 pounds recently and increased hair shedding. He denies any significant changes in cold intolerance.\n\nObjective:\nMr. Henry appears alert and cooperative during the appointment. Vital signs are within normal limits. He has a history of hypothyroidism, type 2 diabetes, and hypertension. Recent lab results show TSH levels at 8.0 mIU/L and T4 levels at 4.9 mcg/dL. He is currently taking Levothyroxine 100 mcg, Metformin 1000 mg, and Lisinopril 20 mg.\n\nAssessment:\nMr. Henry's symptoms of fatigue, weight loss, and hair shedding may be related to his hypothyroidism. The muscle cramps could be a separate issue or related to his current medications. His TSH levels indicate hypothyroidism, and an increase in Levothyroxine dosage to 125 mcg daily has been recommended by his endocrinologist.\n\nPlan:\nSchedule a follow-up appointment in two weeks to recheck TSH and T4 levels after increasing Levothyroxine dosage. Consult with endocrinologist and pharmacist regarding medication options for muscle cramps. Coordinate a colonoscopy for overdue colorectal cancer screening. Provide information on getting the influenza vaccine. Follow up with Mr. Henry to monitor his progress and address any further concerns.",
+  "transcript": "\nPhysician: Good morning, Mr. Henry. I'm Dr. Daniels, your primary care provider. I've reviewed your medical history and test results. I'd like to discuss your symptoms and health concerns with you today. How are you feeling?\n\nPatient: Hello, Dr. Daniels. Lately, I've been feeling quite tired, even after getting a full night's sleep. And occasionally, I get muscle cramps in my legs.\n\nPhysician: I see. Can you tell me more about your fatigue? Is it a new symptom, or has it been ongoing? And how would you describe the muscle cramps? Are they severe or mild?\n\nPatient: Well, the fatigue has been bothering me for a few months now. It's not extreme, but it's definitely noticeable. As for the muscle cramps, they're not too severe, but they're annoying. They usually occur after I've been sitting or lying down for a while.\n\nPhysician: I understand. Have you noticed any other symptoms, such as weight changes, hair loss, or cold intolerance?\n\nPatient: Yes, I have lost a bit of weight recently, about 10 pounds or so. And my hair has been shedding more than usual. But I haven't noticed any significant changes in my tolerance to cold temperatures.\n\nPhysician: Thank you for sharing that. Now, I'd like to discuss your medications. You're currently taking Levothyroxine for hypothyroidism. Have you noticed any changes in your symptoms since starting the medication?\n\nPatient: To be honest, I'm not sure. I thought I was feeling a bit better initially, but the fatigue has persisted. And I've been experiencing some constipation, which I don't think is related to the medication.\n\nPhysician: I see. We'll need to monitor your thyroid levels closely to ensure the medication is effective. I'd like to schedule you for a follow-up appointment in two weeks to recheck your TSH and T4 levels. In the meantime, I recommend increasing your Levothyroxine dosage to 125 mcg, as recommended by your endocrinologist, Dr. Smith.\n\nPatient: Okay, that sounds good. But what about the muscle cramps? Shouldn't I be taking something for those?\n\nPhysician: We can certainly consider medication options for the muscle cramps. However, given your history of hypertension and hypothyroidism, we need to ensure that any medication we prescribe won't interact with your current medications or worsen your condition. Let's discuss this further with your endocrinologist and pharmacist to determine the best course of action.\n\nPatient: Alright, that makes sense. Thank you, Dr. Daniels.\n\nPhysician: You're welcome, Mr. Henry. I'll also recommend that you schedule a colonoscopy to address your overdue colorectal cancer screening. We'll coordinate with your insurance to ensure the process goes smoothly. Finally, please make sure to get your influenza vaccine soon. We'll provide you with information on that as well.\n\nPatient: Okay, I'll take care of it. Thank you for your help, Dr. Daniels.\n\nPhysician: You're welcome, Mr. Henry. We'll work together to address your health concerns and ensure you're feeling your best. We'll follow up with you in two weeks. Have a good day.",
+  "_note_id": "adesouza_006",
+  "_degradation_types": [
+    "omitted_findings"
+  ],
+  "_degradation_details": {
+    "omitted_sentences": [
+      "Henry reports feeling tired despite getting a full night's sleep and experiencing occasional muscle cramps in his legs."
+    ]
+  },
+  "_original_note_id": "adesouza_006"
+}

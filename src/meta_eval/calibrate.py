@@ -78,7 +78,7 @@ class FailureTypeResult:
 
 
 def load_degradation_manifest(manifest_path: str | Path) -> list[dict]:
-    """Load the degraded samples manifest from data/samples/degraded/manifest.json."""
+    """Load the degraded samples manifest."""
     manifest_path = Path(manifest_path)
     with open(manifest_path) as f:
         data = json.load(f)

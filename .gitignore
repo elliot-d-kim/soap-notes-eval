@@ -7,3 +7,6 @@ node_modules/
 .next/
 /docs/DESIGN_RESEARCH_AND_DECISIONS_TRANSCRIPT.md
 .claude/settings.local.json
+
+# Full dataset (kept locally; curated subset is in data/eval_set/)
+data/samples/

@@ -1,0 +1,155 @@
+{
+  "age": 24,
+  "patient_name": "Lois Rodriguez",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "b62960f5230b4df7",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(455) 435-8192",
+        "dob": {
+          "age": 58,
+          "date": "1966-01-19T02:39:35.975Z"
+        },
+        "email": "jean.bailey@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "409-92-1156"
+        },
+        "location": {
+          "city": "Shiloh",
+          "coordinates": {
+            "latitude": "-12.8781",
+            "longitude": "22.0575"
+          },
+          "country": "United States",
+          "postcode": 69559,
+          "state": "Pennsylvania",
+          "street": {
+            "name": "W Belt Line Rd",
+            "number": 1099
+          },
+          "timezone": {
+            "description": "Adelaide, Darwin",
+            "offset": "+9:30"
+          }
+        },
+        "login": {
+          "md5": "a5abe7892ee788c2d8cc0f6a98c96295",
+          "password": "harley1",
+          "salt": "1dUhfRzy",
+          "sha1": "9d024d5380af9eb2a484e5f5ca86f21d15fe9036",
+          "sha256": "d84696f03da0a0abd18524cf7a9af2db4138e1090b67325d486bc78992437cf1",
+          "username": "orangecat889",
+          "uuid": "608e1edb-ad0c-411b-a669-2e60760f8c4a"
+        },
+        "name": {
+          "first": "Jean",
+          "last": "Bailey",
+          "title": "Mrs"
+        },
+        "nat": "US",
+        "phone": "(509) 672-6458",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/48.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/48.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/48.jpg"
+        },
+        "registered": {
+          "age": 21,
+          "date": "2002-10-21T16:52:34.267Z"
+        }
+      }
+    ]
+  },
+  "gender": "female",
+  "dob": "11/11/1999",
+  "phone": "(690) 701-7207",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "c768ee9269ae346d",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(355) 777-1813",
+        "dob": {
+          "age": 24,
+          "date": "1999-11-11T13:36:06.719Z"
+        },
+        "email": "lois.rodriguez@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "667-42-1253"
+        },
+        "location": {
+          "city": "Salt Lake City",
+          "coordinates": {
+            "latitude": "-36.6197",
+            "longitude": "49.0051"
+          },
+          "country": "United States",
+          "postcode": 93128,
+          "state": "Missouri",
+          "street": {
+            "name": "Edwards Rd",
+            "number": 618
+          },
+          "timezone": {
+            "description": "Pacific Time (US & Canada)",
+            "offset": "-8:00"
+          }
+        },
+        "login": {
+          "md5": "10dff749610d04beb11adb157f36ee28",
+          "password": "hilton",
+          "salt": "rxLOahml",
+          "sha1": "9997742346df051bb6dbab1152b6606431134176",
+          "sha256": "a0dcad0aa65f6480ebe621d3719e616d4112c93d516cf5c033d1f0c750942df3",
+          "username": "blueduck966",
+          "uuid": "9cb203c7-e469-4a01-b363-3ffa28e1a02b"
+        },
+        "name": {
+          "first": "Lois",
+          "last": "Rodriguez",
+          "title": "Ms"
+        },
+        "nat": "US",
+        "phone": "(690) 701-7207",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/15.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/15.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/15.jpg"
+        },
+        "registered": {
+          "age": 9,
+          "date": "2014-11-27T09:28:54.678Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Anxiety and Depression",
+  "patient_convo": "\nPhysician: Good morning, Lois. How are you feeling today?\n\nPatient: Hi, Dr. Bailey. I've been feeling really down lately. I just don't have the energy to do things that I used to enjoy, and I've been having trouble sleeping at night.\n\nPhysician: I see. Can you tell me more about your sleep patterns? How long have you been experiencing difficulty sleeping?\n\nPatient: It's been about a month now. I have trouble falling asleep and staying asleep. I'll wake up in the middle of the night and can't get back to sleep.\n\nPhysician: Okay. Have you noticed any patterns or triggers that seem to affect your sleep?\n\nPatient: Well, I've been having a lot of stress at work lately. I'm a graphic designer, and we've been under a tight deadline. I think that's been contributing to my anxiety and difficulty sleeping.\n\nPhysician: I understand. Have you experienced any other symptoms related to your anxiety or depression?\n\nPatient: Yes, I've been feeling really anxious and overwhelmed, especially in the mornings. I've also noticed that I've been having trouble concentrating and focusing on my work. And I've been experiencing some headaches, too.\n\nPhysician: Okay. Have you noticed any changes in your appetite or weight recently?\n\nPatient: Yes, I've lost a little weight. I'm not really interested in food like I used to be.\n\nPhysician: I see. Have you experienced any other physical symptoms, such as fatigue or muscle tension?\n\nPatient: Yes, I've been feeling really tired and lethargic, and my muscles have been feeling tense and achy.\n\nPhysician: Okay. Can you tell me more about your family history? Have there been any mental health issues in your family?\n\nPatient: Yes, my mother has depression, and my grandfather committed suicide.\n\nPhysician: I'm so sorry to hear that. It's important for us to consider your family history when addressing your mental health.\n\nPatient: Yeah, I know. I'm worried that I might be heading down that same path.\n\nPhysician: We'll do everything we can to help you manage your symptoms and prevent that from happening. Let's talk about your current medications. How have you been doing with the fluoxetine and sertraline?\n\nPatient: To be honest, I'm not sure if they're really helping. I still feel pretty down and anxious most of the time.\n\nPhysician: I see. We may need to consider adjusting your dosages or switching medications. We'll monitor your progress closely and make any necessary adjustments.\n\nPatient: Okay, that sounds good.\n\nPhysician: Is there anything else you'd like to discuss or any questions you have for me?\n\nPatient: No, I think that covers everything. Thank you, Dr. Bailey.\n\nPhysician: You're welcome, Lois. We'll work together to get you feeling better. I'll have my nurse come in to schedule your next appointment and discuss some follow-up questions.",
+  "soap_notes": "Subjective:\nLois reports feeling down and lacking energy, experiencing difficulty sleeping for about a month, and having trouble falling and staying asleep. She attributes her sleep issues to work-related stress as a graphic designer under a tight deadline. Lois also mentions feeling anxious, overwhelmed, having trouble concentrating, experiencing headaches, losing weight, decreased appetite, feeling tired, lethargic, and muscle tension. She discloses a family history of depression in her mother and suicide in her grandfather, expressing concern about her mental health.\n\nObjective:\nLois appears alert and engaged during the conversation. She presents with symptoms of anxiety and depression, including fatigue, muscle tension, and weight loss. No signs of acute distress are noted. Vital signs are within normal limits. Lois reports good compliance with her current medications, fluoxetine, and sertraline.\n\nAssessment:\nLois is experiencing symptoms consistent with anxiety and major depressive disorder, exacerbated by work-related stress. Her current medication regimen may not be providing adequate relief. Family history of mental health issues is a significant factor to consider in her treatment plan. Adjustment of medication dosages or a change in medication may be necessary to address her ongoing symptoms effectively.\n\nPlan:\n1. Adjust medication regimen as needed to address Lois's symptoms more effectively.\n2. Monitor her progress closely and schedule follow-up appointments to assess treatment response.\n3. Consider therapy and social work interventions to support Lois in managing her mental health.\n4. Discuss lifestyle modifications, stress management techniques, and self-care strategies to improve her overall well-being.\n5. Educate Lois on the importance of self-monitoring her symptoms and seeking help if she experiences any worsening of her condition.\n6. Collaborate with the care team, including the therapist and social worker, to provide comprehensive support for Lois's mental health needs.",
+  "doctor_name": "Dr. Jean Bailey",
+  "address": "618 Edwards Rd, Salt Lake City, Missouri 93128",
+  "full_patient_data": "\nDEMOGRAPHICS:\nPatient Name: Lois Rodriguez\nAge: 24\nAddress: 618 Edwards Rd, Salt Lake City, Missouri 93128\nPhone: (690) 701-7207\n\nPROBLEM LIST:\nChronic:\n- Anxiety Disorder\n- Major Depressive Disorder\n\nOther:\n- Headache\n\nHEALTH MAINTENANCE:\nVaccines and Screenings:\n- Influenza vaccine: due soon\n- Pap smear: due on 03/01/2024\n- Mammogram: not due yet\n\nREMINDERS AND RESULTS:\nReminders:\n- Schedule Influenza vaccine\n\nResults:\n- CBC: within normal limits\n- Lipid panel: within normal limits\n- TSH: within normal limits\n\nCARE TEAM AND COMMUNICATION:\nCare Team:\n- Dr. Jean Bailey, Psychiatrist\n- Sarah Johnson, Social Worker\n- Emily Smith, Therapist\n\nCommunication:\n- Preferred contact method: phone\n- Emergency contact: Maria Rodriguez, sister, (567) 234-5678\n\nALLERGIES:\nNo known allergies\n\nMEDICATIONS:\n- Fluoxetine 20mg, once daily, for Major Depressive Disorder\n- Sertraline 50mg, once daily, for Anxiety Disorder\n\nIMMUNIZATIONS:\n- Tdap: 03/01/2021\n- MMR: 02/01/2000\n- Varicella: 01/01/2001\n\nSIGNIFICANT HISTORY DETAILS:\nTobacco use: never\nAlcohol use: social drinker\nLanguage they speak: English, some Spanish\n\nSPECIALTY COMMENTS:\n- Patient reports good compliance with medication regimen\n- Patient is open to therapy and social work interventions\n\nFAMILY COMMENTS:\n- Family is supportive of patient's treatment\n- Patient lives with her sister, Maria Rodriguez",
+  "note_text": "Subjective:\nLois reports feeling down and lacking energy, experiencing difficulty sleeping for about a month, and having trouble falling and staying asleep. She attributes her sleep issues to work-related stress as a graphic designer under a tight deadline. Lois also mentions feeling anxious, overwhelmed, having trouble concentrating, experiencing headaches, losing weight, decreased appetite, feeling tired, lethargic, and muscle tension. She discloses a family history of depression in her mother and suicide in her grandfather, expressing concern about her mental health.\n\nObjective:\nLois appears alert and engaged during the conversation. She presents with symptoms of anxiety and depression, including fatigue, muscle tension, and weight loss. No signs of acute distress are noted. Vital signs are within normal limits. Lois reports good compliance with her current medications, fluoxetine, and sertraline.\n\nAssessment:\nLois is experiencing symptoms consistent with anxiety and major depressive disorder, exacerbated by work-related stress. Her current medication regimen may not be providing adequate relief. Family history of mental health issues is a significant factor to consider in her treatment plan. Adjustment of medication dosages or a change in medication may be necessary to address her ongoing symptoms effectively. Patient also shows signs of moderate somatic symptom disorder.\n\nPlan:\n1. Adjust medication regimen as needed to address Lois's symptoms more effectively.\n2. Monitor her progress closely and schedule follow-up appointments to assess treatment response.\n3. Consider therapy and social work interventions to support Lois in managing her mental health.\n4. Discuss lifestyle modifications, stress management techniques, and self-care strategies to improve her overall well-being.\n5. Educate Lois on the importance of self-monitoring her symptoms and seeking help if she experiences any worsening of her condition.\n6. Collaborate with the care team, including the therapist and social worker, to provide comprehensive support for Lois's mental health needs.\n7. Start trial of mirtazapine 15mg at bedtime for sleep and anxiety symptoms.",
+  "transcript": "\nPhysician: Good morning, Lois. How are you feeling today?\n\nPatient: Hi, Dr. Bailey. I've been feeling really down lately. I just don't have the energy to do things that I used to enjoy, and I've been having trouble sleeping at night.\n\nPhysician: I see. Can you tell me more about your sleep patterns? How long have you been experiencing difficulty sleeping?\n\nPatient: It's been about a month now. I have trouble falling asleep and staying asleep. I'll wake up in the middle of the night and can't get back to sleep.\n\nPhysician: Okay. Have you noticed any patterns or triggers that seem to affect your sleep?\n\nPatient: Well, I've been having a lot of stress at work lately. I'm a graphic designer, and we've been under a tight deadline. I think that's been contributing to my anxiety and difficulty sleeping.\n\nPhysician: I understand. Have you experienced any other symptoms related to your anxiety or depression?\n\nPatient: Yes, I've been feeling really anxious and overwhelmed, especially in the mornings. I've also noticed that I've been having trouble concentrating and focusing on my work. And I've been experiencing some headaches, too.\n\nPhysician: Okay. Have you noticed any changes in your appetite or weight recently?\n\nPatient: Yes, I've lost a little weight. I'm not really interested in food like I used to be.\n\nPhysician: I see. Have you experienced any other physical symptoms, such as fatigue or muscle tension?\n\nPatient: Yes, I've been feeling really tired and lethargic, and my muscles have been feeling tense and achy.\n\nPhysician: Okay. Can you tell me more about your family history? Have there been any mental health issues in your family?\n\nPatient: Yes, my mother has depression, and my grandfather committed suicide.\n\nPhysician: I'm so sorry to hear that. It's important for us to consider your family history when addressing your mental health.\n\nPatient: Yeah, I know. I'm worried that I might be heading down that same path.\n\nPhysician: We'll do everything we can to help you manage your symptoms and prevent that from happening. Let's talk about your current medications. How have you been doing with the fluoxetine and sertraline?\n\nPatient: To be honest, I'm not sure if they're really helping. I still feel pretty down and anxious most of the time.\n\nPhysician: I see. We may need to consider adjusting your dosages or switching medications. We'll monitor your progress closely and make any necessary adjustments.\n\nPatient: Okay, that sounds good.\n\nPhysician: Is there anything else you'd like to discuss or any questions you have for me?\n\nPatient: No, I think that covers everything. Thank you, Dr. Bailey.\n\nPhysician: You're welcome, Lois. We'll work together to get you feeling better. I'll have my nurse come in to schedule your next appointment and discuss some follow-up questions.",
+  "_note_id": "adesouza_004",
+  "_degradation_types": [
+    "hallucinated_entities"
+  ],
+  "_degradation_details": {
+    "method": "llm_injection"
+  },
+  "_original_note_id": "adesouza_004"
+}

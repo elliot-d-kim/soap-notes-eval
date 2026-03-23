@@ -1,0 +1,147 @@
+{
+  "age": 73,
+  "patient_name": "Norma Woods",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "e4a9c6c96c855f3e",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(342) 434-4181",
+        "dob": {
+          "age": 51,
+          "date": "1972-05-15T15:23:20.392Z"
+        },
+        "email": "lucy.gordon@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "163-63-6003"
+        },
+        "location": {
+          "city": "Sterling Heights",
+          "coordinates": {
+            "latitude": "-75.2914",
+            "longitude": "105.1234"
+          },
+          "country": "United States",
+          "postcode": 27875,
+          "state": "Arkansas",
+          "street": {
+            "name": "Karen Dr",
+            "number": 7461
+          },
+          "timezone": {
+            "description": "Adelaide, Darwin",
+            "offset": "+9:30"
+          }
+        },
+        "login": {
+          "md5": "66a68173b38543f4a7db66359dafb036",
+          "password": "skidoo",
+          "salt": "zgUXFmnf",
+          "sha1": "361ba95a4987c2e884290a34411f905e726df313",
+          "sha256": "7dbbfc898e373d27c7c968fb37690ea6b7c33bb057a0427fcfb067c6cc33e5b8",
+          "username": "sadmeercat182",
+          "uuid": "952eb6d0-361b-4c83-b1db-917cd8bf4878"
+        },
+        "name": {
+          "first": "Lucy",
+          "last": "Gordon",
+          "title": "Miss"
+        },
+        "nat": "US",
+        "phone": "(679) 454-5160",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/82.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/82.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/82.jpg"
+        },
+        "registered": {
+          "age": 5,
+          "date": "2018-03-01T03:19:38.019Z"
+        }
+      }
+    ]
+  },
+  "gender": "female",
+  "dob": "12/25/1950",
+  "phone": "(766) 878-3483",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "3cbcb5911541cb41",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(579) 903-1627",
+        "dob": {
+          "age": 73,
+          "date": "1950-12-25T01:18:08.198Z"
+        },
+        "email": "norma.woods@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "575-34-9944"
+        },
+        "location": {
+          "city": "Pittsburgh",
+          "coordinates": {
+            "latitude": "-21.4634",
+            "longitude": "155.2116"
+          },
+          "country": "United States",
+          "postcode": 71679,
+          "state": "New Mexico",
+          "street": {
+            "name": "Royal Ln",
+            "number": 2551
+          },
+          "timezone": {
+            "description": "Brussels, Copenhagen, Madrid, Paris",
+            "offset": "+1:00"
+          }
+        },
+        "login": {
+          "md5": "3e55f4a5f92d2b9164737a624ea56a47",
+          "password": "racing",
+          "salt": "S7lhp4sQ",
+          "sha1": "eaaebd6f47a5838ea798267194f9f84013b6c11d",
+          "sha256": "53f511f661b87c015652c2b7872ff5a56dbe3d8560a4f1d5ac3e10d2ecd9d526",
+          "username": "silverbear642",
+          "uuid": "bfc74ba9-abf2-413e-8abc-09123a9adcd5"
+        },
+        "name": {
+          "first": "Norma",
+          "last": "Woods",
+          "title": "Ms"
+        },
+        "nat": "US",
+        "phone": "(766) 878-3483",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/22.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/22.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/22.jpg"
+        },
+        "registered": {
+          "age": 18,
+          "date": "2005-12-04T05:32:35.601Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Respiratory Allergies",
+  "patient_convo": "\nPhysician: Good morning, Mrs. Woods. Thank you for coming in today. How are you feeling?\n\nPatient: Hi, Dr. Gordon. I've been feeling pretty unwell lately. I've had this constant cough and my chest feels tight all the time. It's like there's a band around my chest that I can't get rid of.\n\nPhysician: I see. Have you noticed any patterns or triggers that make your symptoms worse? For example, does it get worse when you're outside or around certain substances?\n\nPatient: Well, it seems to get worse at night, especially when I'm lying down. And sometimes, it feels like my chest is heavy, like there's a weight on it.\n\nPhysician: I understand. Have you experienced any shortness of breath or wheezing?\n\nPatient: Yes, especially when I exert myself or climb stairs. It's like I can't catch my breath. And sometimes, I feel like I'm choking or gasping for air.\n\nPhysician: I see. Have you noticed any other symptoms? Perhaps a runny nose or congestion?\n\nPatient: Yes, my nose has been running a lot lately, and my sinuses have been feeling congested. It's like there's constant pressure in my head.\n\nPhysician: I understand. Have you tried any over-the-counter medications or remedies for your symptoms?\n\nPatient: Yes, I've been using an albuterol inhaler and fluticasone propionate nasal spray as needed. But to be honest, I'm not sure if they're really helping.\n\nPhysician: I see. Have you noticed any side effects from the medications?\n\nPatient: No, not that I can think of.\n\nPhysician: Good. Have you had any recent illnesses or infections that may be related to your symptoms?\n\nPatient: No, nothing recent. But I did have a bout of bronchitis a few years ago.\n\nPhysician: I see. Have you noticed any changes in your voice or throat? Perhaps any hoarseness or soreness?\n\nPatient: No, nothing like that.\n\nPhysician: Good. Have you had any recent travel or exposure to anyone with similar symptoms?\n\nPatient: No, nothing recent.\n\nPhysician: Alright, Mrs. Woods. Based on what you've shared, it sounds like you're experiencing some persistent respiratory symptoms that are affecting your quality of life. I'd like to order some tests to help us better understand what's going on. We'll start with a chest X-ray and possibly a CT scan to get a better look at your lungs. We'll also run some blood tests to check for any underlying conditions that may be contributing to your symptoms. In the meantime, I'd like to increase your albuterol dosage and add a medication to help with your congestion. Does that sound good to you?\n\nPatient: Yes, that sounds good. Thank you, Dr. Gordon. I just want to feel better.\n\nPhysician: Of course, Mrs. Woods. We'll do everything we can to help you manage your symptoms and get you feeling better. We'll follow up in a few days once we have the results of your tests. In the meantime, please don't hesitate to reach out if you have any questions or concerns.",
+  "soap_notes": "Subjective:\nNorma Woods reports feeling unwell with a constant cough and tightness in her chest. She describes her symptoms as worsening at night and experiencing shortness of breath and wheezing, especially with exertion. She also notes nasal congestion and pressure in her head. Norma has been using an albuterol inhaler and fluticasone propionate nasal spray with limited relief.\n\nObjective:\nNorma appears fatigued during the appointment but is alert and oriented. She demonstrates mild wheezing upon auscultation of her lungs. Vital signs are within normal limits. Norma's chest X-ray and CT scan are ordered, along with blood tests to investigate underlying conditions. Albuterol dosage is increased, and a congestion medication is added to her treatment plan.\n\nAssessment:\nNorma is presenting with persistent respiratory symptoms impacting her quality of life. Further diagnostic tests are needed to determine the cause of her symptoms. Adjustments to her medication regimen have been made to address her symptoms effectively.\n\nPlan:\nFollow-up appointments will be scheduled to review the results of the diagnostic tests. Norma is encouraged to contact the clinic with any questions or concerns in the meantime. The care team will continue to monitor her progress and adjust her treatment plan as needed.",
+  "doctor_name": "Dr. Lucy Gordon",
+  "address": "2551 Royal Ln, Pittsburgh, New Mexico 71679",
+  "full_patient_data": "\n\n\nDEMOGRAPHICS:\nName: Norma Woods\nAge: 73\nAddress: 2551 Royal Ln, Pittsburgh, New Mexico 71679\nPhone: (766) 878-3483\n\nPROBLEM LIST:\nChronic:\n- Respiratory Allergies\n- Hypertension\n- Osteoarthritis\n\nOther:\n- None\n\nHEALTH MAINTENANCE:\nVaccines and Screenings:\n- Influenza vaccine: due on 10/01/2024\n- Pneumococcal vaccine: due on 01/01/2026\n- Colorectal cancer screening: due on 05/01/2025\n- Mammography: overdue\n\nREMINDERS AND RESULTS:\n- None\n\nCARE TEAM AND COMMUNICATION:\nCare Team:\n- Dr. Lucy Gordon\n- Norma Woods (patient)\n- RN Jane Doe (care coordinator)\n\nCommunication:\n- Preferred method of contact: phone call\n- Contact person in case of emergency: John Woods (son)\n\nALLERGIES:\n- Penicillin\n\nMEDICATIONS:\n- Albuterol inhaler: 90 mcg, 2 puffs every 4-6 hours as needed\n- Fluticasone propionate nasal spray: 50 mcg, 1 spray in each nostril once daily\n- Lisinopril: 10 mg, 1 tablet daily\n\nIMMUNIZATIONS:\n- Tdap: 09/01/2021\n- Shingrix: 05/01/2022\n- COVID-19 vaccine: 01/15/2022\n\nSIGNIFICANT HISTORY DETAILS:\n- Tobacco use: never\n- Alcohol use: social\n- Language they speak: English\n\nSPECIALTY COMMENTS:\n- Norma has been managing her respiratory allergies with inhalers and nasal sprays for the past 5 years. She reports occasional shortness of breath and wheezing, which are relieved by using her albuterol inhaler.\n\nFAMILY COMMENTS:\n- Norma's son, John, has expressed concerns about her worsening allergies and wants to ensure that she is receiving appropriate care. He is supportive of her treatment plan and is available to assist with any necessary follow-up appointments or medication management.",
+  "note_text": "Subjective:\nNorma Woods reports feeling unwell with a constant cough and tightness in her chest. She describes her symptoms as worsening at night and experiencing shortness of breath and wheezing, especially with exertion. She also notes nasal congestion and pressure in her head. Norma has been using an albuterol inhaler and fluticasone propionate nasal spray with limited relief.\n\nObjective:\nNorma appears fatigued during the appointment but is alert and oriented. She demonstrates mild wheezing upon auscultation of her lungs. Vital signs are within normal limits. Norma's chest X-ray and CT scan are ordered, along with blood tests to investigate underlying conditions. Albuterol dosage is increased, and a congestion medication is added to her treatment plan.\n\nAssessment:\nNorma is presenting with persistent respiratory symptoms impacting her quality of life. Further diagnostic tests are needed to determine the cause of her symptoms. Adjustments to her medication regimen have been made to address her symptoms effectively.\n\nPlan:\nFollow-up appointments will be scheduled to review the results of the diagnostic tests. Norma is encouraged to contact the clinic with any questions or concerns in the meantime. The care team will continue to monitor her progress and adjust her treatment plan as needed.",
+  "transcript": "\nPhysician: Good morning, Mrs. Woods. Thank you for coming in today. How are you feeling?\n\nPatient: Hi, Dr. Gordon. I've been feeling pretty unwell lately. I've had this constant cough and my chest feels tight all the time. It's like there's a band around my chest that I can't get rid of.\n\nPhysician: I see. Have you noticed any patterns or triggers that make your symptoms worse? For example, does it get worse when you're outside or around certain substances?\n\nPatient: Well, it seems to get worse at night, especially when I'm lying down. And sometimes, it feels like my chest is heavy, like there's a weight on it.\n\nPhysician: I understand. Have you experienced any shortness of breath or wheezing?\n\nPatient: Yes, especially when I exert myself or climb stairs. It's like I can't catch my breath. And sometimes, I feel like I'm choking or gasping for air.\n\nPhysician: I see. Have you noticed any other symptoms? Perhaps a runny nose or congestion?\n\nPatient: Yes, my nose has been running a lot lately, and my sinuses have been feeling congested. It's like there's constant pressure in my head.\n\nPhysician: I understand. Have you tried any over-the-counter medications or remedies for your symptoms?\n\nPatient: Yes, I've been using an albuterol inhaler and fluticasone propionate nasal spray as needed. But to be honest, I'm not sure if they're really helping.\n\nPhysician: I see. Have you noticed any side effects from the medications?\n\nPatient: No, not that I can think of.\n\nPhysician: Good. Have you had any recent illnesses or infections that may be related to your symptoms?\n\nPatient: No, nothing recent. But I did have a bout of bronchitis a few years ago.\n\nPhysician: I see. Have you noticed any changes in your voice or throat? Perhaps any hoarseness or soreness?\n\nPatient: No, nothing like that.\n\nPhysician: Good. Have you had any recent travel or exposure to anyone with similar symptoms?\n\nPatient: No, nothing recent.\n\nPhysician: Alright, Mrs. Woods. Based on what you've shared, it sounds like you're experiencing some persistent respiratory symptoms that are affecting your quality of life. I'd like to order some tests to help us better understand what's going on. We'll start with a chest X-ray and possibly a CT scan to get a better look at your lungs. We'll also run some blood tests to check for any underlying conditions that may be contributing to your symptoms. In the meantime, I'd like to increase your albuterol dosage and add a medication to help with your congestion. Does that sound good to you?\n\nPatient: Yes, that sounds good. Thank you, Dr. Gordon. I just want to feel better.\n\nPhysician: Of course, Mrs. Woods. We'll do everything we can to help you manage your symptoms and get you feeling better. We'll follow up in a few days once we have the results of your tests. In the meantime, please don't hesitate to reach out if you have any questions or concerns."
+}

@@ -1,0 +1,155 @@
+{
+  "age": 47,
+  "patient_name": "Bob Diaz",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "6a73d7cddb203500",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(313) 556-0955",
+        "dob": {
+          "age": 45,
+          "date": "1979-02-01T14:26:25.953Z"
+        },
+        "email": "stephen.burns@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "556-56-1324"
+        },
+        "location": {
+          "city": "Minneapolis",
+          "coordinates": {
+            "latitude": "-73.1995",
+            "longitude": "-94.1032"
+          },
+          "country": "United States",
+          "postcode": 64543,
+          "state": "Utah",
+          "street": {
+            "name": "Lakeshore Rd",
+            "number": 2671
+          },
+          "timezone": {
+            "description": "Atlantic Time (Canada), Caracas, La Paz",
+            "offset": "-4:00"
+          }
+        },
+        "login": {
+          "md5": "04e63e5d55002a1ecbda837450885790",
+          "password": "ducks",
+          "salt": "W1sRXsnO",
+          "sha1": "044ad810d7956a0c795401d339edd4a3b22cbd6f",
+          "sha256": "fbaa30ffe3b51c202cc161e0e6cf65da1b3c648f0a2c3fa7c39144fbdbcc1722",
+          "username": "sadbear186",
+          "uuid": "e14468d9-cd4b-4c43-a5b0-1986c4f89ca5"
+        },
+        "name": {
+          "first": "Stephen",
+          "last": "Burns",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(829) 657-6302",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/39.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/39.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/39.jpg"
+        },
+        "registered": {
+          "age": 11,
+          "date": "2012-08-24T08:30:17.413Z"
+        }
+      }
+    ]
+  },
+  "gender": "male",
+  "dob": "11/19/1976",
+  "phone": "(593) 906-9886",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "bf59cf88cb7ce93e",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(903) 687-1330",
+        "dob": {
+          "age": 47,
+          "date": "1976-11-19T21:08:34.811Z"
+        },
+        "email": "bob.diaz@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "433-83-1411"
+        },
+        "location": {
+          "city": "Santa Maria",
+          "coordinates": {
+            "latitude": "-67.2119",
+            "longitude": "-136.9400"
+          },
+          "country": "United States",
+          "postcode": 92172,
+          "state": "Michigan",
+          "street": {
+            "name": "Walnut Hill Ln",
+            "number": 7707
+          },
+          "timezone": {
+            "description": "Ekaterinburg, Islamabad, Karachi, Tashkent",
+            "offset": "+5:00"
+          }
+        },
+        "login": {
+          "md5": "3b0306fa82dfc32c9fea53ab761c5b12",
+          "password": "juan",
+          "salt": "dncYxxnb",
+          "sha1": "a9d3e4490aa2ea63731f826fac007f3915fffb33",
+          "sha256": "8f47e52d91230fb7eb1f6dd11d83af56f4cb8f5fdc3064c5c75a165c8fb35982",
+          "username": "redleopard979",
+          "uuid": "13bcec6e-030c-4663-87a8-f9e76e6f0aed"
+        },
+        "name": {
+          "first": "Bob",
+          "last": "Diaz",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(593) 906-9886",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/49.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/49.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/49.jpg"
+        },
+        "registered": {
+          "age": 3,
+          "date": "2020-09-30T21:17:01.846Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Gastrointestinal Issues",
+  "patient_convo": "\n\nPhysician: Good morning, Mr. Diaz. How are you feeling today?\n\nPatient: Hi, Dr. Burns. I've been feeling pretty lousy lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And sometimes, I get this sharp pain in my stomach that makes me feel like I'm going to throw up.\n\nPhysician: I see. Have you noticed any other symptoms? Maybe some bloating or abdominal discomfort?\n\nPatient: Yeah, I do get bloated a lot, and sometimes I have this feeling of fullness that lasts for hours. And the abdominal pain can be pretty intense. It's like someone is stabbing me with a knife.\n\nPhysician: I understand. Have you had any changes in your bowel movements? Maybe some diarrhea or constipation?\n\nPatient: Well, I have had some diarrhea lately, but it's not always there. And sometimes, I feel like I can't go to the bathroom even when I need to. It's like my body is just not responding.\n\nPhysician: Okay, that's helpful. Have you noticed any other symptoms? Maybe some nausea or vomiting?\n\nPatient: Yes, I do get nauseous sometimes, especially when I eat certain foods. And I have vomited a few times, but it's not constant.\n\nPhysician: I see. Have you had any recent weight changes or loss of appetite?\n\nPatient: Well, I have lost a little bit of weight recently, but I think that's because I just don't feel like eating much. And sometimes, I get this feeling of being really tired all the time.\n\nPhysician: Okay, that's good to know. Have you noticed any triggers that make your symptoms worse? Maybe certain foods or stress?\n\nPatient: Yeah, I think spicy foods make my heartburn worse, and sometimes, I feel like stress does too. But it's hard to say for sure.\n\nPhysician: That's understandable. Have you had any recent travel or exposures to illness?\n\nPatient: No, nothing recent. I did go on a trip to Mexico a few months ago, but I don't think that's related.\n\nPhysician: Okay, that's good to know. I'm going to order some tests to help us better understand what's going on. We'll do an endoscopy to take a look at your esophagus and stomach, and we'll also do some blood tests to check for any infections or inflammation. In the meantime, I'd like you to start keeping a food diary to track any triggers that might be making your symptoms worse. Does that sound good to you?\n\nPatient: Yes, that sounds like a good plan. Thank you, Dr. Burns.\n\nPhysician: You're welcome, Mr. Diaz. We'll get to the bottom of this and figure out the best course of treatment for you.",
+  "soap_notes": "Subjective:\nMr. Diaz reports feeling lousy lately with constant heartburn that persists despite medication. He also experiences sharp stomach pain, bloating, abdominal discomfort, intermittent diarrhea, nausea, vomiting, weight loss, loss of appetite, and fatigue. He notes that spicy foods and stress may exacerbate his symptoms.\n\nObjective:\nMr. Diaz appears fatigued during the appointment. He denies any recent travel or exposures to illness. Gastroenterologist recommends further evaluation with an endoscopy due to intermittent abdominal pain and bloating. Spouse notes fatigue and loss of appetite as additional symptoms to consider.\n\nAssessment:\nMr. Diaz presents with chronic GERD, hypertension, and gastrointestinal issues. Further evaluation with an endoscopy and blood tests is warranted to investigate his symptoms. A food diary will be initiated to track potential triggers.\n\nPlan:\nOrder endoscopy and blood tests to investigate symptoms. Initiate food diary to track triggers. Follow up with results to determine appropriate treatment plan. Encourage continued communication with care team for comprehensive care.",
+  "doctor_name": "Dr. Stephen Burns",
+  "address": "7707 Walnut Hill Ln, Santa Maria, Michigan 92172",
+  "full_patient_data": "\nDEMOGRAPHICS:\nName: Bob Diaz\nAge: 47\nAddress: 7707 Walnut Hill Ln, Santa Maria, Michigan 92172\nPhone: (593) 906-9886\n\nPROBLEM LIST:\n- Chronic: Gastroesophageal Reflux Disease (GERD), Hypertension\n- Other: Gastrointestinal Issues\n\nHEALTH MAINTENANCE:\n- Vaccines: Influenza (due soon), Tdap (overdue)\n- Screenings: Colonoscopy (due on 11/19/2024), Prostate Exam (due on 11/19/2025)\n\nREMINDERS AND RESULTS:\n- Reminder: Schedule Tdap vaccine\n- Results: Colonoscopy - Normal, Prostate Exam - Normal\n\nCARE TEAM AND COMMUNICATION:\n- Primary Care Physician: Dr. Stephen Burns\n- Gastroenterologist: Dr. Emily Thompson\n- Nurse Practitioner: Sarah Jones\n- Preferred Contact Method: Phone\n\nALLEGIES:\n- Penicillin\n\nMEDICATIONS:\n- Omeprazole 20mg, twice daily for GERD\n- Lisinopril 10mg, once daily for Hypertension\n\nIMMUNIZATIONS:\n- Influenza (2023)\n- Tdap (2021)\n- Pneumococcal (2020)\n\nSIGNIFICANT HISTORY DETAILS:\n- Tobacco Use: Non-smoker\n- Alcohol Use: Social drinker\n- Language: English, Spanish\n\nSPECIALTY COMMENTS:\n- Gastroenterologist: \"Mr. Diaz reports intermittent abdominal pain and bloating. Recommend further evaluation with endoscopy.\"\n\nFAMILY COMMENTS:\n- Spouse: \"Bob has been experiencing fatigue and loss of appetite. Please consider these symptoms when evaluating his gastrointestinal issues.\"",
+  "note_text": "Subjective:\nMr. Diaz reports feeling lousy lately with constant heartburn that persists despite medication. He also experiences sharp stomach pain, bloating, abdominal discomfort, intermittent diarrhea, nausea, vomiting, weight loss, loss of appetite, and fatigue. He notes that spicy foods and stress may exacerbate his symptoms.\n\nObjective:\nMr. Diaz appears fatigued during the appointment. He denies any recent travel or exposures to illness. Gastroenterologist recommends further evaluation with an endoscopy due to intermittent abdominal pain and bloating. Spouse notes fatigue and loss of appetite as additional symptoms to consider.\n\n\nPlan:\nOrder endoscopy and blood tests to investigate symptoms. Initiate food diary to track triggers. Follow up with results to determine appropriate treatment plan. Encourage continued communication with care team for comprehensive care.",
+  "transcript": "\n\nPhysician: Good morning, Mr. Diaz. How are you feeling today?\n\nPatient: Hi, Dr. Burns. I've been feeling pretty lousy lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And sometimes, I get this sharp pain in my stomach that makes me feel like I'm going to throw up.\n\nPhysician: I see. Have you noticed any other symptoms? Maybe some bloating or abdominal discomfort?\n\nPatient: Yeah, I do get bloated a lot, and sometimes I have this feeling of fullness that lasts for hours. And the abdominal pain can be pretty intense. It's like someone is stabbing me with a knife.\n\nPhysician: I understand. Have you had any changes in your bowel movements? Maybe some diarrhea or constipation?\n\nPatient: Well, I have had some diarrhea lately, but it's not always there. And sometimes, I feel like I can't go to the bathroom even when I need to. It's like my body is just not responding.\n\nPhysician: Okay, that's helpful. Have you noticed any other symptoms? Maybe some nausea or vomiting?\n\nPatient: Yes, I do get nauseous sometimes, especially when I eat certain foods. And I have vomited a few times, but it's not constant.\n\nPhysician: I see. Have you had any recent weight changes or loss of appetite?\n\nPatient: Well, I have lost a little bit of weight recently, but I think that's because I just don't feel like eating much. And sometimes, I get this feeling of being really tired all the time.\n\nPhysician: Okay, that's good to know. Have you noticed any triggers that make your symptoms worse? Maybe certain foods or stress?\n\nPatient: Yeah, I think spicy foods make my heartburn worse, and sometimes, I feel like stress does too. But it's hard to say for sure.\n\nPhysician: That's understandable. Have you had any recent travel or exposures to illness?\n\nPatient: No, nothing recent. I did go on a trip to Mexico a few months ago, but I don't think that's related.\n\nPhysician: Okay, that's good to know. I'm going to order some tests to help us better understand what's going on. We'll do an endoscopy to take a look at your esophagus and stomach, and we'll also do some blood tests to check for any infections or inflammation. In the meantime, I'd like you to start keeping a food diary to track any triggers that might be making your symptoms worse. Does that sound good to you?\n\nPatient: Yes, that sounds like a good plan. Thank you, Dr. Burns.\n\nPhysician: You're welcome, Mr. Diaz. We'll get to the bottom of this and figure out the best course of treatment for you.",
+  "_note_id": "adesouza_001",
+  "_degradation_types": [
+    "missing_section"
+  ],
+  "_degradation_details": {
+    "removed_section": "assessment"
+  },
+  "_original_note_id": "adesouza_001"
+}

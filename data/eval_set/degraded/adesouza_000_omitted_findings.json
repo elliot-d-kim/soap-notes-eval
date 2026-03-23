@@ -1,0 +1,158 @@
+{
+  "age": 28,
+  "patient_name": "Zack Fields",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "356f06ed84ea63b6",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(725) 218-6363",
+        "dob": {
+          "age": 58,
+          "date": "1965-05-05T05:58:51.076Z"
+        },
+        "email": "kristen.kelly@example.com",
+        "gender": "female",
+        "id": {
+          "name": "SSN",
+          "value": "197-47-8601"
+        },
+        "location": {
+          "city": "West Valley City",
+          "coordinates": {
+            "latitude": "-22.6487",
+            "longitude": "141.9690"
+          },
+          "country": "United States",
+          "postcode": 24175,
+          "state": "Arizona",
+          "street": {
+            "name": "Mcclellan Rd",
+            "number": 1951
+          },
+          "timezone": {
+            "description": "Mountain Time (US & Canada)",
+            "offset": "-7:00"
+          }
+        },
+        "login": {
+          "md5": "91c76c14c5f38634f47ef7abe71597b4",
+          "password": "bottom",
+          "salt": "7xwYaYPT",
+          "sha1": "deb94558a5ba330a95aae47d0ada71fe4897094e",
+          "sha256": "7b590a5f61559e8e0f48257cda5b0bf8004f281e457936980b36229b4c55241b",
+          "username": "whiteduck283",
+          "uuid": "879237f0-2f55-4c0d-ab2e-3355d19b9bdd"
+        },
+        "name": {
+          "first": "Kristen",
+          "last": "Kelly",
+          "title": "Mrs"
+        },
+        "nat": "US",
+        "phone": "(257) 678-8337",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/84.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
+        },
+        "registered": {
+          "age": 15,
+          "date": "2008-11-13T05:28:49.497Z"
+        }
+      }
+    ]
+  },
+  "gender": "male",
+  "dob": "11/19/1995",
+  "phone": "(839) 255-2098",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "a87f9c557fbd4345",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(280) 370-4388",
+        "dob": {
+          "age": 28,
+          "date": "1995-11-19T12:35:56.265Z"
+        },
+        "email": "zack.fields@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "277-25-6464"
+        },
+        "location": {
+          "city": "Minneapolis",
+          "coordinates": {
+            "latitude": "-26.4229",
+            "longitude": "-151.6220"
+          },
+          "country": "United States",
+          "postcode": 60074,
+          "state": "Georgia",
+          "street": {
+            "name": "Parker Rd",
+            "number": 6104
+          },
+          "timezone": {
+            "description": "Bombay, Calcutta, Madras, New Delhi",
+            "offset": "+5:30"
+          }
+        },
+        "login": {
+          "md5": "bb3c09b5dcfb6405a4c412d269689429",
+          "password": "java",
+          "salt": "Cl8EzQb6",
+          "sha1": "0abcdebca69402dde2dfb5687a51b29fb029e7d9",
+          "sha256": "7bc8acd8d5dade2d3d83fc3c883d33dea34383f288089fb77028e1da05415982",
+          "username": "beautifulladybug863",
+          "uuid": "f3b99828-72f7-46b0-a707-dee5c5f18840"
+        },
+        "name": {
+          "first": "Zack",
+          "last": "Fields",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(839) 255-2098",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/33.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/33.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg"
+        },
+        "registered": {
+          "age": 2,
+          "date": "2021-02-13T20:49:52.908Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Joint Pain",
+  "patient_convo": "\nPhysician: Good morning, Zack. How are you feeling today?\n\nPatient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing.\n\nPhysician: I see. Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around?\n\nPatient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much.\n\nPhysician: Okay, that helps. Have you noticed any swelling or redness in the affected areas?\n\nPatient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything.\n\nPhysician: Got it. And how long have you been experiencing this pain?\n\nPatient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time.\n\nPhysician: I understand. Have you noticed any triggers that make the pain better or worse?\n\nPatient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit.\n\nPhysician: Okay, that's helpful. And have you tried any treatments or medications so far to help manage the pain?\n\nPatient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it.\n\nPhysician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints. Does that sound good to you?\n\nPatient: Yeah, that sounds like a plan. Thanks, Doc.\n\nPhysician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there. Sound good?\n\nPatient: Sounds good to me. Thanks again.",
+  "soap_notes": "Subjective:\nZack Fields reports experiencing constant pain in his right knee and left ankle for the past six months. He describes the pain as a dull ache that is always present and affects his mobility, particularly when walking or standing for extended periods. He notes that the pain improves when he is sitting or lying down. Zack has been taking ibuprofen for pain relief, but it provides only minimal relief and occasionally causes stomach discomfort.\n\nObjective:\nDuring the examination, Zack appeared uncomfortable when moving his right knee and left ankle. There were no signs of swelling or redness in the affected joints. Zack's range of motion in both joints was limited due to pain. He is currently taking ibuprofen 600mg as needed for pain relief. Zack's mother expressed concerns about his mental health due to the impact of the pain on his daily activities.\n\nAssessment:\nBased on Zack's symptoms and history, the likely diagnosis is osteoarthritis in the right knee and left ankle. Further testing is needed to confirm the diagnosis. Zack's current pain management with ibuprofen is suboptimal, and he experiences occasional gastrointestinal side effects. Referral to physical therapy is recommended to improve mobility and reduce strain on the affected joints.\n\nPlan:\n1. Prescribe a different medication for pain management that may be more effective and have fewer gastrointestinal side effects.\n2. Refer Zack to physical therapy to address mobility issues and strengthen the affected joints.\n3. Advise Zack to avoid heavy lifting or bending and to take it easy on his joints.\n4. Follow up with Zack in a few weeks to assess his progress and adjust the treatment plan as needed.",
+  "doctor_name": "Dr. Kristen Kelly",
+  "address": "6104 Parker Rd, Minneapolis, Georgia 60074",
+  "full_patient_data": "\n\n\nDEMOGRAPHICS:\nName: Zack Fields\nAge: 28\nAddress: 6104 Parker Rd, Minneapolis, Georgia 60074\nPhone: (839) 255-2098\n\nPROBLEM LIST:\n1. Chronic: Joint Pain (Right Knee and Left Ankle)\n2. Other: Seasonal Allergies\n\nHEALTH MAINTENANCE:\nVaccines and Screenings:\n- Tdap: 08/14/2022 (overdue)\n- Influenza: 10/02/2022 (due soon)\n- Colonoscopy: 09/15/2023 (not due yet)\n\nREMINDERS AND RESULTS:\n- Reminder: Tdap booster due\n- Reminder: Schedule annual physical\n- Result: Lipid Panel (09/15/2022): Normal\n\nCARE TEAM AND COMMUNICATION:\nCare Team:\n- Dr. Kristen Kelly, Primary Care Physician\n- Dr. Rebecca Nguyen, Orthopedic Surgeon\n- Sarah Johnson, Nurse Practitioner\n- John Smith, Physical Therapist\n\nCommunication:\n- Preferred Method: Email\n- Emergency Contact: Jane Fields, Mother, (555) 123-4567\n\nALLERGIES:\n- Penicillin\n\nMEDICATIONS:\n- Ibuprofen 600mg, PRN, every 4-6 hours as needed for pain\n- Loratadine 10mg, daily for allergies\n\nIMMUNIZATIONS:\n- Tdap: 08/14/2022\n- Influenza: 10/02/2022\n- Hepatitis B: 03/15/1996\n- Measles, Mumps, Rubella: 04/12/1996\n- Varicella: 05/23/1996\n\nSIGNIFICANT HISTORY DETAILS:\n- Tobacco Use: Never\n- Alcohol Use: Occasional\n- Language they speak: English\n\nSPECIALTY COMMENTS:\n- Dr. Nguyen: \"Mr. Fields has been experiencing joint pain in his right knee and left ankle for the past 6 months. MRI results show mild to moderate arthritis. I recommend physical therapy and a trial of NSAIDs.\"\n\nFAMILY COMMENTS:\n- Jane Fields (Mother): \"Zack has been having a hard time with the pain. He's been avoiding physical activities. I'm worried about his mental health.\"",
+  "note_text": "Subjective:\nHe notes that the pain improves when he is sitting or lying down. Zack has been taking ibuprofen for pain relief, but it provides only minimal relief and occasionally causes stomach discomfort.\n\nObjective:\nDuring the examination, Zack appeared uncomfortable when moving his right knee and left ankle. There were no signs of swelling or redness in the affected joints. Zack's range of motion in both joints was limited due to pain. He is currently taking ibuprofen 600mg as needed for pain relief. Zack's mother expressed concerns about his mental health due to the impact of the pain on his daily activities.\n\nAssessment:\nBased on Zack's symptoms and history, the likely diagnosis is osteoarthritis in the right knee and left ankle. Further testing is needed to confirm the diagnosis. Zack's current pain management with ibuprofen is suboptimal, and he experiences occasional gastrointestinal side effects. Referral to physical therapy is recommended to improve mobility and reduce strain on the affected joints.\n\nPlan:\n1. Prescribe a different medication for pain management that may be more effective and have fewer gastrointestinal side effects.\n2. Refer Zack to physical therapy to address mobility issues and strengthen the affected joints.\n3. Advise Zack to avoid heavy lifting or bending and to take it easy on his joints.\n4. Follow up with Zack in a few weeks to assess his progress and adjust the treatment plan as needed.",
+  "transcript": "\nPhysician: Good morning, Zack. How are you feeling today?\n\nPatient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing.\n\nPhysician: I see. Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around?\n\nPatient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much.\n\nPhysician: Okay, that helps. Have you noticed any swelling or redness in the affected areas?\n\nPatient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything.\n\nPhysician: Got it. And how long have you been experiencing this pain?\n\nPatient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time.\n\nPhysician: I understand. Have you noticed any triggers that make the pain better or worse?\n\nPatient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit.\n\nPhysician: Okay, that's helpful. And have you tried any treatments or medications so far to help manage the pain?\n\nPatient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it.\n\nPhysician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints. Does that sound good to you?\n\nPatient: Yeah, that sounds like a plan. Thanks, Doc.\n\nPhysician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there. Sound good?\n\nPatient: Sounds good to me. Thanks again.",
+  "_note_id": "adesouza_000",
+  "_degradation_types": [
+    "omitted_findings"
+  ],
+  "_degradation_details": {
+    "omitted_sentences": [
+      "Zack Fields reports experiencing constant pain in his right knee and left ankle for the past six months.",
+      "He describes the pain as a dull ache that is always present and affects his mobility, particularly when walking or standing for extended periods."
+    ]
+  },
+  "_original_note_id": "adesouza_000"
+}

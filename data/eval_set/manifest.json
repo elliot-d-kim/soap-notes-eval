@@ -1,0 +1,1070 @@
+{
+  "version": "1.0",
+  "description": "Curated eval set: 20 good + ~80 degraded SOAP notes (100 total). Full dataset in data/samples/ (gitignored).",
+  "samples": [
+    {
+      "note_id": "adesouza_000",
+      "filename": "adesouza_000.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_001",
+      "filename": "adesouza_001.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_002",
+      "filename": "adesouza_002.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_003",
+      "filename": "adesouza_003.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_004",
+      "filename": "adesouza_004.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_005",
+      "filename": "adesouza_005.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_006",
+      "filename": "adesouza_006.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_007",
+      "filename": "adesouza_007.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_008",
+      "filename": "adesouza_008.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_009",
+      "filename": "adesouza_009.json",
+      "source_dataset": "adesouza1",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_000",
+      "filename": "omi_000.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_001",
+      "filename": "omi_001.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_002",
+      "filename": "omi_002.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_003",
+      "filename": "omi_003.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_004",
+      "filename": "omi_004.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_005",
+      "filename": "omi_005.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_006",
+      "filename": "omi_006.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_007",
+      "filename": "omi_007.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_008",
+      "filename": "omi_008.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_009",
+      "filename": "omi_009.json",
+      "source_dataset": "omi-health",
+      "label": "good",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_000_missing_section",
+      "filename": "degraded/adesouza_000_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_000_omitted_findings",
+      "filename": "degraded/adesouza_000_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_000_redundancy_bloat",
+      "filename": "degraded/adesouza_000_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_000_structural_errors",
+      "filename": "degraded/adesouza_000_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_000_hallucinated_entities",
+      "filename": "degraded/adesouza_000_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_000_internal_contradiction",
+      "filename": "degraded/adesouza_000_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_001_missing_section",
+      "filename": "degraded/adesouza_001_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_001_omitted_findings",
+      "filename": "degraded/adesouza_001_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_001_redundancy_bloat",
+      "filename": "degraded/adesouza_001_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_001_structural_errors",
+      "filename": "degraded/adesouza_001_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_001_hallucinated_entities",
+      "filename": "degraded/adesouza_001_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_001_internal_contradiction",
+      "filename": "degraded/adesouza_001_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_002_missing_section",
+      "filename": "degraded/adesouza_002_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_002_omitted_findings",
+      "filename": "degraded/adesouza_002_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_002_redundancy_bloat",
+      "filename": "degraded/adesouza_002_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_002_structural_errors",
+      "filename": "degraded/adesouza_002_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_002_hallucinated_entities",
+      "filename": "degraded/adesouza_002_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_002_internal_contradiction",
+      "filename": "degraded/adesouza_002_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_003_missing_section",
+      "filename": "degraded/adesouza_003_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_003_omitted_findings",
+      "filename": "degraded/adesouza_003_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_003_redundancy_bloat",
+      "filename": "degraded/adesouza_003_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_003_structural_errors",
+      "filename": "degraded/adesouza_003_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_003_hallucinated_entities",
+      "filename": "degraded/adesouza_003_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_003_internal_contradiction",
+      "filename": "degraded/adesouza_003_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_004_missing_section",
+      "filename": "degraded/adesouza_004_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_004_omitted_findings",
+      "filename": "degraded/adesouza_004_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_004_redundancy_bloat",
+      "filename": "degraded/adesouza_004_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_004_structural_errors",
+      "filename": "degraded/adesouza_004_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_004_hallucinated_entities",
+      "filename": "degraded/adesouza_004_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_004_internal_contradiction",
+      "filename": "degraded/adesouza_004_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_005_missing_section",
+      "filename": "degraded/adesouza_005_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_005_omitted_findings",
+      "filename": "degraded/adesouza_005_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_005_redundancy_bloat",
+      "filename": "degraded/adesouza_005_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_005_structural_errors",
+      "filename": "degraded/adesouza_005_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_005_hallucinated_entities",
+      "filename": "degraded/adesouza_005_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_005_internal_contradiction",
+      "filename": "degraded/adesouza_005_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_006_missing_section",
+      "filename": "degraded/adesouza_006_missing_section.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "adesouza_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_006_omitted_findings",
+      "filename": "degraded/adesouza_006_omitted_findings.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "adesouza_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_006_redundancy_bloat",
+      "filename": "degraded/adesouza_006_redundancy_bloat.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "adesouza_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_006_structural_errors",
+      "filename": "degraded/adesouza_006_structural_errors.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "adesouza_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_006_hallucinated_entities",
+      "filename": "degraded/adesouza_006_hallucinated_entities.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "adesouza_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "adesouza_006_internal_contradiction",
+      "filename": "degraded/adesouza_006_internal_contradiction.json",
+      "source_dataset": "adesouza1",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "adesouza_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_000_missing_section",
+      "filename": "degraded/omi_000_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_000_omitted_findings",
+      "filename": "degraded/omi_000_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_000_redundancy_bloat",
+      "filename": "degraded/omi_000_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_000_structural_errors",
+      "filename": "degraded/omi_000_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_000_hallucinated_entities",
+      "filename": "degraded/omi_000_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_000_internal_contradiction",
+      "filename": "degraded/omi_000_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_000",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_001_missing_section",
+      "filename": "degraded/omi_001_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_001_omitted_findings",
+      "filename": "degraded/omi_001_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_001_redundancy_bloat",
+      "filename": "degraded/omi_001_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_001_structural_errors",
+      "filename": "degraded/omi_001_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_001_hallucinated_entities",
+      "filename": "degraded/omi_001_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_001_internal_contradiction",
+      "filename": "degraded/omi_001_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_001",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_002_missing_section",
+      "filename": "degraded/omi_002_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_002_omitted_findings",
+      "filename": "degraded/omi_002_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_002_redundancy_bloat",
+      "filename": "degraded/omi_002_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_002_structural_errors",
+      "filename": "degraded/omi_002_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_002_hallucinated_entities",
+      "filename": "degraded/omi_002_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_002_internal_contradiction",
+      "filename": "degraded/omi_002_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_002",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_003_missing_section",
+      "filename": "degraded/omi_003_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_003_omitted_findings",
+      "filename": "degraded/omi_003_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_003_redundancy_bloat",
+      "filename": "degraded/omi_003_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_003_structural_errors",
+      "filename": "degraded/omi_003_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_003_hallucinated_entities",
+      "filename": "degraded/omi_003_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_003_internal_contradiction",
+      "filename": "degraded/omi_003_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_003",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_004_missing_section",
+      "filename": "degraded/omi_004_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_004_omitted_findings",
+      "filename": "degraded/omi_004_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_004_redundancy_bloat",
+      "filename": "degraded/omi_004_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_004_structural_errors",
+      "filename": "degraded/omi_004_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_004_hallucinated_entities",
+      "filename": "degraded/omi_004_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_004_internal_contradiction",
+      "filename": "degraded/omi_004_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_004",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_005_missing_section",
+      "filename": "degraded/omi_005_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_005_omitted_findings",
+      "filename": "degraded/omi_005_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_005_redundancy_bloat",
+      "filename": "degraded/omi_005_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_005_structural_errors",
+      "filename": "degraded/omi_005_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_005_hallucinated_entities",
+      "filename": "degraded/omi_005_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_005_internal_contradiction",
+      "filename": "degraded/omi_005_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_005",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_006_missing_section",
+      "filename": "degraded/omi_006_missing_section.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "missing_section"
+      ],
+      "original_note_id": "omi_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_006_omitted_findings",
+      "filename": "degraded/omi_006_omitted_findings.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "omitted_findings"
+      ],
+      "original_note_id": "omi_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_006_redundancy_bloat",
+      "filename": "degraded/omi_006_redundancy_bloat.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "redundancy_bloat"
+      ],
+      "original_note_id": "omi_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_006_structural_errors",
+      "filename": "degraded/omi_006_structural_errors.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "structural_errors"
+      ],
+      "original_note_id": "omi_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_006_hallucinated_entities",
+      "filename": "degraded/omi_006_hallucinated_entities.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "hallucinated_entities"
+      ],
+      "original_note_id": "omi_006",
+      "metadata": {}
+    },
+    {
+      "note_id": "omi_006_internal_contradiction",
+      "filename": "degraded/omi_006_internal_contradiction.json",
+      "source_dataset": "omi-health",
+      "label": "degraded",
+      "degradation_types": [
+        "internal_contradiction"
+      ],
+      "original_note_id": "omi_006",
+      "metadata": {}
+    }
+  ]
+}

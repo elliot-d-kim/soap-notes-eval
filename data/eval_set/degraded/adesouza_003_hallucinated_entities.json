@@ -1,0 +1,155 @@
+{
+  "age": 65,
+  "patient_name": "Frederick Johnson",
+  "doctor_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "a0fd5bcdf297ca45",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(387) 453-3521",
+        "dob": {
+          "age": 51,
+          "date": "1972-08-30T05:25:25.207Z"
+        },
+        "email": "billy.elliott@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "050-92-9063"
+        },
+        "location": {
+          "city": "Phoenix",
+          "coordinates": {
+            "latitude": "-57.5044",
+            "longitude": "-179.4693"
+          },
+          "country": "United States",
+          "postcode": 84155,
+          "state": "Alaska",
+          "street": {
+            "name": "Poplar Dr",
+            "number": 7215
+          },
+          "timezone": {
+            "description": "Mountain Time (US & Canada)",
+            "offset": "-7:00"
+          }
+        },
+        "login": {
+          "md5": "4b777dc06c3de5c82811b317cd3cca9e",
+          "password": "veronica",
+          "salt": "jbot2QRX",
+          "sha1": "d68a25f17f60e8dd19b68b3e4a6cd18b3f7a7674",
+          "sha256": "e05d8c861691c3ebd34b9a98befd6e297e4bc1db33df6685a16ade22ddafad45",
+          "username": "yellowswan360",
+          "uuid": "133baa0d-2034-4dbb-8ffd-47ef9b3b9cce"
+        },
+        "name": {
+          "first": "Billy",
+          "last": "Elliott",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(672) 757-7944",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/96.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/96.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/96.jpg"
+        },
+        "registered": {
+          "age": 3,
+          "date": "2020-10-01T03:28:41.717Z"
+        }
+      }
+    ]
+  },
+  "gender": "male",
+  "dob": "7/13/1958",
+  "phone": "(990) 894-3626",
+  "person_data": {
+    "info": {
+      "page": 1,
+      "results": 1,
+      "seed": "f716fb9efd8d4fbd",
+      "version": "1.4"
+    },
+    "results": [
+      {
+        "cell": "(598) 821-4252",
+        "dob": {
+          "age": 65,
+          "date": "1958-07-13T12:34:07.316Z"
+        },
+        "email": "frederick.johnson@example.com",
+        "gender": "male",
+        "id": {
+          "name": "SSN",
+          "value": "241-87-0580"
+        },
+        "location": {
+          "city": "Seagoville",
+          "coordinates": {
+            "latitude": "-2.2575",
+            "longitude": "-173.7790"
+          },
+          "country": "United States",
+          "postcode": 34412,
+          "state": "Georgia",
+          "street": {
+            "name": "James St",
+            "number": 1575
+          },
+          "timezone": {
+            "description": "Bombay, Calcutta, Madras, New Delhi",
+            "offset": "+5:30"
+          }
+        },
+        "login": {
+          "md5": "025255b5202a18ec2f72164f5b0dc1b8",
+          "password": "rockhard",
+          "salt": "J7HO11Lu",
+          "sha1": "45e5c480092b269c0b8d6affd6e628205ff595a8",
+          "sha256": "167dfd81b1ae90ac73b47f13f3c234f1b4b9f01399e7d21d312fb6ba0e46ec26",
+          "username": "blackelephant381",
+          "uuid": "57b26d34-9f8a-4dd9-9c23-532fef0df759"
+        },
+        "name": {
+          "first": "Frederick",
+          "last": "Johnson",
+          "title": "Mr"
+        },
+        "nat": "US",
+        "phone": "(990) 894-3626",
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/99.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/99.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/99.jpg"
+        },
+        "registered": {
+          "age": 18,
+          "date": "2005-10-27T02:14:59.298Z"
+        }
+      }
+    ]
+  },
+  "health_problem": "Injuries",
+  "patient_convo": "\nPhysician: Good morning, Mr. Johnson. How can I assist you today?\n\nPatient: Hello, doctor. I've been experiencing some discomfort in my right hip, and it's been getting worse over the past few weeks. It's been hurting me when I walk or stand for too long.\n\nPhysician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache?\n\nPatient: It's more of a dull ache, but it can become sharp if I move the wrong way. It's also been making it hard for me to sleep at night.\n\nPhysician: I understand. Have you noticed any swelling or redness in the affected area?\n\nPatient: No, nothing like that. Just the pain and stiffness.\n\nPhysician: Okay. Have you had any previous injuries or surgeries on that hip?\n\nPatient: Yes, I had a fall a few years ago and injured my hip. It's been bothering me on and off ever since.\n\nPhysician: I see. Have you noticed any weakness or numbness in your leg or foot on the same side?\n\nPatient: A little bit of weakness, maybe. But it's mostly just the pain and stiffness that's bothering me.\n\nPhysician: Understood. Have you been taking any medications for the pain?\n\nPatient: Yes, I've been taking over-the-counter acetaminophen, but it's not really helping much.\n\nPhysician: I see. Have you noticed any other symptoms, such as fever or chills?\n\nPatient: No, nothing like that. Just the pain and stiffness in my hip.\n\nPhysician: Okay, Mr. Johnson. Based on what you've told me, it sounds like you may be experiencing some degenerative changes in your hip joint, possibly related to the previous injury you mentioned. I would like to order some imaging studies, such as an X-ray or MRI, to get a better look at what's going on in there. In the meantime, I'd like to prescribe a medication to help with the pain and inflammation. Would you be okay with that?\n\nPatient: Yes, that sounds good. Thank you, doctor.\n\nPhysician: Great. I'll also recommend some physical therapy exercises to help improve your mobility and reduce the pain. We'll follow up in a few weeks once we have the results of the imaging studies and take it from there. Does that sound good to you?\n\nPatient: Yes, that sounds great. Thank you, doctor.\n\nPhysician: You're welcome, Mr. Johnson. We'll get you all set up and schedule a follow-up appointment for you.",
+  "soap_notes": "Subjective:\nMr. Johnson presents with discomfort in his right hip that has been worsening over the past few weeks. He describes the pain as a dull ache that can become sharp with certain movements, affecting his ability to walk and stand for extended periods. The pain is also disrupting his sleep.\n\nObjective:\nMr. Johnson denies any swelling or redness in the affected area. He reports a previous injury to the hip from a fall a few years ago, leading to intermittent discomfort. He mentions experiencing some weakness in his leg but primarily complains of pain and stiffness. He has been taking acetaminophen for pain relief with minimal effect.\n\nAssessment:\nBased on Mr. Johnson's history of hip injury and current symptoms, there may be degenerative changes in the hip joint contributing to his pain and stiffness. Further imaging studies, such as X-ray or MRI, are warranted to assess the extent of the issue. Pain management and physical therapy interventions are recommended to improve mobility and reduce discomfort.\n\nPlan:\nOrder imaging studies (X-ray or MRI) to evaluate the hip joint. Prescribe medication for pain and inflammation relief. Recommend physical therapy exercises to enhance mobility and alleviate symptoms. Schedule a follow-up appointment to review imaging results and adjust the treatment plan accordingly.",
+  "doctor_name": "Dr. Billy Elliott",
+  "address": "1575 James St, Seagoville, Georgia 34412",
+  "full_patient_data": "\n\n\nDEMOGRAPHICS:\nPatient Name: Frederick Johnson\nAge: 65\nAddress: 1575 James St, Seagoville, Georgia 34412\nPhone: (990) 894-3626\n\nPROBLEM LIST:\nChronic:\n- Hypertension\n- Type 2 Diabetes Mellitus\n- Osteoarthritis\n\nOther:\n- Injuries (Right Hip, Left Shoulder)\n\nHEALTH MAINTENANCE:\nVaccines and Screenings:\n- Tetanus Vaccine: due soon (expiration date: 12/31/2024)\n- Colorectal Cancer Screening: overdue\n- Prostate Cancer Screening: due on 08/01/2024\n\nREMINDERS AND RESULTS:\n- Reminder: Schedule Tetanus Vaccine\n- Reminder: Schedule Colorectal Cancer Screening\n- Result: A1C: 7.1%\n- Result: LDL Cholesterol: 105 mg/dL\n\nCARE TEAM AND COMMUNICATION:\nCare Team:\n- Dr. Billy Elliott\n- Primary Care Nurse: Jane Doe\n- Physical Therapist: John Smith\n\nCommunication:\n- Preferred method: phone calls\n- Language: English\n\nALLERGIES:\n- Penicillin\n\nMEDICATIONS:\n- Metformin 1000mg, twice daily\n- Lisinopril 10mg, once daily\n- Acetaminophen 500mg, as needed\n\nIMMUNIZATIONS:\n- Tetanus Vaccine (Tdap): 01/01/2017\n- Influenza Vaccine (Fluzone): 10/15/2022\n- Pneumococcal Vaccine (Pneumovax): 04/20/2018\n\nSIGNIFICANT HISTORY DETAILS:\n- Tobacco Use: former smoker, quit 01/01/2000\n- Alcohol Use: social drinker\n- Language: English\n\nSPECIALTY COMMENTS:\n- Orthopedic surgeon recommended hip replacement surgery for right hip injury\n\nFAMILY COMMENTS:\n- Wife is concerned about his mobility and ability to perform daily activities",
+  "note_text": "SOAP NOTE:\nSubjective:\nMr. Johnson presents with discomfort in his right hip that has been worsening over the past few weeks. He describes the pain as a dull ache that can become sharp with certain movements, affecting his ability to walk and stand for extended periods. The pain is also disrupting his sleep.\n\nObjective:\nMr. Johnson denies any swelling or redness in the affected area. He reports a previous injury to the hip from a fall a few years ago, leading to intermittent discomfort. He mentions experiencing some weakness in his leg but primarily complains of pain and stiffness. He has been taking acetaminophen for pain relief with minimal effect.\n\nAssessment:\nBased on Mr. Johnson's history of hip injury and current symptoms, there may be degenerative changes in the hip joint contributing to his pain and stiffness. Possible trochanteric bursitis cannot be ruled out given the pattern of symptoms. Further imaging studies, such as X-ray or MRI, are warranted to assess the extent of the issue. Pain management and physical therapy interventions are recommended to improve mobility and reduce discomfort.\n\nPlan:\nOrder imaging studies (X-ray or MRI) to evaluate the hip joint. Prescribe meloxicam 15mg daily for pain and inflammation relief. Recommend physical therapy exercises to enhance mobility and alleviate symptoms. Schedule a follow-up appointment to review imaging results and adjust the treatment plan accordingly.",
+  "transcript": "\nPhysician: Good morning, Mr. Johnson. How can I assist you today?\n\nPatient: Hello, doctor. I've been experiencing some discomfort in my right hip, and it's been getting worse over the past few weeks. It's been hurting me when I walk or stand for too long.\n\nPhysician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache?\n\nPatient: It's more of a dull ache, but it can become sharp if I move the wrong way. It's also been making it hard for me to sleep at night.\n\nPhysician: I understand. Have you noticed any swelling or redness in the affected area?\n\nPatient: No, nothing like that. Just the pain and stiffness.\n\nPhysician: Okay. Have you had any previous injuries or surgeries on that hip?\n\nPatient: Yes, I had a fall a few years ago and injured my hip. It's been bothering me on and off ever since.\n\nPhysician: I see. Have you noticed any weakness or numbness in your leg or foot on the same side?\n\nPatient: A little bit of weakness, maybe. But it's mostly just the pain and stiffness that's bothering me.\n\nPhysician: Understood. Have you been taking any medications for the pain?\n\nPatient: Yes, I've been taking over-the-counter acetaminophen, but it's not really helping much.\n\nPhysician: I see. Have you noticed any other symptoms, such as fever or chills?\n\nPatient: No, nothing like that. Just the pain and stiffness in my hip.\n\nPhysician: Okay, Mr. Johnson. Based on what you've told me, it sounds like you may be experiencing some degenerative changes in your hip joint, possibly related to the previous injury you mentioned. I would like to order some imaging studies, such as an X-ray or MRI, to get a better look at what's going on in there. In the meantime, I'd like to prescribe a medication to help with the pain and inflammation. Would you be okay with that?\n\nPatient: Yes, that sounds good. Thank you, doctor.\n\nPhysician: Great. I'll also recommend some physical therapy exercises to help improve your mobility and reduce the pain. We'll follow up in a few weeks once we have the results of the imaging studies and take it from there. Does that sound good to you?\n\nPatient: Yes, that sounds great. Thank you, doctor.\n\nPhysician: You're welcome, Mr. Johnson. We'll get you all set up and schedule a follow-up appointment for you.",
+  "_note_id": "adesouza_003",
+  "_degradation_types": [
+    "hallucinated_entities"
+  ],
+  "_degradation_details": {
+    "method": "llm_injection"
+  },
+  "_original_note_id": "adesouza_003"
+}
