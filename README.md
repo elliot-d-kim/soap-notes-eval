@@ -4,17 +4,69 @@ An offline evaluation system for AI-generated SOAP notes from doctor-patient con
 
 ---
 
-## Why This Exists
+## How I Approached This
 
-DeepScribe's core product is AI-generated clinical notes. Demonstrating deep fluency in how to *evaluate* that output — not just generate it — directly addresses the highest-leverage problem the team faces. Most candidates build a generator. This builds the system that tells you whether the generator is any good.
+I want to be transparent about my process, because I think the thinking matters as much as the code.
 
-The design is grounded in three strategic insights from the evaluation literature:
+### Starting from the problem, not the solution
 
-**Tiered architecture mirrors real production systems.** The Tier 1 → 2 → 3 escalation pattern (cheap/fast screening → expensive/thorough judgment → human-in-the-loop calibration) is how mature ML teams actually operate. It shows awareness of cost-quality tradeoffs at scale, not just "call GPT-4 on everything."
+I began by reading the assessment carefully and recognizing that the core ask is *evaluation*, not generation. This sounds obvious, but it's a distinction I had to keep reminding myself of throughout my research — the literature on AI-generated SOAP notes frequently blurs the line between "here's how to make notes better" and "here's how to know if notes are good." My job was the latter.
 
-**Meta-evaluation is the differentiator.** Including a calibration module that measures judge-vs-human agreement (Cohen's kappa, targeted >90% binary agreement) demonstrates understanding of a problem most candidates don't even consider: *how do you know your evaluator is trustworthy?*
+I commissioned two structured Deep Research reports — one on [AI SOAP note evaluation methods](docs/AI_SOAP_NOTE_GENERATION_RESEARCH.md) and one on [meta-evaluation of LLM judges](docs/EVALUATING_LLM_JUDGE_RESEARCH.md) — and then spent significant time actually reading through them, following citations to the primary sources, and forming my own conclusions. This was not a skim. I went into the MTS Dialogue paper (Ben Abacha et al., 2023), the NotChat paper that produced the Omi Health dataset, the UCSF/Stanford patient safety study (Dai et al., 2025), the PDQI-9 validation study, and Hamel Husain's widely-referenced guide to LLM-as-a-judge evaluation. The design decisions documented in [`docs/DESIGN_RESEARCH_AND_DECISIONS.md`](docs/DESIGN_RESEARCH_AND_DECISIONS.md) came out of that process.
 
-**Literature-grounded decisions build trust.** Binary pass/fail criteria come from the LLM-as-a-judge literature showing numeric scales produce rater drift. PDQI-9 comes from clinical quality research. Chain-of-thought-before-verdict comes from G-Eval (Liu et al., EMNLP 2023). This is not a vibe-coded prototype — it is a researched system.
+### What I brought vs. what I learned
+
+I'm familiar with classical ML — supervised vs. unsupervised approaches, cost/latency tradeoffs, the importance of training/validation/test splits, common techniques like linear regression, KNN, random forests. I understand what it means to evaluate an evaluator and why you can't just grade your own homework. What I did *not* walk in knowing was the specific clinical NLP tooling (scispaCy for biomedical NER, ClinicalBERT for semantic similarity), the PDQI-9 rubric, or the specific failure taxonomy for clinical notes. Those came from the research. The architecture is mine; many of the specific tools were chosen based on what the literature recommended for this domain.
+
+### The meta-evaluation problem — the sneaky thing
+
+The moment that shaped the entire project was realizing: *I need to evaluate the evaluation system. This is the sneaky thing.* If I build an LLM judge, how do I know the judge is good? If I just run it against good SOAP notes and it says "good," that tells me almost nothing. I need bad SOAP notes — with *known* failure types — so I can measure whether the judge actually catches what it should catch.
+
+This is why the synthetic degradation suite exists. The existing datasets (MTS Dialogue, ACI-Bench, Omi Health) only contain good examples. To test an evaluator, you need both good and bad, with ground-truth labels for what's wrong. So I generate intentionally degraded variants — missing sections, hallucinated entities, internal contradictions — and use those as the test bed for the judge itself.
+
+### Why a tiered architecture
+
+Reading through the evaluation literature, I kept noticing a pattern: every method had real tradeoffs. Traditional NLP metrics (ROUGE, BERTScore) are fast and cheap but correlate poorly with clinical quality. LLM-as-a-judge is powerful but slow and expensive. Human expert review is the gold standard but doesn't scale. No single approach covers everything.
+
+This led me to the tiered design — not because I'd seen it in a textbook, but because it naturally fell out of the tradeoff analysis. Tier 1 handles things you can check deterministically in milliseconds (are all SOAP sections present? is there obvious redundancy?). Tier 2 handles judgment that requires language understanding (is this note accurate relative to the transcript?). Tier 3 is where humans close the loop. The research confirmed this pattern: Husain's framework describes "Level 1" (unit tests/assertions), "Level 2" (human eval + LLM judge), and "Level 3" (A/B testing), with the explicit advice to "conquer Level 1 before investing in Level 2."
+
+### The domain expert UX problem
+
+This is the part I feel most strongly about. A lot of the evaluation discussion in the literature centers on metrics, models, and golden datasets. But how are you going to *create* that golden dataset? Domain experts — the clinicians whose judgment you need — are not technical. They're not going to run Python scripts or parse JSON. The bottleneck in clinical AI evaluation is not compute; it's expert time.
+
+I arrived at this independently and then found it validated almost word-for-word in Husain's guide: "You must remove all friction from reviewing data... I found that it's better to build my own data viewing and labeling tool. One pattern I noticed is that great AI researchers are willing to manually inspect lots of data and more than that they build infrastructure that allows them to manually inspect data quickly."
+
+This is why Tier 3 isn't just a dashboard — it's designed as a workspace where a clinician sees the dialogue, the generated SOAP note, and the judge's annotations side-by-side, and can accept/reject/modify those annotations through simple CRUD operations. The diff between what the judge said and what the expert decided becomes the training signal for the next iteration of the judge prompt.
+
+### What the literature told me about binary scoring
+
+One specific finding shaped the Tier 2 design significantly. The Hugging Face LLM-as-a-judge cookbook showed that two human raters had only 0.563 correlation when scoring on a continuous scale — but after switching to structured evaluation with a small integer scale and chain-of-thought reasoning, correlation jumped to 0.843. Husain goes further: he argues against multipoint scales entirely, saying "domain expert pass/fail judgments correlate better with actual quality than granular numeric scores." Between this and the CALM framework's documentation of rater drift on numeric scales, I committed to binary pass/fail for all criteria. It's simpler, more actionable, and more reliable.
+
+### Honest scoping under time constraints
+
+The assessment asks for 3-5 hours of build. I spent a large fraction of that on research — reading papers, following citations, understanding the problem space — because I believe the design decisions matter more than the implementation details. A well-designed evaluation system that someone else can extend is more valuable than a feature-complete system built on shaky foundations.
+
+Things I thought about but explicitly scoped out:
+- **Online evaluation / real-time feedback loops.** Valuable in production, but fundamentally a deployment concern rather than an eval design concern.
+- **Generator self-correction.** Having the judge LLM provide feedback to the note-generating LLM in real-time is a compelling idea, but it's a product feature, not an evaluation system.
+- **End-user edit flywheel.** Capturing what physicians change in generated notes — the way Whisper learns from your text corrections — could be an incredibly rich data source. But it raises HIPAA/PII concerns and is more of a data pipeline problem than an eval problem.
+- **Head-to-head frontier model comparison.** The research revealed a genuine gap: nobody has published a clean GPT-4o vs. Claude vs. Gemini comparison on MTS Dialogue or ACI-Bench. I noted this as a real contribution someone could make, but it's expensive and tangential to the eval system design.
+
+### What needs more iteration
+
+**Tier 3 UX.** The current implementation is functional — three-column layout, CRUD on annotations, diff export — but getting the expert review experience *right* requires iteration with actual clinicians. Husain's guide describes features like keyboard navigation, progress tracking, semantic search across traces, clustering similar cases, and surfacing traces flagged by automated evaluators for priority review. The current UI is a first pass at the information architecture; the interaction design needs refinement that can only come from watching someone use it.
+
+**Judge prompt calibration.** The Tier 2 judge prompt (`prompts/tier2_judge_v001.md`) is a v001 for a reason. Husain's "Critique Shadowing" methodology — where you iterate between domain expert review and prompt refinement until you reach >90% agreement — is the process I've designed the system to support, but actually *running* that process requires a domain expert and multiple iterations. The meta-eval module (`src/meta_eval/`) provides the agreement metrics; the Tier 3 UI provides the annotation workflow; the versioned prompt system provides the iteration mechanism. The pieces are in place for the loop, but the loop hasn't been run yet.
+
+---
+
+## How This Serves Goals 1 and 2
+
+The assessment defines two goals:
+
+**Goal 1: Move fast.** Tier 1 runs in ~50-200ms per note with zero API calls — it's pure deterministic screening that can gate a CI pipeline or run on every PR. Section completeness, structural validation, redundancy detection, and entity extraction all happen locally. If a note fails Tier 1, you know immediately without waiting for an LLM call. This is the "conquer Level 1 before investing in Level 2" principle in practice.
+
+**Goal 2: Understand production quality.** Tier 2 provides the deeper quality signal — six PDQI-9-adapted criteria evaluated by an LLM judge, with hallucination detection via transcript grounding. It runs asynchronously on every note in batch. The meta-evaluation module then answers the question the assessment explicitly asks: "how do you know if the eval is working?" By measuring judge-vs-human agreement (Cohen's kappa) and per-failure-type detection rates, you get a quantitative answer to whether your evaluator is trustworthy, and where it's falling short.
 
 ---
 
@@ -64,13 +116,43 @@ The design is grounded in three strategic insights from the evaluation literatur
 
 ### Key Design Decisions
 
-| Decision | Rationale |
+| Decision | Rationale | Source |
+|---|---|---|
+| **Binary pass/fail (not Likert)** | Simpler judgments are more reliable and actionable. Numeric scales introduce rater drift and ambiguous midpoints. Human rater correlation jumped from 0.563 to 0.843 when switching to structured evaluation. | Husain 2024; HuggingFace LLM-as-Judge cookbook |
+| **Reference-free as primary mode** | Production notes have no gold-standard reference. The system evaluates using only the source transcript + internal consistency. Even physician-authored "Gold" notes contained hallucinations 20% of the time (PDQI-9 study). | Palm et al. 2025; Asgari et al. 2025 |
+| **Chain-of-thought before verdict** | Forces the judge to articulate reasoning before scoring — a form of test-time scaling that improves consistency and creates auditable reasoning trails for human review. | G-Eval (Liu et al., EMNLP 2023) |
+| **Versioned prompt templates** | The judge prompt is the most sensitive component. Husain: "The evaluation prompt matters more than the model choice. Invest in rubric engineering before switching models." Stored as separate files with version tracking. Never hardcoded. | Husain 2024 |
+| **Cohen's kappa meta-evaluation** | Inter-rater agreement between judge and human expert is the primary quality signal. Husain reports >90% agreement achievable in as few as three iterations of critique shadowing. | Husain 2024 |
+
+---
+
+## Evaluation Criteria (PDQI-9 Adapted)
+
+| Criterion | Pass Condition |
 |---|---|
-| **Binary pass/fail (not Likert)** | Simpler judgments are more reliable and actionable. Numeric scales introduce rater drift and ambiguous midpoints (Husain, 2024). |
-| **Reference-free as primary mode** | Production notes have no gold-standard reference. The system evaluates using only the source transcript + internal consistency. |
-| **Chain-of-thought before verdict** | Forces the judge to articulate reasoning, improving consistency and creating auditable reasoning trails for human review. |
-| **Versioned prompt templates** | Judge prompts are the most sensitive component. Stored as separate files with version tracking. Never hardcoded. |
-| **Cohen's kappa meta-evaluation** | Inter-rater agreement between judge and human expert is the primary quality signal — target >90% agreement on binary pass/fail. |
+| **Accuracy** | All facts traceable to transcript |
+| **Completeness** | Critical transcript facts present in note |
+| **Succinctness** | No redundant sentences or padding |
+| **Organization** | All 4 SOAP sections present, correct order |
+| **Consistency** | Subjective → Assessment → Plan tells coherent story |
+| **Appropriateness** | Language and management consistent with standard practice |
+
+---
+
+## Synthetic Degradation Types
+
+To test the evaluator, I needed bad SOAP notes with known failure types — the existing datasets only provide good examples. The degradation suite generates variants using both programmatic manipulation and LLM-assisted generation:
+
+| Type | Method | What's Broken |
+|---|---|---|
+| `missing_section` | Programmatic | Assessment section removed |
+| `omitted_findings` | Programmatic | Clinical keywords removed from Subjective |
+| `redundancy_bloat` | Programmatic | Plan sentences duplicated + filler added |
+| `structural_errors` | Programmatic | Plan appears before Assessment |
+| `hallucinated_entities` | LLM-assisted | Plausible but unsupported medications/diagnoses injected |
+| `internal_contradiction` | LLM-assisted | Contradiction between Subjective and Assessment |
+
+27 degraded variants across 9 source notes, each with ground-truth labels in `data/samples/degraded/manifest.json`. These become both pytest fixtures and calibration targets for the meta-evaluation module.
 
 ---
 
@@ -143,55 +225,51 @@ uv run pytest tests/ -v
 RUN_INTEGRATION_TESTS=1 uv run pytest tests/ -v
 ```
 
----
-
-## Evaluation Criteria (PDQI-9 Adapted)
-
-| Criterion | Pass Condition |
-|---|---|
-| **Accuracy** | All facts traceable to transcript |
-| **Completeness** | Critical transcript facts present in note |
-| **Succinctness** | No redundant sentences or padding |
-| **Organization** | All 4 SOAP sections present, correct order |
-| **Consistency** | Subjective → Assessment → Plan tells coherent story |
-| **Appropriateness** | Language and management consistent with standard practice |
-
----
-
-## Synthetic Degradation Types
-
-| Type | Method | What's Broken |
-|---|---|---|
-| `missing_section` | Programmatic | Assessment section removed |
-| `omitted_findings` | Programmatic | Clinical keywords removed from Subjective |
-| `redundancy_bloat` | Programmatic | Plan sentences duplicated + filler added |
-| `structural_errors` | Programmatic | Plan appears before Assessment |
-| `hallucinated_entities` | LLM-assisted | Plausible but unsupported medications/diagnoses injected |
-| `internal_contradiction` | LLM-assisted | Contradiction between Subjective and Assessment |
+49 tests pass (unit + schema validation). 3 integration tests are available when an API key is configured.
 
 ---
 
 ## Craftsmanship: What I Paid Close Attention To
 
-### 1. The Meta-Evaluation Loop
+### 1. Designing for the meta-evaluation loop
 
-Most eval systems stop at "the judge says pass." This system asks the harder question: *how do you know the judge is trustworthy?*
+Most eval systems stop at "the judge says pass." The harder question — the one I kept coming back to during my research — is: *how do you know the judge is trustworthy?*
 
-`src/meta_eval/agreement.py` implements Cohen's kappa and Krippendorff's alpha between judge verdicts and ground-truth labels. `src/meta_eval/calibrate.py` tracks per-failure-type detection rates (did the judge catch `missing_section`? `hallucinated_entities`?). This is the calibration loop that enables iterative prompt refinement — the same loop described in Husain's Critique Shadowing methodology, which reports >90% judge-human agreement achievable in as few as three iterations.
+The system is designed around this question. `src/meta_eval/agreement.py` implements Cohen's kappa and Krippendorff's alpha to measure judge-vs-human agreement. `src/meta_eval/calibrate.py` tracks per-failure-type detection rates — did the judge catch `missing_section`? Did it catch `hallucinated_entities`? The synthetic degradation suite provides the ground-truth labels. The Tier 3 review UI provides the human annotation workflow. The versioned prompt system provides the iteration mechanism. Together, these form the infrastructure for Husain's "Critique Shadowing" loop: iterate between expert review and prompt refinement until agreement exceeds 90%.
 
-### 2. Schema-Enforced Chain-of-Thought
+I haven't run that loop — it requires a domain expert and multiple iterations — but the system is designed so that when a clinician sits down to use it, every piece is in place to start turning.
 
-`src/tier2/schemas.py` uses Pydantic validators to enforce the chain-of-thought pattern at the *model level* — not just in the prompt. `CriterionVerdict` raises `ValidationError` if the rationale is fewer than 10 characters. `Tier2Verdict` raises if `overall_verdict` is PASS while any criterion is FAIL or a hallucination is detected. The LLM cannot produce an inconsistent verdict that passes schema validation.
+### 2. The Tier 3 expert review design
 
-### 3. Tier 3 Expert Review as a Calibration Tool
+This is where I see the most remaining work, and also where I think the highest leverage is. The insight that shaped this tier came from recognizing that evaluation is ultimately *for* humans — specifically, non-technical health professionals whose time is the scarcest resource in the system. Making their review experience frictionless isn't a nice-to-have; it's the bottleneck that determines whether the whole meta-evaluation loop actually works.
 
-The review UI isn't just a dashboard — it's the feedback mechanism that closes the meta-evaluation loop. Every expert accept/reject/modify decision is captured with reasoning traces and diffed against the original judge output. The JSON export format is designed specifically to feed back into prompt refinement: when an expert rejects an accuracy verdict, that example becomes training signal for the next prompt iteration. This is how you move from "the judge agrees with me 78% of the time" to ">90%."
+The current implementation provides the core information architecture: three-column layout (transcript | SOAP note | judge annotations), CRUD operations on annotations, reasoning capture, and diff export for calibration. What it still needs — and what I'd prioritize in the next iteration — is the interaction refinement that Husain describes: keyboard navigation for speed, progress indicators, semantic clustering of similar traces, priority surfacing of flagged notes, and the kind of "make it feel fast, clear, and motivating" polish that only comes from watching a real user interact with it.
+
+### 3. Schema-enforced chain-of-thought
+
+`src/tier2/schemas.py` enforces the chain-of-thought pattern at the *data model level*, not just in the prompt. `CriterionVerdict` raises `ValidationError` if the rationale is fewer than 10 characters. `Tier2Verdict` raises if `overall_verdict` is PASS while any criterion is FAIL or a hallucination is detected. The LLM literally cannot produce an inconsistent verdict that passes schema validation. This is a small thing, but it's the kind of structural guarantee that prevents silent failures in a pipeline where you're processing notes in batch.
+
+---
+
+## Research References
+
+Key sources that shaped the design (full references in `docs/`):
+
+- **Asgari et al. 2025** — CREOLA framework: 12,999 clinician-annotated sentences, 1.47% hallucination rate, 44% classified as "major." Hallucinations most common in Plan section.
+- **Palm et al. 2025** — PDQI-9 applied to 97 encounters. AI notes scored higher on Thoroughness and Organization, lower on Succinctness and Internal Consistency.
+- **Croxford et al. 2025** — PDSQI-9 + LLM-as-a-Judge. GPT-o3-mini with 5-shot prompting achieved ICC 0.818 with human evaluators. 96% reduction in eval time.
+- **Dai et al. 2025** — UCSF/Stanford patient safety study. Medication and treatment errors were the most significant safety risk. AI generated severe errors in 22% of cases.
+- **Husain 2024** — Critique Shadowing methodology. Binary pass/fail + detailed critiques. >90% agreement in three iterations. "The real business value comes from looking at your data."
+- **Mukherjee et al. 2026** — Meta-evaluation collapse: recursive LLM evaluation converges on internally consistent but fragile fixed points detached from human truth.
+- **Ben Abacha et al. 2023** — MTS Dialogue dataset: 1,700 conversations. No commercial LLM benchmarks attempted (a gap that still exists).
 
 ---
 
 ## Future Work
 
-- **Online evaluation** — real-time feedback loops and production monitoring
-- **Generator self-correction** — judge feedback improving the note-generation model
-- **Full dataset processing** — currently processes samples only; architecture is dataset-agnostic
-- **Deployment infrastructure** — local-first by design; no Docker or CI/CD
+Beyond the Tier 3 UX refinement and judge prompt calibration discussed above:
+
+- **Online evaluation** — Real-time feedback loops and production monitoring. The tiered architecture supports this (Tier 1 can run synchronously in a request pipeline), but the orchestration infrastructure isn't built.
+- **Generator self-correction** — Having the judge provide feedback to the note-generating LLM so it can fix its notes in real time. This is a compelling product feature that sits at the boundary of evaluation and generation.
+- **End-user edit flywheel** — Capturing what physicians change in generated notes (the way Whisper learns from text corrections) and feeding those diffs back as evaluation signal. Raises HIPAA/PII concerns, but the edit patterns themselves — are they correcting medications? moving sentences between sections? — would be an incredibly rich data source for understanding systematic failure modes.
+- **Full dataset processing** — Currently processes samples only; the architecture is dataset-agnostic and ready for scale.
