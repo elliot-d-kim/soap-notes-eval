@@ -40,7 +40,7 @@ So the question becomes: how do you make it as easy as possible for a health pro
 
 One specific finding shaped the Tier 2 design significantly. The Hugging Face LLM-as-a-judge cookbook showed that two human raters had only 0.563 correlation when scoring on a continuous scale — but after switching to structured evaluation with a small integer scale and chain-of-thought reasoning, correlation jumped to 0.843. The broader LLM-as-a-judge literature reinforces this: domain expert pass/fail judgments correlate better with actual quality than granular numeric scores. Between this and the documented rater drift on numeric scales, I committed to binary pass/fail for all criteria. It's simpler, more actionable, and more reliable.
 
-### Honest scoping under time constraints
+### Scoping under time constraints
 
 The assessment asks for 3-5 hours of build. I spent a significant chunk of that on research — reading papers, following citations, understanding the problem space. This was a deliberate tradeoff, not a failure to plan. With AI coding tools, iterating on builds has become extremely cheap. But so has deep domain-specific research. The payoff of upfront research isn't avoiding failure or minimizing iteration — it's not reinventing the wheel. You use available public domain knowledge as a base to get something functional quickly, then iterate as you tailor it to your use case. The key is keeping first principles in mind: it's no good to copy over a base that doesn't fit your problem.
 
@@ -52,13 +52,13 @@ Things I thought about but explicitly scoped out:
 
 ### What needs more iteration
 
-**Tier 3 UX.** Let me be honest: the current UI is not polished. The three-column layout exists, CRUD on annotations works, diff export works — but it doesn't look good, and there's plenty of iteration I could do on my own before I'd even need to loop in a physician. Progress indicators, keyboard navigation for speed, better visual hierarchy, surfacing flagged notes for priority review — these are all things I know would improve the experience. Time constraint. But the core information architecture is right: transcript | SOAP note | judge annotations, side by side, with the ability to accept/reject/modify and capture why.
+**Tier 3 UX.** The Tier 3 review UI is at an early stage. The three-column layout exists, CRUD on annotations works, and diff export works — but the visual design and interaction refinement are areas where I see significant room for improvement even before involving a physician. Progress indicators, keyboard navigation for speed, better visual hierarchy, surfacing flagged notes for priority review — these are all things that would materially improve the experience and are well within reach with further iteration. The core information architecture is sound: transcript | SOAP note | judge annotations, side by side, with the ability to accept/reject/modify and capture why.
 
 **Judge prompt calibration.** The Tier 2 judge prompt (`prompts/tier2_judge_v001.md`) is a v001 for a reason. The critique shadowing methodology — iterate between domain expert review and prompt refinement until you reach >90% agreement — is the process I've designed the system to support, but actually *running* that process requires a domain expert and multiple iterations. The meta-eval module (`src/meta_eval/`) provides the agreement metrics; the Tier 3 UI provides the annotation workflow; the versioned prompt system provides the iteration mechanism. The pieces are in place for the loop, but the loop hasn't been run yet.
 
-**Sample size.** The assessment mentions 100 SOAP notes. The current implementation works with 9 source notes + 30 degraded variants = 39 total. The architecture is dataset-agnostic — scaling to 100+ is a config change, not a redesign — but I prioritized depth of evaluation design over breadth of data processing within the time constraint. The scripts currently emit single-note sample reports; batch processing across the full dataset with aggregate reporting is a natural next step.
+**Sample size.** The assessment mentions 100 SOAP notes. The current implementation works with 9 source notes + 30 degraded variants = 39 total. The architecture is dataset-agnostic — scaling to 100+ is a config change, not a redesign — but within the time constraint I prioritized depth of evaluation design over breadth of data processing. The scripts currently emit single-note sample reports; batch processing across the full dataset with aggregate reporting is a natural next step.
 
-**Aggregate reporting / dashboard.** The assessment mentions dashboard as a bonus deliverable. I don't have one. The individual JSON reports from Tier 1 and Tier 2 exist, but there's no cross-note summary showing patterns like "hallucinations are most common in the Plan section" or "completeness failures cluster in notes from dataset X." This is where the meta-eval module's per-failure-type detection rates would shine if run at scale.
+**Aggregate reporting / dashboard.** The assessment mentions a dashboard as a bonus deliverable. This is an area that would benefit from development — the individual JSON reports from Tier 1 and Tier 2 exist, but there's no cross-note summary showing patterns like "hallucinations are most common in the Plan section" or "completeness failures cluster in notes from dataset X." This is where the meta-eval module's per-failure-type detection rates would shine if run at scale.
 
 ---
 
@@ -68,7 +68,7 @@ The assessment defines two goals:
 
 **Goal 1: Move fast** — "quickly measure and incorporate the latest models and PR changes, without waiting days/weeks." This is about velocity of iteration: when a new model drops or a PR changes the generation pipeline, how quickly can you know whether things got better or worse?
 
-My approach to the assessment itself reflects this principle — I discuss the research-before-building tradeoff in "Honest scoping" above.
+My approach to the assessment itself reflects this principle — I discuss the research-before-building tradeoff in "Scoping under time constraints" above.
 
 In the system itself: Tier 1 runs in ~50-200ms per note with zero API calls, so it can gate a CI pipeline or run on every PR. Tier 2 runs asynchronously in batch. Both produce structured JSON that can be diffed across runs. When a new model or prompt change lands, you re-run the suite and compare. The architecture is designed so that adding a new model to evaluate is a config change, not a code change.
 
@@ -249,7 +249,7 @@ I haven't run that loop — it requires a domain expert and multiple iterations 
 
 This is where I see the most remaining work, and also where I think the highest leverage is. The insight that shaped this tier came from recognizing that evaluation is ultimately *for* humans — specifically, non-technical health professionals whose time is the scarcest resource in the system. Making their review experience frictionless isn't a nice-to-have; it's the bottleneck that determines whether the whole meta-evaluation loop actually works.
 
-The current implementation provides the core information architecture: three-column layout (transcript | SOAP note | judge annotations), CRUD operations on annotations, reasoning capture, and diff export for calibration. It's not pretty yet — I'd be the first to say it needs polish before putting it in front of a physician. But the data flow is right: every expert accept/reject/modify decision is captured with reasoning and diffed against the original judge output. That diff is the training signal for the next prompt iteration.
+The current implementation provides the core information architecture: three-column layout (transcript | SOAP note | judge annotations), CRUD operations on annotations, reasoning capture, and diff export for calibration. The visual design is early-stage and there's meaningful room for refinement — but the data flow is right: every expert accept/reject/modify decision is captured with reasoning and diffed against the original judge output. That diff is the training signal for the next prompt iteration.
 
 ### 3. Schema-enforced chain-of-thought
 
