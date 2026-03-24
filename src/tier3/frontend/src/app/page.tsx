@@ -117,7 +117,7 @@ export default function Home() {
     );
   }
 
-  // Error state
+  // Error state (only shown in live mode — demo mode never hits this)
   if (error) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -134,6 +134,8 @@ export default function Home() {
       </div>
     );
   }
+
+  const isDemo = process.env.NEXT_PUBLIC_DEMO_MODE === "true";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -251,7 +253,7 @@ export default function Home() {
           </>
         )}
         <div className="flex-1" />
-        <span>FastAPI :8000 → Next.js :3000</span>
+        <span>{isDemo ? "Demo Mode — in-memory sessions" : "FastAPI :8000 → Next.js :3000"}</span>
       </footer>
     </div>
   );

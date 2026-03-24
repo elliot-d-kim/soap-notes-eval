@@ -1,0 +1,181 @@
+{
+  "note_id": "adesouza_000",
+  "source_dataset": "adesouza1",
+  "timestamp": "2026-03-23T22:26:11.603540+00:00",
+  "passed": true,
+  "failure_types": [],
+  "structure": {
+    "note_id": "adesouza_000",
+    "passed": true,
+    "checks": [
+      {
+        "name": "section_present:subjective",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "section_present:objective",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "section_present:assessment",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "section_present:plan",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "section_length:subjective",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "section_length:objective",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "section_length:assessment",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "section_length:plan",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "section_ordering",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "redundancy_bloat",
+        "passed": true,
+        "details": ""
+      }
+    ]
+  },
+  "entities": {
+    "subjective": {
+      "medications": [
+        "constant pain",
+        "pain"
+      ],
+      "diagnoses": [],
+      "procedures": [],
+      "other": [
+        "Zack Fields",
+        "right knee",
+        "left ankle",
+        "months",
+        "ache",
+        "mobility",
+        "walking",
+        "standing",
+        "extended",
+        "periods",
+        "improves",
+        "sitting",
+        "lying down",
+        "Zack",
+        "ibuprofen",
+        "pain relief",
+        "minimal",
+        "relief",
+        "stomach discomfort"
+      ],
+      "model_name": "core_sci_sm"
+    },
+    "objective": {
+      "medications": [
+        "pain"
+      ],
+      "diagnoses": [],
+      "procedures": [
+        "examination",
+        "affected",
+        "impact",
+        "daily activities"
+      ],
+      "other": [
+        "Zack",
+        "moving",
+        "right knee",
+        "left ankle",
+        "swelling",
+        "redness",
+        "joints",
+        "Zack's range of motion",
+        "ibuprofen",
+        "pain relief",
+        "Zack's",
+        "mother",
+        "expressed",
+        "concerns",
+        "mental health"
+      ],
+      "model_name": "core_sci_sm"
+    },
+    "assessment": {
+      "medications": [
+        "strain"
+      ],
+      "diagnoses": [
+        "diagnosis",
+        "osteoarthritis"
+      ],
+      "procedures": [
+        "symptoms",
+        "testing",
+        "suboptimal",
+        "physical therapy",
+        "affected"
+      ],
+      "other": [
+        "Zack's",
+        "history",
+        "right knee",
+        "left ankle",
+        "Zack's current",
+        "pain management",
+        "ibuprofen",
+        "experiences",
+        "occasional",
+        "mobility",
+        "reduce",
+        "joints"
+      ],
+      "model_name": "core_sci_sm"
+    },
+    "plan": {
+      "medications": [],
+      "diagnoses": [],
+      "procedures": [
+        "effective",
+        "gastrointestinal",
+        "side effects",
+        "physical therapy"
+      ],
+      "other": [
+        "medication",
+        "pain management",
+        "Zack",
+        "mobility issues",
+        "joints",
+        "Advise Zack",
+        "lifting",
+        "bending",
+        "Follow up with",
+        "weeks",
+        "progress",
+        "treatment plan"
+      ],
+      "model_name": "core_sci_sm"
+    }
+  }
+}

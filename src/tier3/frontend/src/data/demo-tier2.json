@@ -1,0 +1,77 @@
+{
+  "note_id": "aci_000",
+  "model_used": "openrouter/anthropic/claude-3.5-sonnet",
+  "prompt_version": "v001",
+  "timestamp": "2026-03-19T11:47:13.650622+00:00",
+  "criteria": [
+    {
+      "criterion": "accuracy",
+      "rationale": "Several facts in the note are not supported by the transcript: patient age/gender, vital signs (HR, BP, O2 sat), lisinopril dose, and specific antibiotic dosing details.",
+      "verdict": "fail",
+      "evidence": [
+        "45-year-old female",
+        "HR 92 bpm, BP 128/82 mmHg, O2 sat 97%",
+        "lisinopril 10mg daily"
+      ]
+    },
+    {
+      "criterion": "completeness",
+      "rationale": "The note captures all key clinical elements from the transcript: 3-day cough, fever, shortness of breath, green sputum, right-sided crackles, CXR findings, and treatment plan with two antibiotics.",
+      "verdict": "pass",
+      "evidence": []
+    },
+    {
+      "criterion": "succinctness",
+      "rationale": "The note is appropriately concise with no redundant information. Each section contains relevant information without unnecessary repetition.",
+      "verdict": "pass",
+      "evidence": []
+    },
+    {
+      "criterion": "organization",
+      "rationale": "The note follows standard SOAP format with appropriate content in each section. Symptoms in Subjective, exam findings in Objective, diagnoses in Assessment, and treatment in Plan.",
+      "verdict": "pass",
+      "evidence": []
+    },
+    {
+      "criterion": "consistency",
+      "rationale": "All sections align logically: symptoms and exam findings support pneumonia diagnosis, and antibiotic choices are appropriate for the assessment.",
+      "verdict": "pass",
+      "evidence": []
+    },
+    {
+      "criterion": "appropriateness",
+      "rationale": "Clinical decisions and terminology are appropriate for community-acquired pneumonia. Antibiotic choices and follow-up timeline align with standard practice.",
+      "verdict": "pass",
+      "evidence": []
+    }
+  ],
+  "hallucination_flags": [
+    {
+      "entity": "Demographics",
+      "claim_in_note": "45-year-old female",
+      "grounding_verdict": "fail",
+      "explanation": "Patient age and gender not mentioned in transcript"
+    },
+    {
+      "entity": "Vital signs",
+      "claim_in_note": "HR 92 bpm, BP 128/82 mmHg, O2 sat 97%",
+      "grounding_verdict": "fail",
+      "explanation": "Only temperature was mentioned in transcript"
+    },
+    {
+      "entity": "Medication details",
+      "claim_in_note": "lisinopril 10mg daily",
+      "grounding_verdict": "fail",
+      "explanation": "Lisinopril mentioned but dose not specified in transcript"
+    },
+    {
+      "entity": "Antibiotic dosing",
+      "claim_in_note": "Azithromycin 500mg PO x1, then 250mg daily x 4 days",
+      "grounding_verdict": "fail",
+      "explanation": "Specific antibiotic doses not mentioned in transcript"
+    }
+  ],
+  "overall_verdict": "fail",
+  "overall_rationale": "While the note is well-organized and clinically appropriate, it contains multiple hallucinated details not present in the source transcript, particularly regarding demographics, vital signs, and medication dosing.",
+  "escalate_to_tier3": true
+}

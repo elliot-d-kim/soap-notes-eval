@@ -1,7 +1,13 @@
 /**
  * API client for the Tier 3 FastAPI backend.
+ *
+ * In demo mode (NEXT_PUBLIC_DEMO_MODE=true or no API_URL configured),
+ * uses an in-memory implementation with bundled sample data.
  */
 
+import { demoApi } from "./demo-api";
+
+const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === "true";
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
@@ -124,7 +130,7 @@ export interface SessionSummary {
 
 // --- API calls ---
 
-export const api = {
+const liveApi = {
   // Notes
   listNotes: () => apiFetch<Array<{ note_id: string; source_dataset: string; transcript: string; note_text: string }>>("/api/notes"),
   getNote: (id: string) => apiFetch<NoteData>(`/api/notes/${id}`),
@@ -182,3 +188,8 @@ export const api = {
   exportSession: (sessionId: string) =>
     apiFetch<Record<string, unknown>>(`/api/sessions/${sessionId}/export`),
 };
+
+/**
+ * Export the demo API in demo mode, or the live API otherwise.
+ */
+export const api = DEMO_MODE ? demoApi : liveApi;
